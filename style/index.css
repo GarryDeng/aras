@@ -1,0 +1,34 @@
+.swiper-container {
+  height: 4.6875rem;
+}
+.swiper-container .swiper-slide {
+  height: 4.6875rem;
+}
+.swiper-container .swiper-slide a {
+  display: block;
+}
+.swiper-container .swiper-slide a img {
+  width: 100%;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 50%;
+  width: 20px;
+  right: 1.65625rem;
+  left: auto;
+  transform: translateY(50%);
+}
+.swiper-pagination-bullet {
+  background-color: #FFF;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #FFF;
+  width: 16px;
+  height: 16px;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 32px auto;
+  display: block;
+}

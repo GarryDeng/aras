@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* 清除内外边距 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td,
+main,
+canvas {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+/* 将斜体扶正 */
+/* 重置列表元素 */
+ul,
+ol {
+  list-style: none;
+}
+/* 重置文本格式元素 */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+abbr[title],
+acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+/* 重置表单元素 */
+legend {
+  color: #000;
+}
+/* for ie6 */
+fieldset,
+img {
+  border: none;
+}
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */
+}
+body,
+button,
+input {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px;
+}
+.clear {
+  clear: both;
+}
+.clear::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+@font-face {
+  font-family: 'iconfont';
+  /* project id 678263 */
+  src: url('//at.alicdn.com/t/font_678263_f9vk7f3267.eot');
+  src: url('//at.alicdn.com/t/font_678263_f9vk7f3267.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_678263_f9vk7f3267.woff') format('woff'), url('//at.alicdn.com/t/font_678263_f9vk7f3267.ttf') format('truetype'), url('//at.alicdn.com/t/font_678263_f9vk7f3267.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-size: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

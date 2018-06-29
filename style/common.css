@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* 清除内外边距 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td,
+main,
+canvas {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+/* 将斜体扶正 */
+/* 重置列表元素 */
+ul,
+ol {
+  list-style: none;
+}
+/* 重置文本格式元素 */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+abbr[title],
+acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+/* 重置表单元素 */
+legend {
+  color: #000;
+}
+/* for ie6 */
+fieldset,
+img {
+  border: none;
+}
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */
+}
+body,
+button,
+input {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px;
+}
+.clear {
+  clear: both;
+}
+.clear::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+@font-face {
+  font-family: 'iconfont';
+  /* project id 678263 */
+  src: url('//at.alicdn.com/t/font_678263_f9vk7f3267.eot');
+  src: url('//at.alicdn.com/t/font_678263_f9vk7f3267.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_678263_f9vk7f3267.woff') format('woff'), url('//at.alicdn.com/t/font_678263_f9vk7f3267.ttf') format('truetype'), url('//at.alicdn.com/t/font_678263_f9vk7f3267.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-size: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.header-fixed-list {
+  width: 7.29166667rem;
+  background-color: #000;
+  height: 0.36458333rem;
+  line-height: 0.36458333rem;
+  position: fixed;
+  top: 0.15625rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+.header-fixed-list .logo-pc {
+  height: auto;
+  width: 0.625rem;
+  position: absolute;
+  left: 0.30729167rem;
+  top: 0.10416667rem;
+  display: block;
+}
+.header-fixed-list .list-skip {
+  float: left;
+  margin-left: 2.36458333rem;
+}
+.header-fixed-list .list-skip .nav-a {
+  font-size: 14px;
+  margin-right: 0.42708333rem;
+  line-height: 0.36458333rem;
+  float: left;
+  position: relative;
+}
+.header-fixed-list .list-skip .nav-a a {
+  color: #FFF;
+}
+.header-fixed-list .list-skip .nav-a:last-child {
+  margin-right: 0;
+}
+.header-fixed-list .list-skip .nav-a .second {
+  position: absolute;
+  width: 0.9375rem;
+  left: 50%;
+  margin-left: -0.46875rem;
+  top: 0.36458333rem;
+  background: #000;
+  line-height: 0.32291667rem;
+  text-align: center;
+  display: none;
+}
+.header-fixed-list .list-skip .nav-a .second a {
+  display: block;
+  border-bottom: 1px solid #232323;
+}
+.header-fixed-list .list-skip .nav-a .second a:last-child {
+  border: none;
+}
+.header-fixed-list .list-skip .nav-a:hover .second {
+  display: block;
+}
+.header-fixed-list .search-input {
+  position: absolute;
+  right: 1.06770833rem;
+  top: 0;
+  width: 3.28125rem;
+  background-color: #000;
+  z-index: 99;
+  transition: all .3s;
+}
+.header-fixed-list .search-input .white,
+.header-fixed-list .search-input .black {
+  display: block;
+  width: 0.10416667rem;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  top: 0.13020833rem;
+  cursor: pointer;
+}
+.header-fixed-list .search-input .black {
+  display: none;
+}
+.header-fixed-list .search-input .history-search {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.32291667rem;
+  background-color: #FFF;
+  padding: 0.125rem 0.15625rem;
+  opacity: 1;
+  transition: opacity .1s;
+}
+.header-fixed-list .search-input .history-search p {
+  font-size: 14px;
+  color: #000;
+  opacity: .5;
+  line-height: 1em;
+  padding-bottom: 0.10416667rem;
+}
+.header-fixed-list .search-input .history-search a {
+  line-height: 0.23958333rem;
+  color: #000;
+  font-size: 14px;
+  display: block;
+}
+.header-fixed-list .search-input .close-white {
+  position: absolute;
+  left: 0;
+  width: 0.10416667rem;
+  top: 0.13020833rem;
+  opacity: 1;
+  transition: opacity .1s;
+}
+.header-fixed-list .search-input input {
+  box-sizing: border-box;
+  padding: 0.08333333rem 0.26041667rem;
+  border: none;
+  border-bottom: #808080 1px solid;
+  background: transparent;
+  width: 100%;
+  color: #fff;
+  height: 0.15625rem;
+  font-size: 14px;
+  line-height: 0.09375rem;
+  opacity: 1;
+  transition: opacity .1s;
+}
+.header-fixed-list .search-input input:focus {
+  outline: none;
+}
+.header-fixed-list .search-input.search-focus {
+  width: 0.15625rem;
+}
+.header-fixed-list .search-input.search-focus input,
+.header-fixed-list .search-input.search-focus .close-white,
+.header-fixed-list .search-input.search-focus .history-search {
+  opacity: 0;
+}
+.header-fixed-list .search-input.search-focus input {
+  width: 0%;
+  padding: 0;
+}
+.header-fixed-list .login-register {
+  color: #FFF;
+  font-size: 14px;
+  position: absolute;
+  right: 0.27083333rem;
+}
+.header-fixed-list .login-register a {
+  color: #FFF;
+  padding: 0 5px;
+}
+.header-fixed-list .login-register a.registed {
+  padding: 0;
+  width: 0.19791667rem;
+  height: 0.19791667rem;
+  border-radius: 50%;
+  display: block;
+  margin-top: 0.08333333rem;
+  overflow: hidden;
+  position: relative;
+}
+.header-fixed-list .login-register a.registed img {
+  width: 100%;
+}
