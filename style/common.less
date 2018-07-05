@@ -3,31 +3,33 @@
 
 // 导航start
 .header-fixed-list{
-    width: 1400/192rem;
+    max-width: 1400px;
+    width: 100%;
     background-color: #000;
-    height: 70/192rem;
-    line-height: 70/192rem;
+    height: 70px;
+    line-height: 70px;
     position: fixed;
-    top: 30/192rem;
+    top: 30px;
     left: 0;
     right: 0;
     margin: 0 auto;
     z-index: 999;
+    transition: all .3s;
     .logo-pc{
         height: auto;
-        width: 120/192rem;
+        width: 120px;
         position: absolute;
-        left: 59/192rem;
-        top: 20/192rem;
+        left: 59px;
+        top: 20px;
         display: block;
     }
     .list-skip{
         float: left;
-        margin-left: 454/192rem;
+        margin-left: 454px;
         .nav-a{
             font-size: 14px;
-            margin-right: 82/192rem;
-            line-height: 70/192rem;
+            margin-right: 82px;
+            line-height: 70px;
             float: left;
             position: relative;
             a{
@@ -38,12 +40,12 @@
             }
             .second{
                 position: absolute;
-                width: 180/192rem;
+                width: 180px;
                 left: 50%;
-                margin-left: -90/192rem;
-                top: 70/192rem;
+                margin-left: -90px;
+                top: 70px;
                 background: #000;
-                line-height: 62/192rem;
+                line-height: 62px;
                 text-align: center;
                 display: none;
                 a{
@@ -63,19 +65,19 @@
     }
     .search-input{
         position: absolute;
-        right: 205/192rem;
+        right: 205px;
         top: 0;
-        width: 630/192rem;
+        width: 630px;
         background-color: #000;
         z-index: 99;
         transition: all .3s;
         .white,.black{
             display: block;
-            width: 20/192rem;
+            width: 20px;
             position: absolute;
             right: 0;
             z-index: 99;
-            top: (70-20)/2/192rem;
+            top: (70-20)/2px;
             cursor: pointer;
         }
         .black{
@@ -85,9 +87,9 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: 62/192rem;
+            top: 62px;
             background-color: #FFF;
-            padding: 24/192rem 30/192rem;
+            padding: 24px 30px;
             opacity: 1;
             transition: opacity .1s;
             p{
@@ -95,10 +97,10 @@
                 color: #000;
                 opacity: .5;
                 line-height: 1em;
-                padding-bottom: 20/192rem;
+                padding-bottom: 20px;
             }
             a{
-                line-height: 46/192rem;
+                line-height: 46px;
                 color: #000;
                 font-size: 14px;
                 display: block;
@@ -107,22 +109,23 @@
         .close-white{
             position: absolute;
             left: 0;
-            width: 20/192rem;
-            top: (70-20)/2/192rem;
+            width: 20px;
+            top: (70-20)/2px;
             opacity: 1;
             transition: opacity .1s;
+            cursor: pointer;
         }
         input{
             box-sizing: border-box;
-            padding: (50-18)/2/192rem 50/192rem;
+            padding: (50-18)/2px 50px;
             border: none;
             border-bottom: #808080 1px solid;
             background: transparent;
             width: 100%;
             color: #fff;
-            height: (70-10)/2/192rem;
+            height: (70-10)/2px;
             font-size: 14px;
-            line-height: 18/192rem;
+            line-height: 18px;
             opacity: 1;
             transition: opacity .1s;
             &:focus{
@@ -130,11 +133,11 @@
             }
         }
         &.search-focus{
-            width: 30/192rem;
+            width: 30px;
             input,.close-white,.history-search{
                 opacity: 0;
             }
-            input{
+            input,.history-search{
                 width: 0%;
                 padding: 0;
             }
@@ -144,21 +147,443 @@
         color: #FFF;
         font-size: 14px;
         position: absolute;
-        right: 52/192rem;
+        right: 52px;
         a{
             color: #FFF;
             padding: 0 5px;
             &.registed{
                 padding: 0;
-                width: 38/192rem;
-                height: 38/192rem;
+                width: 38px;
+                height: 38px;
                 border-radius: 50%;
                 display: block;
-                margin-top: (70-38)/2/192rem;
+                margin-top: (70-38)/2px;
                 overflow: hidden;
                 position: relative;
                 img{
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: #000;
+    .footer-common{
+        width: 1280px;
+        margin: 0 auto;
+        .nav-common{
+            padding-top: 130px;
+            padding-bottom: 106px;
+            border-bottom: 1px solid #4d4d4d;
+            a{
+                display: block;
+                width: 140px;
+                color: #FFF;
+                opacity: .8;
+                font-size: 14px;
+                float: left;
+            }
+        }
+        .message-common{
+            .call-mail{
+                padding-top: 40px;
+                padding-bottom: 42px;
+                span{
+                    display: inline-block;
+                    color: #FFF;
+                    opacity: .8;
+                    font-size: 14px;
+                    &.phone{
+                        padding-right: 70px;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            top: -5px;
+                            border-left: 1px solid #FFF;
+                            opacity: .8;
+                            right: 0;
+                            height: 30px;
+                        }
+                    }
+                    &.mial{
+                        padding-left: 100px;
+                    }
+                }
+            }
+            .address{
+                font-size: 14px;
+                color: #FFF;
+                opacity: .8;
+            }
+            .blogroll{
+                width: 475px;
+                position: relative;
+                margin-top: 40px;
+                span{
+                    position: absolute;
+                    left: -100px;
+                    color: #FFF;
+                    opacity: .8;
+                    top: 6px;
+                    font-size: 14px;
+                }
+                a{
+                    color: #FFF;
+                    font-size: 14px;
+                    opacity: .8;
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .copyright{
+        margin-top: 120px;
+        padding-bottom: 24px;
+        text-align: center;
+        a{
+            color: #FFF;
+        }
+        font-size: 12px;
+        opacity: .8;
+        color: #FFF;
+    }
+}
+// 登录页面
+.fixed-login-wechat{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    .content-text{
+        position: fixed;
+        width: 298px;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #FFF url('../images/wechat.png') no-repeat left top;
+        border-radius: 12px;
+        box-shadow: 1px 1px 5px 1px #757575;
+        .title{
+            line-height: 106px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .er-code{
+            width: 126px;
+            display: block;
+            margin: 8px auto;
+        }
+        .login-code{
+            font-size: 14px;
+            line-height: 44px;
+            text-align: center;
+        }
+        .agreement{
+            background: url("../images/button.png") no-repeat center;
+            background-size: cover;
+            line-height: 51px;
+            height: 51px;
+            text-align: center;
+            font-size: 12px;
+            a{
+                color: #000;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1380px) {
+    // 导航start
+    .header-fixed-list{
+        max-width: 1080px;
+        width: 100%;
+        .list-skip{
+            margin-left: 304px;
+            .nav-a{
+                margin-right: 50px;
+            }
+        }
+        .search-input{
+            right: 168px;
+            width: 550px;
+        }
+    }
+    footer{
+        .footer-common{
+            max-width: 1080+60px;
+            width: 100%;
+            padding: 0 30px;
+            box-sizing: border-box;
+            .nav-common{
+                padding-top: 130/128rem;
+                padding-bottom: 106/128rem;
+                a{
+                    width: 120px;
+                }
+            }
+            .message-common{
+                .call-mail{
+                    padding-top: 40/128rem;
+                    padding-bottom: 42/128rem;
+                    span{
+                        &.phone{
+                            padding-right: 70/128rem;
+                        }
+                        &.mial{
+                            padding-left: 100/128rem;
+                        }
+                    }
+                }
+                .blogroll{
+                    width: 475/128rem;
+                    margin-top: 40/128rem;
+                    span{
+                        left: -100/128rem;
+                    }
+                }
+            }
+        }
+        .copyright{
+            margin-top: 120/128rem;
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    header{
+        height: 60px;
+    }
+    // 导航start
+    .header-fixed-list{
+        top: 0;
+        height: 60px;
+        line-height: 60px;
+        .login-register{
+            right: 60/98rem;
+        }
+        .logo-pc{
+            width: 120/70*60px;
+            left: 60/98rem;
+            top: (60-26)/2px;
+        }
+        .list-skip{
+            margin-left: 0;
+            float: right;
+            margin-right: 230px;
+            .nav-a{
+                margin-right: 30/98rem;
+                line-height: 60px;
+            }
+        }
+        .search-input{
+            right: 168px;
+            width: 510/98rem;
+            .white,.black{
+                top: (60-20)/2px;
+            }
+            .history-search{
+                top: 60px;
+                padding: 24px 30px;
+                p{
+                    font-size: 12px;
+                    padding-bottom: 12px;
+                }
+                a{
+                    line-height: 26px;
+                    font-size: 12px;
+                }
+            }
+            .close-white{
+                width: 16px;
+                left: 4px;
+                top: (60-16)/2px;
+            }
+            input{
+                padding: (50-18)/2px 50px;
+                height: (60-10)/2px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+    footer{
+        .footer-common{
+            max-width: 1080+60px;
+            width: 100%;
+            padding: 0 30px;
+            box-sizing: border-box;
+            .nav-common{
+                padding-top: 130/128rem;
+                padding-bottom: 106/128rem;
+                a{
+                    width: 120px;
+                }
+            }
+            .message-common{
+                .call-mail{
+                    padding-top: 40/128rem;
+                    padding-bottom: 42/128rem;
+                    span{
+                        &.phone{
+                            padding-right: 70/128rem;
+                        }
+                        &.mial{
+                            padding-left: 100/128rem;
+                        }
+                    }
+                }
+                .blogroll{
+                    width: 475/128rem;
+                    margin-top: 40/128rem;
+                    span{
+                        left: -100/128rem;
+                    }
+                }
+            }
+        }
+        .copyright{
+            margin-top: 120/128rem;
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    header{
+        height: 95/75rem;
+    }
+    .header-fixed-list{
+        line-height: 95/75rem;
+        height: 95/75rem;
+        .logo-pc{
+            width: 130/75rem;
+            left: 50%;
+            margin-left: -65/75rem;
+            top: (95-34)/2/75rem;
+        }
+        .list-skip{
+            display: none;
+        }
+        .search-input{
+            display: none;
+        }
+        .login-register{
+            display: none;
+        }
+    }
+    footer{
+        .footer-common{
+            padding: 0 19/75rem;
+            .nav-common{
+                padding-top: 38/75rem;
+                padding-bottom: 30/75rem;
+                a{
+                    width: auto;
+                    font-size: 14/75rem;
+                    &:nth-child(1){
+                        margin-right: 124/75rem;
+                    }
+                    &:nth-child(2){
+                        margin-right: 100/75rem;
+                    }
+                    &:nth-child(3){
+                        margin-right: 100/75rem;
+                    }
+                    &:nth-child(5){
+                        float: right;
+                    }
+                }
+            }
+            .message-common{
+                .blogroll{
+                    display: none;
+                }
+                .fl{
+                    float: none;
+                }
+                .call-mail,.address{
+                    line-height: 1em;
+                    padding-top: 38/75rem;
+                    padding-bottom: 30/75rem;
+                    float: left;
+                    span{
+                        font-size: 14/75rem;
+                        line-height: 1em;
+                        display: block;
+                        float: left;
+                        &.phone{
+                            margin-left: 30/75rem;
+                            padding: 0;
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        &.mial{
+                            padding: 0;
+                            margin-left: 90/75rem;
+                        }
+                    }
+                }
+                .address{
+                    font-size: 14/75rem;
+                    float: right;
+                }
+            }
+        }
+        .copyright{
+            font-size: 12/75rem;
+            margin-top: 0;
+            padding-bottom: 8/75rem;
+        }
+    }
+    .phone-nav-header{
+        display: block !important;
+        height: 100/75rem;
+        .link{
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            background-color: #FFF;
+            a{
+                display: block;
+                float: left;
+                line-height: 50/75rem;
+                padding-top: 50/75rem;
+                color: #000;
+                opacity: .4;
+                text-align: center;
+                font-size: 20/75rem;
+                &.active{
+                    opacity: 1;
+                }
+                &:nth-child(1){
+                    width: 130/75rem;
+                    background: url("../images/phone-index-nav.png") no-repeat center 12/75rem;
+                    background-size: 39/75rem auto;
+                }
+                &:nth-child(2){
+                    width: 160/75rem;
+                    background: url("../images/phone-tank.png") no-repeat center 10/75rem;
+                    background-size: 45/75rem auto;
+                }
+                &:nth-child(3){
+                    width: 170/75rem;
+                    background: url("../images/phone-scheme.png") no-repeat center 20/75rem;
+                    background-size: 34/75rem auto;
+                }
+                &:nth-child(4){
+                    width: 160/75rem;
+                    background: url("../images/phone-book.png") no-repeat center 13/75rem;
+                    background-size: 31/75rem auto;
+                }
+                 &:nth-child(5){
+                    width: 130/75rem;
+                    background: url("../images/phone-me.png") no-repeat center 12/75rem;
+                    background-size: 34/75rem auto;
                 }
             }
         }

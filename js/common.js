@@ -18,4 +18,8 @@ $('.header-fixed-list .search-input input').on('blur',function(){
         if (!($('.header-fixed-list .search-input').hasClass('search-focus')) && focusTime)
             $('.header-fixed-list .search-input').addClass('search-focus');
     },500)
-})
+});
+//清空输入内容
+$('.search-input.search-focus .close-white').on('click',function () {
+    $(this).siblings('input').val('');
+});
