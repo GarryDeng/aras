@@ -1,0 +1,560 @@
+.wisdom-search-input {
+  width: 100%;
+  position: relative;
+}
+.wisdom-search-input .bg {
+  display: block;
+  width: 100%;
+}
+.wisdom-search-input .search-input {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.wisdom-search-input .search-input .send-input {
+  display: block;
+  width: 694px;
+  line-height: 30px;
+  padding: 10px 20px;
+  border: 2px solid #303031;
+  font-size: 17px;
+  color: #000;
+  background-color: transparent;
+}
+.wisdom-search-input .search-input .send-input::-webkit-input-placeholder,
+.wisdom-search-input .search-input .send-input:-input-placeholder,
+.wisdom-search-input .search-input .send-input:-ms-input-placeholder {
+  opacity: .2;
+}
+.wisdom-search-input .search-input .send-input:focus {
+  outline: none;
+}
+.wisdom-search-input .search-input .history-list {
+  line-height: 1em;
+  padding-top: 35px;
+  font-size: 14px;
+  color: #000;
+  opacity: .2;
+  text-align: center;
+}
+.wisdom-search-input .search-input .history-list a {
+  color: #000;
+  margin-right: 15px;
+}
+.wisdom-search-list {
+  border-bottom: 1px solid #f8f8f8;
+}
+.wisdom-search-list ul {
+  width: 1280px;
+  margin: 0 auto;
+  line-height: 80px;
+  height: 80px;
+}
+.wisdom-search-list ul li {
+  float: left;
+  margin-right: 106px;
+}
+.wisdom-search-list ul li a {
+  display: block;
+  color: #000;
+  opacity: .4;
+  font-size: 14px;
+  padding: 0 11px;
+}
+.wisdom-search-list ul li.active {
+  border-bottom: 1px solid #000;
+}
+.wisdom-search-list ul li.active a {
+  opacity: 1;
+}
+.wisdom-search-thinktak .headline {
+  width: 1280px;
+  margin: 0 auto;
+  line-height: 160px;
+}
+.wisdom-search-thinktak .headline .think-that {
+  font-size: 30px;
+}
+.wisdom-search-thinktak .headline .think-that .china {
+  font-size: 30px;
+}
+.wisdom-search-thinktak .headline .think-that .en {
+  font-size: 20px;
+}
+.wisdom-search-thinktak .headline .look-more {
+  font-size: 20px;
+  color: #000;
+}
+.wisdom-search-thinktak .wisdom-specialist {
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding-bottom: 90px;
+  border-bottom: 2px solid #efefef;
+}
+.wisdom-search-thinktak .wisdom-specialist li {
+  width: 272px;
+  margin-right: 64px;
+  float: left;
+  height: 432px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px 2px 6px 1px #efefef;
+}
+.wisdom-search-thinktak .wisdom-specialist li:nth-child(4n) {
+  margin-right: 0;
+}
+.wisdom-search-thinktak .wisdom-specialist li .user,
+.wisdom-search-thinktak .wisdom-specialist li .scheme,
+.wisdom-search-thinktak .wisdom-specialist li .building {
+  display: block;
+  width: 100%;
+  height: 322px;
+}
+.wisdom-search-thinktak .wisdom-specialist li .more {
+  height: 110px;
+  background: #FFF;
+}
+.wisdom-search-thinktak .wisdom-specialist li .more a {
+  position: absolute;
+  color: #000;
+  right: 22px;
+  bottom: 18px;
+  opacity: .5;
+  font-size: 14px;
+  z-index: 9;
+  transition: all .3s;
+}
+.wisdom-search-thinktak .wisdom-specialist li .content-text {
+  position: absolute;
+  top: 322px;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  padding: 0 12px;
+  height: 432px;
+  transition: all .3s;
+}
+.wisdom-search-thinktak .wisdom-specialist li .content-text .name {
+  line-height: 70px;
+  font-size: 24px;
+}
+.wisdom-search-thinktak .wisdom-specialist li .content-text .college {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.wisdom-search-thinktak .wisdom-specialist li .content-text .technical {
+  color: #FFF;
+  font-size: 16px;
+}
+.wisdom-search-thinktak .wisdom-specialist li .content-text .honor {
+  color: #FFF;
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 2.5em;
+}
+.wisdom-search-thinktak .wisdom-specialist li:hover .name,
+.wisdom-search-thinktak .wisdom-specialist li:hover .college {
+  color: #FFF;
+}
+.wisdom-search-thinktak .wisdom-specialist li:hover .college {
+  margin-top: 3px;
+}
+.wisdom-search-thinktak .wisdom-specialist li:hover .more a {
+  color: #FFF;
+  opacity: 1;
+}
+.wisdom-search-thinktak .wisdom-specialist li:hover .content-text {
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+}
+.wisdom-search-thinktak .wisdom-specialist li .scheme {
+  height: 302px;
+}
+.wisdom-search-thinktak .wisdom-specialist li .scheme-text {
+  line-height: 130px;
+  font-size: 22px;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+}
+.wisdom-search-thinktak .wisdom-specialist li .building {
+  height: 274px;
+}
+.wisdom-search-thinktak .wisdom-specialist li .building-content {
+  padding: 0 18px;
+}
+.wisdom-search-thinktak .wisdom-specialist li .building-content .title {
+  line-height: 60px;
+  font-size: 22px;
+  color: #000;
+}
+.wisdom-search-thinktak .wisdom-specialist li .building-content .details {
+  font-size: 14px;
+  line-height: 22px;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+}
+.wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock {
+  margin-top: 18px;
+  position: relative;
+  line-height: 38px;
+  color: #000;
+  font-size: 14px;
+  opacity: .4;
+}
+.wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock::before {
+  content: "";
+  top: 0px;
+  left: -18px;
+  right: -18px;
+  border-top: 1px solid #000;
+  position: absolute;
+  opacity: .4;
+}
+@media screen and (max-width: 1380px) {
+  .wisdom-search-input .search-input .send-input {
+    width: 5.02898551rem;
+    line-height: 0.2173913rem;
+    padding: 0.07246377rem 0.14492754rem;
+    font-size: 0.12318841rem;
+  }
+  .wisdom-search-input .search-input .history-list {
+    padding-top: 0.2173913rem;
+  }
+  .wisdom-search-list ul {
+    width: 7.82608696rem;
+    line-height: 0.57971014rem;
+    height: 0.57971014rem;
+  }
+  .wisdom-search-list ul li {
+    margin-right: 0.46376812rem;
+  }
+  .wisdom-search-thinktak .headline {
+    width: 7.82608696rem;
+    line-height: 1.15942029rem;
+  }
+  .wisdom-search-thinktak .headline .think-that .china {
+    font-size: 0.2173913rem;
+  }
+  .wisdom-search-thinktak .headline .think-that .en {
+    font-size: 0.14492754rem;
+  }
+  .wisdom-search-thinktak .headline .look-more {
+    font-size: 0.14492754rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist {
+    width: 7.82608696rem;
+    margin-top: 0.17391304rem;
+    padding-bottom: 0.57971014rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li {
+    width: 1.97101449rem;
+    margin-right: 0.95652174rem;
+    height: 3.13043478rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .user {
+    height: 2.33333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .scheme {
+    height: 2.1884058rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building {
+    height: 1.98550725rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(3) {
+    margin-right: 0;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(4) {
+    display: none;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .more {
+    height: 0.79710145rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .more a {
+    right: 0.15942029rem;
+    bottom: 0.13043478rem;
+    font-size: 0.10144928rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text {
+    top: 2.33333333rem;
+    padding: 0 0.08695652rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .name {
+    font-size: 0.17391304rem;
+    line-height: 0.50724638rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .college {
+    font-size: 0.11594203rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .technical {
+    font-size: 0.11594203rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .honor {
+    margin-top: 0.28985507rem;
+    line-height: 0.20869565rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .scheme-text {
+    line-height: 0.94202899rem;
+    font-size: 0.15942029rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content {
+    padding: 0 0.13043478rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .title {
+    font-size: 0.15942029rem;
+    line-height: 0.43478261rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .details {
+    font-size: 12px;
+    height: 0.33333333rem;
+    line-height: 0.17391304rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock {
+    margin-top: 0.10144928rem;
+    font-size: 12px;
+    line-height: 0.27536232rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .wisdom-search-input .search-input .send-input {
+    width: 7.08163265rem;
+    line-height: 0.30612245rem;
+    padding: 0.10204082rem 0.10204082rem;
+    font-size: 0.17346939rem;
+    border: 1px solid #303031;
+  }
+  .wisdom-search-input .search-input .history-list {
+    padding-top: 0.30612245rem;
+  }
+  .wisdom-search-list {
+    height: 0.6122449rem;
+    line-height: 0.6122449rem;
+  }
+  .wisdom-search-list ul {
+    width: 8.53061224rem;
+  }
+  .wisdom-search-list ul li {
+    margin-right: 0.65306122rem;
+  }
+  .wisdom-search-thinktak .headline {
+    width: 8.53061224rem;
+    line-height: 1.63265306rem;
+  }
+  .wisdom-search-thinktak .headline .think-that .china {
+    font-size: 0.30612245rem;
+  }
+  .wisdom-search-thinktak .headline .think-that .en {
+    font-size: 0.20408163rem;
+  }
+  .wisdom-search-thinktak .headline .look-more {
+    font-size: 0.20408163rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist {
+    width: 7.63265306rem;
+    margin-top: 0.24489796rem;
+    padding-bottom: 0.36734694rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li {
+    width: 2.7755102rem;
+    margin-right: 2.06122449rem;
+    height: 4.40816327rem;
+    margin-bottom: 0.32653061rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .user {
+    height: 3.28571429rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .scheme {
+    height: 3.08163265rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building {
+    height: 2.79591837rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(3) {
+    margin-right: 2.06122449rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(4) {
+    display: block;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .more {
+    height: 1.12244898rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .more a {
+    right: 0.2244898rem;
+    bottom: 0.18367347rem;
+    font-size: 0.14285714rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text {
+    top: 3.28571429rem;
+    padding: 0 0.12244898rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .name {
+    font-size: 0.24489796rem;
+    line-height: 0.71428571rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .college {
+    font-size: 0.16326531rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .technical {
+    font-size: 0.16326531rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .honor {
+    margin-top: 0.40816327rem;
+    line-height: 0.29387755rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .scheme-text {
+    line-height: 1.32653061rem;
+    font-size: 0.2244898rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content {
+    padding: 0 0.18367347rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .title {
+    font-size: 0.2244898rem;
+    line-height: 0.6122449rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .details {
+    font-size: 12px;
+    height: 0.46938776rem;
+    line-height: 0.24489796rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock {
+    margin-top: 0.14285714rem;
+    font-size: 12px;
+    line-height: 0.3877551rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wisdom-search-input {
+    display: none;
+  }
+  .wisdom-search-list ul {
+    width: 9.38666667rem;
+    line-height: 1.09333333rem;
+    height: 1.09333333rem;
+  }
+  .wisdom-search-list ul li {
+    margin-right: 0;
+    width: 25%;
+  }
+  .wisdom-search-list ul li.active {
+    border-bottom: 0;
+  }
+  .wisdom-search-list ul li.active a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0.09333333rem solid #000;
+  }
+  .wisdom-search-list ul li:nth-child(2) {
+    text-indent: .15rem;
+  }
+  .wisdom-search-list ul li:nth-child(3) {
+    text-indent: .3rem;
+  }
+  .wisdom-search-list ul li:nth-child(4) {
+    text-align: right;
+  }
+  .wisdom-search-list ul li a {
+    font-size: 0.34666667rem;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+  }
+  .wisdom-search-thinktak .headline {
+    width: 9.38666667rem;
+    line-height: 2rem;
+  }
+  .wisdom-search-thinktak .headline .think-that .china {
+    font-size: 0.4rem;
+  }
+  .wisdom-search-thinktak .headline .think-that .en {
+    font-size: 0.26666667rem;
+  }
+  .wisdom-search-thinktak .headline .look-more {
+    font-size: 0.20408163rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist {
+    width: 8.58666667rem;
+    margin-top: 0;
+    padding-bottom: 0.48rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li {
+    width: 3.62666667rem;
+    margin-right: 1.30666667rem;
+    height: 5.76rem;
+    margin-bottom: 0.48rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .user {
+    height: 4.29333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .scheme {
+    height: 4.02666667rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building {
+    height: 3.65333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(3) {
+    margin-right: 1.30666667rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .more {
+    height: 1.46666667rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .more a {
+    right: 0.29333333rem;
+    bottom: 0.24rem;
+    font-size: 0.18666667rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text {
+    top: 4.29333333rem;
+    padding: 0 0.16rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .name {
+    font-size: 0.32rem;
+    line-height: 0.93333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .college {
+    font-size: 0.21333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .technical {
+    font-size: 0.21333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .content-text .honor {
+    margin-top: 0.53333333rem;
+    line-height: 0.384rem;
+    font-size: 0.16rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .scheme-text {
+    line-height: 1.73333333rem;
+    font-size: 0.29333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content {
+    padding: 0 0.24rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .title {
+    font-size: 0.29333333rem;
+    line-height: 0.8rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .details {
+    font-size: 0.18666667rem;
+    height: 0.61333333rem;
+    line-height: 0.32rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock {
+    margin-top: 0.18666667rem;
+    font-size: 0.18666667rem;
+    line-height: 0.50666667rem;
+  }
+}

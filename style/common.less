@@ -2,6 +2,26 @@
 @import url('default.less');
 
 // 导航start
+header{
+    &.whole-header-nav{
+        height: 70px;
+        position: relative;
+        .header-fixed-list{
+            top: 0;
+            &::before{
+                content: "";
+                left: 0;
+                right: 0;
+                background-color: #000;
+                top: 0;
+                height: 70px;
+                position: fixed;
+                box-shadow: 0 0px 12px 1px #FFF;
+            }
+        }
+    }
+    
+}
 .header-fixed-list{
     max-width: 1400px;
     width: 100%;
@@ -356,6 +376,15 @@ footer{
 @media screen and (max-width: 980px) {
     header{
         height: 60px;
+        &.whole-header-nav{
+            height: 60px;
+            position: relative;
+            .header-fixed-list{
+                &::before{
+                    height: 60px;
+                }
+            }
+        }
     }
     // 导航start
     .header-fixed-list{
@@ -453,6 +482,14 @@ footer{
 @media screen and (max-width:750px) {
     header{
         height: 95/75rem;
+        &.whole-header-nav{
+            height: 95/75rem;
+            .header-fixed-list{
+                &::before{
+                    height: 95/75rem;
+                }
+            }
+        }
     }
     .header-fixed-list{
         line-height: 95/75rem;

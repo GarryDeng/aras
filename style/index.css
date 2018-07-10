@@ -15,9 +15,9 @@
 .swiper-pagination-fraction {
   bottom: 50%;
   width: 20px;
-  right: 1.65625rem;
-  left: auto;
+  left: 50%;
   transform: translateY(50%);
+  margin-left: 640px;
 }
 .swiper-pagination-bullet {
   background-color: #FFF;
@@ -118,7 +118,7 @@
   text-overflow: ellipsis;
 }
 .offer-index .information-index li p.content {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   height: 48px;
   position: relative;
@@ -295,7 +295,7 @@
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    right: .9rem;
+    margin-left: 3.91304348rem;
   }
   .offer-index {
     width: 7.82608696rem;
@@ -350,7 +350,7 @@
     font-size: 0.11594203rem;
   }
   .offer-index .information-index li p.content {
-    font-size: 0.14492754rem;
+    font-size: 0.13043478rem;
     line-height: 0.17391304rem;
     height: 0.34782609rem;
   }
@@ -522,7 +522,7 @@
     font-size: 0.11594203rem;
   }
   .offer-index .information-index li p.content {
-    font-size: 0.14492754rem;
+    font-size: 0.13043478rem;
     line-height: 0.17391304rem;
     height: 0.34782609rem;
   }
@@ -703,7 +703,7 @@
     font-size: 0.21333333rem;
   }
   .offer-index .information-index li p.content {
-    font-size: 0.26666667rem;
+    font-size: 0.24rem;
     line-height: 0.32rem;
     height: 0.64rem;
   }

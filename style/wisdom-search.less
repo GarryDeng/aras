@@ -1,0 +1,587 @@
+.wisdom-search-input{
+    width: 100%;
+    position: relative;
+    .bg{
+        display: block;
+        width: 100%;
+    }
+    .search-input{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        .send-input{
+            display: block;
+            width: 694px;
+            line-height: 30px;
+            padding: 10px 20px;
+            border: 2px solid #303031;
+            font-size: 17px;
+            color: #000;
+            background-color: transparent;
+            &::-webkit-input-placeholder,&:-input-placeholder,&:-ms-input-placeholder{
+                opacity: .2; 
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        .history-list{
+            line-height: 1em;
+            padding-top: 35px;
+            font-size: 14px;
+            color: #000;
+            opacity: .2;
+            text-align: center;
+            a{
+                color: #000;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+.wisdom-search-list{
+    border-bottom: 1px solid #f8f8f8;
+    ul{
+        width: 1280px;
+        margin: 0 auto;
+        line-height: 80px;
+        height: 80px;
+        li{
+            float: left;
+            margin-right: 106px;
+            a{
+                display: block;
+                color: #000;
+                opacity: .4;
+                font-size: 14px;
+                padding: 0 11px;
+            }
+            &.active{
+                border-bottom: 1px solid #000;
+                a{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.wisdom-search-thinktak{
+    .headline{
+        width: 1280px;
+        margin: 0 auto;
+        line-height: 160px;
+        .think-that{
+            font-size: 30px;
+            .china{
+                font-size: 30px;
+            }
+            .en{
+                font-size: 20px;
+            }
+        }
+        .look-more{
+            font-size: 20px;
+            color: #000;
+        }
+    }
+    .wisdom-specialist{
+        width: 1280px;
+        margin: 0 auto;
+        margin-top: 24px;
+        padding-bottom: 90px;
+        border-bottom: 2px solid #efefef;
+        li{
+            width: 272px;
+            margin-right: 64px;
+            float: left;
+            height: 322+110px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 3px 2px 6px 1px #efefef;
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+            .user,.scheme,.building{
+                display: block;
+                width: 100%;
+                height: 322px;
+            }
+            .more{
+                height: 110px;
+                background: #FFF;
+                a{
+                    position: absolute;
+                    color: #000;
+                    right: 22px;
+                    bottom: 18px;
+                    opacity: .5;
+                    font-size: 14px;
+                    z-index: 9;
+                    transition: all .3s;
+                }
+            }
+            .content-text{
+                position: absolute;
+                top: 322px;
+                left: 0;
+                right: 0;
+                z-index: 8;
+                padding: 0 12px;
+                height: 322+110px;
+                transition: all .3s;
+                .name{
+                    line-height: 70px;
+                    font-size: 24px;
+                }
+                .college{
+                    font-size: 16px;
+                    line-height: 1.6em;
+                }
+                .technical{
+                    color: #FFF;
+                    font-size: 16px;
+                }
+                .honor{
+                    color: #FFF;
+                    margin-top: 40px;
+                    font-size: 12px;
+                    line-height: 2.5em;
+                }
+            }
+            &:hover{
+                .name,.college{
+                    color: #FFF;
+                }
+                .college{
+                    margin-top: 3px;
+                }
+                .more{
+                    a{
+                        color: #FFF;
+                        opacity: 1;
+                    }
+                }
+                .content-text{
+                    background: rgba(0, 0, 0, .8);
+                    top: 0;
+                }
+            }
+            .scheme{
+                height: 302px;
+            }
+            .scheme-text{
+                line-height: 130px;
+                font-size: 22px;
+                text-align: center;
+                white-space: nowrap;
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #000;
+            }
+            .building{
+                height: 274px;
+            }
+            .building-content{
+                padding: 0 18px;
+                .title{
+                    line-height: 60px;
+                    font-size: 22px;
+                    color: #000;
+                }
+                .details{
+                    font-size: 14px;
+                    line-height: 22px;
+                    height: 44px;
+                    position: relative;
+                    overflow: hidden;
+                    color: #000;
+                }
+                .date-lock{
+                    margin-top: 18px;
+                    position: relative;
+                    line-height: 38px;
+                    color: #000;
+                    font-size: 14px;
+                    opacity: .4;
+                    &::before{
+                        content: "";
+                        top: 0px;
+                        left: -18px;
+                        right: -18px;
+                        border-top: 1px solid #000;
+                        position: absolute;
+                        opacity: .4;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1380px) {
+    .wisdom-search-input{
+        .search-input{
+            .send-input {
+                width: 694/138rem;
+                line-height: 30/138rem;
+                padding: 10/138rem 20/138rem;
+                font-size: 17/138rem;
+            }
+            .history-list{
+                padding-top: 30/138rem;
+            }
+        }
+    }
+    .wisdom-search-list{
+        ul{
+            width: 1080/138rem;
+            line-height: 80/138rem;
+            height: 80/138rem;
+            li{
+                margin-right: 64/138rem;
+            }
+        }
+    }
+    .wisdom-search-thinktak{
+        .headline{
+            width: 1080/138rem;
+            line-height: 160/138rem;
+            .think-that{
+                .china{
+                    font-size: 30/138rem;
+                }
+                .en{
+                    font-size: 20/138rem;
+                }
+            }
+            .look-more{
+                font-size: 20/138rem;
+            }
+        }
+        .wisdom-specialist{
+            width: 1080/138rem;
+            margin-top: 24/138rem;
+            padding-bottom: 80/138rem;
+            li{
+                width: 272/138rem;
+                margin-right: 132/138rem;
+                height: 432/138rem;
+                .user{
+                    height: 322/138rem;
+                }
+                .scheme{
+                    height: 302/138rem;
+                }
+                .building{
+                    height: 274/138rem;
+                }
+                &:nth-child(3){
+                    margin-right: 0;
+                }
+                &:nth-child(4){
+                    display: none;
+                }
+                .more{
+                    height: 110/138rem;
+                    a{
+                        right: 22/138rem;
+                        bottom: 18/138rem;
+                        font-size: 14/138rem;
+                    }
+                }
+                .content-text{
+                    top: 322/138rem;
+                    padding: 0 12/138rem;
+                    .name{
+                        font-size: 24/138rem;
+                        line-height: 70/138rem;
+                    }
+                    .college{
+                        font-size: 16/138rem;
+                    }
+                    .technical{
+                        font-size: 16/138rem;
+                    }
+                    .honor{
+                        margin-top: 40/138rem;
+                        line-height: 12*2.4/138rem;
+                    }
+                }
+                .scheme-text{
+                    line-height: 130/138rem;
+                    font-size: 22/138rem;
+                }
+                .building-content{
+                    padding: 0 18/138rem;
+                    .title{
+                        font-size: 22/138rem;
+                        line-height: 60/138rem;
+                    }
+                    .details{
+                        font-size: 12px;
+                        height: 46/138rem;
+                        line-height: 24/138rem;
+                    }
+                    .date-lock{
+                        margin-top: 14/138rem;
+                        font-size: 12px;
+                        line-height: 38/138rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    .wisdom-search-input{
+        .search-input{
+            .send-input {
+                width: 694/98rem;
+                line-height: 30/98rem;
+                padding: 10/98rem 10/98rem;
+                font-size: 17/98rem;
+                border: 1px solid #303031;
+            }
+            .history-list{
+                padding-top: 30/98rem;
+            }
+        }
+    }
+    .wisdom-search-list{
+        height: 60/98rem;
+        line-height: 60/98rem;
+        ul{
+            width: 836/98rem;
+            li{
+                margin-right: 64/98rem;
+            }
+        }
+    }
+    .wisdom-search-thinktak{
+        .headline{
+            width: 836/98rem;
+            line-height: 160/98rem;
+            .think-that{
+                .china{
+                    font-size: 30/98rem;
+                }
+                .en{
+                    font-size: 20/98rem;
+                }
+            }
+            .look-more{
+                font-size: 20/98rem;
+            }
+        }
+        .wisdom-specialist{
+            width: 748/98rem;
+            margin-top: 24/98rem;
+            padding-bottom: 36/98rem;
+            li{
+                width: 272/98rem;
+                margin-right: 202/98rem;
+                height: 432/98rem;
+                margin-bottom: 32/98rem;
+                .user{
+                    height: 322/98rem;
+                }
+                .scheme{
+                    height: 302/98rem;
+                }
+                .building{
+                    height: 274/98rem;
+                }
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+                &:nth-child(3){
+                    margin-right: 202/98rem;
+                }
+                &:nth-child(4){
+                    display: block;
+                }
+                .more{
+                    height: 110/98rem;
+                    a{
+                        right: 22/98rem;
+                        bottom: 18/98rem;
+                        font-size: 14/98rem;
+                    }
+                }
+                .content-text{
+                    top: 322/98rem;
+                    padding: 0 12/98rem;
+                    .name{
+                        font-size: 24/98rem;
+                        line-height: 70/98rem;
+                    }
+                    .college{
+                        font-size: 16/98rem;
+                    }
+                    .technical{
+                        font-size: 16/98rem;
+                    }
+                    .honor{
+                        margin-top: 40/98rem;
+                        line-height: 12*2.4/98rem;
+                    }
+                }
+                .scheme-text{
+                    line-height: 130/98rem;
+                    font-size: 22/98rem;
+                }
+                .building-content{
+                    padding: 0 18/98rem;
+                    .title{
+                        font-size: 22/98rem;
+                        line-height: 60/98rem;
+                    }
+                    .details{
+                        font-size: 12px;
+                        height: 46/98rem;
+                        line-height: 24/98rem;
+                    }
+                    .date-lock{
+                        margin-top: 14/98rem;
+                        font-size: 12px;
+                        line-height: 38/98rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .wisdom-search-input{
+        display: none;
+    }
+    .wisdom-search-list{
+        ul{
+            width: (750-46)/75rem;
+            line-height: 82/75rem;
+            height: 82/75rem;
+            li{
+                margin-right: 0;
+                width: 25%;
+                &.active{
+                    border-bottom: 0;
+                    a{
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            border-bottom: 7/75rem solid #000;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    text-indent: .15rem;
+                }
+                &:nth-child(3){
+                    text-indent: .3rem;
+                }
+                &:nth-child(4){
+                    text-align: right;
+                }
+                a{
+                    font-size: 26/75rem;
+                    padding: 0;
+                    display: inline-block;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .wisdom-search-thinktak{
+        .headline{
+            width: (750-46)/75rem;
+            line-height: 150/75rem;
+            .think-that{
+                .china{
+                    font-size: 30/75rem;
+                }
+                .en{
+                    font-size: 20/75rem;
+                }
+            }
+            .look-more{
+                font-size: 20/98rem;
+            }
+        }
+        .wisdom-specialist{
+            width: 644/75rem;
+            margin-top: 0;
+            padding-bottom: 36/75rem;
+            li{
+                width: 272/75rem;
+                margin-right: 98/75rem;
+                height: 432/75rem;
+                margin-bottom: 36/75rem;
+                .user{
+                    height: 322/75rem;
+                }
+                .scheme{
+                    height: 302/75rem;
+                }
+                .building{
+                    height: 274/75rem;
+                }
+                &:nth-child(3){
+                    margin-right: 98/75rem;
+                }
+                .more{
+                    height: 110/75rem;
+                    a{
+                        right: 22/75rem;
+                        bottom: 18/75rem;
+                        font-size: 14/75rem;
+                    }
+                }
+                .content-text{
+                    top: 322/75rem;
+                    padding: 0 12/75rem;
+                    .name{
+                        font-size: 24/75rem;
+                        line-height: 70/75rem;
+                    }
+                    .college{
+                        font-size: 16/75rem;
+                    }
+                    .technical{
+                        font-size: 16/75rem;
+                    }
+                    .honor{
+                        margin-top: 40/75rem;
+                        line-height: 12*2.4/75rem;
+                        font-size: 12/75rem;
+                    }
+                }
+                .scheme-text{
+                    line-height: 130/75rem;
+                    font-size: 22/75rem;
+                }
+                .building-content{
+                    padding: 0 18/75rem;
+                    .title{
+                        font-size: 22/75rem;
+                        line-height: 60/75rem;
+                    }
+                    .details{
+                        font-size: 14/75rem;
+                        height: 46/75rem;
+                        line-height: 24/75rem;
+                    }
+                    .date-lock{
+                        margin-top: 14/75rem;
+                        font-size: 14/75rem;
+                        line-height: 38/75rem;
+                    }
+                }
+            }
+        }
+    }
+}
