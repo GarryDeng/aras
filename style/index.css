@@ -55,11 +55,36 @@
   float: left;
   width: 20%;
 }
+.offer-index .classify-index li:nth-child(1) {
+  margin-right: 8%;
+  width: 12%;
+}
+.offer-index .classify-index li:nth-child(2) {
+  margin-right: 6%;
+  width: 14%;
+}
+.offer-index .classify-index li:nth-child(3) {
+  margin-right: 4%;
+  width: 16%;
+}
+.offer-index .classify-index li:nth-child(5) {
+  margin-left: 4%;
+  width: 16%;
+}
+.offer-index .classify-index li:hover img {
+  transform: scale(1.15);
+}
+.offer-index .classify-index li:hover .china::after {
+  width: 40px;
+  margin-left: -20px;
+}
 .offer-index .classify-index li img {
   margin: 60px auto;
   display: block;
   width: 60px;
   height: 60px;
+  transition: all .3s;
+  transform: scale(1);
 }
 .offer-index .classify-index li .english {
   color: #000;
@@ -84,6 +109,7 @@
   height: 6px;
   background-color: #000;
   margin-left: -10px;
+  transition: all .3s;
 }
 .offer-index .information-index li {
   float: left;
@@ -179,6 +205,7 @@
   font-size: 20px;
   text-align: center;
   line-height: 34px;
+  margin-left: 0;
 }
 .offer-index .name-container .swiper-button-prev,
 .offer-index .name-container .swiper-button-next {
@@ -579,7 +606,7 @@
     left: 4.87755102rem;
   }
   .offer-index .get-more-name {
-    bottom: 1.12244898rem;
+    bottom: .8rem;
   }
   .offer-index .service-index {
     padding-bottom: 0.72463768rem;
@@ -748,27 +775,28 @@
   }
   .offer-index .name-container .swiper-pagination {
     bottom: 0;
-    left: 4.13333333rem;
+    left: 4.03rem;
     width: 1.46666667rem;
     font-size: 0.24rem;
-    line-height: 0.45333333rem;
+    line-height: .35rem;
   }
   .offer-index .name-container .swiper-button-prev,
   .offer-index .name-container .swiper-button-next {
-    height: 0.45333333rem;
-    width: 0.45333333rem;
+    height: .35rem;
+    width: .35rem;
     background-size: 0.10666667rem auto;
   }
   .offer-index .name-container .swiper-button-prev {
     left: 3.68rem;
   }
   .offer-index .name-container .swiper-button-next {
-    left: 5.6rem;
+    left: 5.49666667rem;
   }
   .offer-index .get-more-name {
     bottom: 1.92rem;
     margin-right: 0.24rem;
     font-size: 0.21333333rem;
+    line-height: .35rem;
   }
   .offer-index .service-index {
     padding-bottom: 0.72463768rem;

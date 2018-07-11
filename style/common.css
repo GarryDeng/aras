@@ -347,6 +347,9 @@ footer .footer-common .message-common .call-mail span {
 footer .footer-common .message-common .call-mail span.phone {
   padding-right: 70px;
   position: relative;
+  background: url("../images/phone.png") no-repeat left center;
+  background-size: 18px auto;
+  text-indent: 38px;
 }
 footer .footer-common .message-common .call-mail span.phone::after {
   content: "";
@@ -359,23 +362,29 @@ footer .footer-common .message-common .call-mail span.phone::after {
 }
 footer .footer-common .message-common .call-mail span.mial {
   padding-left: 100px;
+  background: url("../images/mail.png") no-repeat 68px center;
+  background-size: 16px auto;
 }
 footer .footer-common .message-common .address {
   font-size: 14px;
   color: #FFF;
   opacity: .8;
+  background: url("../images/address.png") no-repeat left center;
+  background-size: 20px auto;
+  text-indent: 38px;
 }
 footer .footer-common .message-common .blogroll {
   width: 475px;
   position: relative;
-  margin-top: 40px;
+  margin-top: 26px;
+  line-height: 56px;
 }
 footer .footer-common .message-common .blogroll span {
   position: absolute;
   left: -100px;
   color: #FFF;
   opacity: .8;
-  top: 6px;
+  top: 3px;
   font-size: 14px;
 }
 footer .footer-common .message-common .blogroll a {
@@ -475,13 +484,17 @@ footer .copyright a {
   }
   footer .footer-common .message-common .call-mail span.phone {
     padding-right: 0.546875rem;
+    background-size: 16px auto;
   }
   footer .footer-common .message-common .call-mail span.mial {
     padding-left: 0.78125rem;
+    background: url("../images/mail.png") no-repeat 0.53125rem center;
+    background-size: 14px auto;
   }
   footer .footer-common .message-common .blogroll {
     width: 3.7109375rem;
-    margin-top: 0.3125rem;
+    margin-top: 0.2125rem;
+    line-height: 0.4375rem;
   }
   footer .footer-common .message-common .blogroll span {
     left: -0.78125rem;
@@ -522,6 +535,9 @@ footer .copyright a {
   .header-fixed-list .list-skip .nav-a {
     margin-right: 0.30612245rem;
     line-height: 60px;
+  }
+  .header-fixed-list .list-skip .nav-a .second {
+    top: 60px;
   }
   .header-fixed-list .search-input {
     right: 168px;
@@ -573,13 +589,17 @@ footer .copyright a {
   }
   footer .footer-common .message-common .call-mail span.phone {
     padding-right: 0.546875rem;
+    background-size: 14px auto;
   }
   footer .footer-common .message-common .call-mail span.mial {
     padding-left: 0.78125rem;
+    background: url(../images/mail.png) no-repeat 0.37333333rem center;
+    background-size: 14px auto;
   }
   footer .footer-common .message-common .blogroll {
     width: 3.7109375rem;
-    margin-top: 0.3125rem;
+    margin-top: 0.203125rem;
+    line-height: 0.515625rem;
   }
   footer .footer-common .message-common .blogroll span {
     left: -0.78125rem;
@@ -615,7 +635,32 @@ footer .copyright a {
     display: none;
   }
   .header-fixed-list .login-register {
-    display: none;
+    right: auto;
+    left: 0.4rem;
+    font-size: 0.26666667rem;
+  }
+  .header-fixed-list .login-register a.registed {
+    width: 0.53333333rem;
+    height: 0.8rem;
+    border-radius: 0;
+    margin-top: 0.34666667rem;
+    display: block;
+  }
+  .header-fixed-list .login-register a.registed img {
+    display: block;
+  }
+  .header-fixed-list .phone-search-icon {
+    display: block !important;
+    width: 0.53333333rem;
+    height: 0.8rem;
+    border-radius: 0;
+    margin-top: 0.34666667rem;
+    position: absolute;
+    right: 0.4rem;
+  }
+  .header-fixed-list .phone-search-icon img {
+    display: block;
+    width: 100%;
   }
   footer .footer-common {
     padding: 0 0.25333333rem;
@@ -648,22 +693,23 @@ footer .copyright a {
   }
   footer .footer-common .message-common .call-mail,
   footer .footer-common .message-common .address {
-    line-height: 1em;
-    padding-top: 0.50666667rem;
-    padding-bottom: 0.4rem;
+    padding: 0;
+    line-height: 0.4rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.29333333rem;
     float: left;
   }
   footer .footer-common .message-common .call-mail span,
   footer .footer-common .message-common .address span {
     font-size: 0.18666667rem;
-    line-height: 1em;
     display: block;
     float: left;
   }
   footer .footer-common .message-common .call-mail span.phone,
   footer .footer-common .message-common .address span.phone {
-    margin-left: 0.4rem;
-    padding: 0;
+    padding-left: 0.42666667rem;
+    background-size: 0.18666667rem auto;
+    text-indent: 0;
   }
   footer .footer-common .message-common .call-mail span.phone::after,
   footer .footer-common .message-common .address span.phone::after {
@@ -671,12 +717,15 @@ footer .copyright a {
   }
   footer .footer-common .message-common .call-mail span.mial,
   footer .footer-common .message-common .address span.mial {
-    padding: 0;
-    margin-left: 1.2rem;
+    background: url(../images/mail.png) no-repeat 0.42666667rem center;
+    background-size: 0.18666667rem auto;
   }
   footer .footer-common .message-common .address {
     font-size: 0.18666667rem;
     float: right;
+    background-size: 0.21333333rem auto;
+    text-indent: 0;
+    padding-left: 0.4rem;
   }
   footer .copyright {
     font-size: 0.16rem;

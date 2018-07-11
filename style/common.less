@@ -217,6 +217,9 @@ footer{
                     &.phone{
                         padding-right: 70px;
                         position: relative;
+                        background: url("../images/phone.png") no-repeat left center;
+                        background-size: 18px auto;
+                        text-indent: 38px;
                         &::after{
                             content: "";
                             position: absolute;
@@ -229,6 +232,8 @@ footer{
                     }
                     &.mial{
                         padding-left: 100px;
+                        background: url("../images/mail.png") no-repeat 68px center;
+                        background-size: 16px auto;
                     }
                 }
             }
@@ -236,17 +241,21 @@ footer{
                 font-size: 14px;
                 color: #FFF;
                 opacity: .8;
+                background: url("../images/address.png") no-repeat left center;
+                background-size: 20px auto;
+                text-indent: 38px;
             }
             .blogroll{
                 width: 475px;
                 position: relative;
-                margin-top: 40px;
+                margin-top: 26px;
+                line-height: 56px;
                 span{
                     position: absolute;
                     left: -100px;
                     color: #FFF;
                     opacity: .8;
-                    top: 6px;
+                    top: 3px;
                     font-size: 14px;
                 }
                 a{
@@ -353,15 +362,19 @@ footer{
                     span{
                         &.phone{
                             padding-right: 70/128rem;
+                            background-size: 16px auto;
                         }
                         &.mial{
                             padding-left: 100/128rem;
+                            background: url("../images/mail.png") no-repeat 68/128rem center;
+                            background-size: 14px auto;
                         }
                     }
                 }
                 .blogroll{
                     width: 475/128rem;
-                    margin-top: 40/128rem;
+                    margin-top: 0.2125rem;
+                    line-height: 56/128rem;
                     span{
                         left: -100/128rem;
                     }
@@ -406,6 +419,9 @@ footer{
             .nav-a{
                 margin-right: 30/98rem;
                 line-height: 60px;
+                .second{
+                    top: 60px;
+                }
             }
         }
         .search-input{
@@ -459,15 +475,19 @@ footer{
                     span{
                         &.phone{
                             padding-right: 70/128rem;
+                            background-size: 14px auto;
                         }
                         &.mial{
                             padding-left: 100/128rem;
+                            background: url(../images/mail.png) no-repeat 28/75rem center;
+                            background-size: 14px auto;
                         }
                     }
                 }
                 .blogroll{
                     width: 475/128rem;
-                    margin-top: 40/128rem;
+                    margin-top: 26/128rem;
+                    line-height: 66/128rem;
                     span{
                         left: -100/128rem;
                     }
@@ -507,7 +527,35 @@ footer{
             display: none;
         }
         .login-register{
-            display: none;
+            right: auto;
+            left: 30/75rem;
+            font-size: 20/75rem;
+            a{
+                // display: none;
+                &.registed{
+                    width: 40/75rem;
+                    height: 60/75rem;
+                    border-radius: 0;
+                    margin-top: 26/75rem;
+                    display: block;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .phone-search-icon{
+            display: block !important;
+            width: 40/75rem;
+            height: 60/75rem;
+            border-radius: 0;
+            margin-top: 26/75rem;
+            position: absolute;
+            right: 30/75rem;
+            img{
+                display: block;
+                width: 100%;
+            }
         }
     }
     footer{
@@ -541,31 +589,37 @@ footer{
                     float: none;
                 }
                 .call-mail,.address{
-                    line-height: 1em;
-                    padding-top: 38/75rem;
-                    padding-bottom: 30/75rem;
+                    padding: 0;
+                    line-height: 30/75rem;
+                    margin-top: 30/75rem;
+                    margin-bottom: 22/75rem;
                     float: left;
                     span{
                         font-size: 14/75rem;
-                        line-height: 1em;
+                        // line-height: 1em;
                         display: block;
                         float: left;
                         &.phone{
-                            margin-left: 30/75rem;
-                            padding: 0;
+                            // margin-left: 30/75rem;
+                            padding-left: 32/75rem;
+                            background-size: 14/75rem auto;
+                            text-indent: 0;
                             &::after{
                                 display: none;
                             }
                         }
                         &.mial{
-                            padding: 0;
-                            margin-left: 90/75rem;
+                            background: url(../images/mail.png) no-repeat 32/75rem center;
+                            background-size: 14/75rem auto;
                         }
                     }
                 }
                 .address{
                     font-size: 14/75rem;
                     float: right;
+                    background-size: 16/75rem auto;
+                    text-indent: 0;
+                    padding-left: 30/75rem;
                 }
             }
         }
