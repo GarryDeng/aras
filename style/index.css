@@ -503,6 +503,22 @@
   .offer-index .classify-index {
     padding-bottom: 0.68115942rem;
   }
+  .offer-index .classify-index li:nth-child(2) {
+    margin-right: 4%;
+    width: 16%;
+  }
+  .offer-index .classify-index li:nth-child(3) {
+    margin-right: 0;
+    width: 20%;
+  }
+  .offer-index .classify-index li:nth-child(4) {
+    margin-left: 4%;
+    width: 16%;
+  }
+  .offer-index .classify-index li:nth-child(5) {
+    margin-left: 8%;
+    width: 12%;
+  }
   .offer-index .classify-index li img {
     margin: 0.6122449rem auto;
     width: 0.43478261rem;
@@ -684,6 +700,14 @@
   }
   .offer-index .classify-index {
     padding-bottom: 0.42666667rem;
+  }
+  .offer-index .classify-index li:nth-child(1) {
+    margin-left: 3%;
+    margin-right: 5%;
+  }
+  .offer-index .classify-index li:nth-child(5) {
+    margin-right: 3%;
+    margin-left: 5%;
   }
   .offer-index .classify-index li img {
     margin: 0.58666667rem auto;

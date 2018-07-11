@@ -668,6 +668,18 @@ footer .copyright a {
   footer .footer-common .nav-common {
     padding-top: 0.50666667rem;
     padding-bottom: 0.4rem;
+    position: relative;
+    border: none;
+  }
+  footer .footer-common .nav-common::before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #4d4d4d;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0.33333333);
   }
   footer .footer-common .nav-common a {
     width: auto;
@@ -743,6 +755,16 @@ footer .copyright a {
     bottom: 0;
     z-index: 999;
     background-color: #FFF;
+  }
+  .phone-nav-header .link::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #bbbbbb;
+    transform: scaleY(0.33333333);
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: .4;
   }
   .phone-nav-header .link a {
     display: block;

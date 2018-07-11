@@ -437,10 +437,14 @@
   .wisdom-search-input {
     display: none;
   }
-  .wisdom-search-list ul {
-    width: 9.38666667rem;
+  .wisdom-search-list {
     line-height: 1.09333333rem;
     height: 1.09333333rem;
+  }
+  .wisdom-search-list ul {
+    line-height: 1.09333333rem;
+    height: 1.09333333rem;
+    width: 9.38666667rem;
   }
   .wisdom-search-list ul li {
     margin-right: 0;
@@ -556,5 +560,8 @@
     margin-top: 0.18666667rem;
     font-size: 0.18666667rem;
     line-height: 0.50666667rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock::before {
+    transform: scaleY(0.33333333);
   }
 }

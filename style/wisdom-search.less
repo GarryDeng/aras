@@ -457,10 +457,12 @@
         display: none;
     }
     .wisdom-search-list{
+        line-height: 82/75rem;
+        height: 82/75rem;
         ul{
-            width: (750-46)/75rem;
             line-height: 82/75rem;
             height: 82/75rem;
+            width: (750-46)/75rem;
             li{
                 margin-right: 0;
                 width: 25%;
@@ -579,6 +581,9 @@
                         margin-top: 14/75rem;
                         font-size: 14/75rem;
                         line-height: 38/75rem;
+                        &::before{
+                            transform: scaleY(.33333333);
+                        }
                     }
                 }
             }

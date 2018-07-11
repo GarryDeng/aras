@@ -564,6 +564,20 @@ footer{
             .nav-common{
                 padding-top: 38/75rem;
                 padding-bottom: 30/75rem;
+                position: relative;
+                border: none;
+                &::before{
+                    content: "";
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    border-bottom: 1px solid #4d4d4d;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transform: scaleY(.33333333);
+                }
                 a{
                     width: auto;
                     font-size: 14/75rem;
@@ -639,6 +653,16 @@ footer{
             bottom: 0;
             z-index: 999;
             background-color: #FFF;
+            &::before{
+                content: "";
+                display: block;
+                border-top: 1px solid #bbbbbb;
+                transform: scaleY(.33333333);
+                left: 0;
+                right: 0;
+                top: 0;
+                opacity: .4;
+            }
             a{
                 display: block;
                 float: left;
