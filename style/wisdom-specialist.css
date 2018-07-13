@@ -1,0 +1,94 @@
+.wisdom-search-thinktak {
+  padding-top: 60px;
+}
+.wisdom-search-thinktak .wisdom-specialist {
+  border: none;
+}
+.wisdom-search-thinktak .wisdom-specialist li {
+  margin-bottom: 30px;
+}
+.wisdom-search-thinktak .page-total {
+  text-align: center;
+  padding-bottom: 110px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+.wisdom-search-thinktak .page-total a {
+  color: #a5a5a5;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+.wisdom-search-thinktak .page-total a.active {
+  color: #000;
+}
+.wisdom-search-thinktak .page-total a.prev,
+.wisdom-search-thinktak .page-total a.next {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+}
+.wisdom-search-thinktak .page-total a.prev {
+  background: url("../images/prev.png") no-repeat center;
+  background-size: 32px auto;
+}
+.wisdom-search-thinktak .page-total a.next {
+  background: url("../images/next.png") no-repeat center;
+  background-size: 32px auto;
+}
+@media screen and (max-width: 1380px) {
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(4n) {
+    margin-right: 0.95652174rem;
+    display: block;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(n) {
+    margin-right: 2.06122449rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wisdom-search-thinktak .wisdom-specialist li {
+    margin-bottom: 0.45333333rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(n) {
+    margin-right: 1.30666667rem;
+  }
+  .wisdom-search-thinktak .wisdom-specialist li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .wisdom-search-thinktak .page-total {
+    padding-bottom: 1.02666667rem;
+    line-height: 0.32rem;
+  }
+  .wisdom-search-thinktak .page-total a {
+    margin: 0 0.08rem;
+    padding: 0 0.08rem;
+    font-size: 0.18666667rem;
+    display: inline-block;
+    height: 0.32rem;
+    line-height: 0.29333333rem;
+  }
+  .wisdom-search-thinktak .page-total a.prev,
+  .wisdom-search-thinktak .page-total a.next {
+    width: 0.32rem;
+    height: 0.32rem;
+    vertical-align: bottom;
+  }
+  .wisdom-search-thinktak .page-total a.prev {
+    background: url("../images/prev.png") no-repeat center;
+    background-size: 0.32rem auto;
+  }
+  .wisdom-search-thinktak .page-total a.next {
+    background: url("../images/next.png") no-repeat center;
+    background-size: 0.32rem auto;
+  }
+}

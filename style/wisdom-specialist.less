@@ -1,0 +1,110 @@
+.wisdom-search-thinktak{
+    padding-top: 60px;
+    .wisdom-specialist{
+        border: none;
+        li{
+            margin-bottom: 30px;
+        }
+    }
+    .page-total{
+        text-align: center;
+        padding-bottom: 110px;
+        line-height: 36px;
+        vertical-align: middle;
+        a{
+            color: #a5a5a5;
+            font-size: 14px;
+            margin: 0 10px;
+            padding: 0 5px;
+            &.active{
+                color: #000;
+            }
+            &.prev,&.next{
+                width: 34px;
+                height: 34px;
+                // border: 1px solid #616161;
+                display: inline-block;
+                // border-radius: 50%;
+                padding: 0;
+                vertical-align: middle;
+            }
+            &.prev{
+                background: url("../images/prev.png") no-repeat center;
+                background-size: 32px auto;
+            }
+            &.next{
+                background: url("../images/next.png") no-repeat center;
+                background-size: 32px auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1380px) {
+    .wisdom-search-thinktak{
+        .wisdom-specialist{
+            li{
+                &:nth-child(4n){
+                    margin-right: 0.95652174rem;
+                    display: block;
+                }
+                &:nth-child(3n){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    .wisdom-search-thinktak{
+        .wisdom-specialist{
+            li{
+                &:nth-child(n){
+                    margin-right: 2.06122449rem;
+                }
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .wisdom-search-thinktak{
+        .wisdom-specialist{
+            li{
+                &:nth-child(n){
+                    margin-right: 1.30666667rem;
+                }
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+                margin-bottom: 34/75rem;
+            }
+        }
+        .page-total{
+            padding-bottom: 77/75rem;
+            line-height: 24/75rem;
+            a{
+                margin: 0 6/75rem;
+                padding: 0 6/75rem;
+                font-size: 14/75rem;
+                display: inline-block;
+                height: 24/75rem;
+                line-height: 22/75rem;
+                &.prev,&.next{
+                    width: 24/75rem;
+                    height: 24/75rem;
+                    vertical-align: bottom;
+                }
+                &.prev{
+                    background: url("../images/prev.png") no-repeat center;
+                    background-size: 24/75rem auto;
+                }
+                &.next{
+                    background: url("../images/next.png") no-repeat center;
+                    background-size: 24/75rem auto;
+                }
+            }
+        }
+    }
+}

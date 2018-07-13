@@ -1,0 +1,94 @@
+.wisdom-service-content {
+  background-color: #FFF;
+}
+.wisdom-service-content .content-text {
+  width: 1280px;
+  margin: 0 auto;
+  height: 420px;
+  position: relative;
+}
+.wisdom-service-content .content-text .title {
+  width: 316px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wisdom-service-content .content-text .title .china {
+  font-size: 30px;
+  line-height: 56px;
+}
+.wisdom-service-content .content-text .title .en {
+  font-size: 24px;
+  line-height: 1.4em;
+}
+.wisdom-service-content .content-text .details {
+  width: 769px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+@media screen and (max-width: 1380px) {
+  .wisdom-service-content .content-text {
+    width: 7.82608696rem;
+  }
+  .wisdom-service-content .content-text .title {
+    width: 2.02898551rem;
+  }
+  .wisdom-service-content .content-text .title .china {
+    font-size: 0.2173913rem;
+    line-height: 0.4057971rem;
+  }
+  .wisdom-service-content .content-text .title .en {
+    font-size: 0.17391304rem;
+  }
+  .wisdom-service-content .content-text .details {
+    width: 4.83333333rem;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .wisdom-service-content .content-text {
+    width: 8.57142857rem;
+  }
+  .wisdom-service-content .content-text .title {
+    width: 2.75510204rem;
+  }
+  .wisdom-service-content .content-text .title .china {
+    font-size: 0.2173913rem;
+    line-height: 0.4057971rem;
+  }
+  .wisdom-service-content .content-text .title .en {
+    font-size: 0.17391304rem;
+  }
+  .wisdom-service-content .content-text .details {
+    width: 5.46938776rem;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wisdom-service-content .content-text {
+    width: 10rem;
+    height: 4.92rem;
+  }
+  .wisdom-service-content .content-text .title {
+    width: 3.44rem;
+  }
+  .wisdom-service-content .content-text .title .china {
+    font-size: 0.32rem;
+    line-height: 0.50666667rem;
+  }
+  .wisdom-service-content .content-text .title .en {
+    font-size: 0.24rem;
+  }
+  .wisdom-service-content .content-text .details {
+    width: 5.49333333rem;
+    margin-right: .3rem;
+    font-size: 0.26666667rem;
+  }
+}
