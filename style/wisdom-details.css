@@ -1,0 +1,666 @@
+.wisdom-specialist-body {
+  width: 1280px;
+  margin: 0 auto;
+}
+.wisdom-specialist-body .link-rel {
+  line-height: 46px;
+}
+.wisdom-specialist-body .link-rel a {
+  color: #000;
+  opacity: .4;
+  font-size: 14px;
+}
+.wisdom-specialist-body .user-data {
+  margin-top: 68px;
+  position: relative;
+  padding-bottom: 56px;
+}
+.wisdom-specialist-body .user-data .head-name {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wisdom-specialist-body .user-data .head-name .head {
+  display: block;
+  width: 252px;
+  height: 252px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 4px 5px 12px 1px #ccc;
+}
+.wisdom-specialist-body .user-data .head-name .name {
+  line-height: 90px;
+  text-align: center;
+  font-size: 24px;
+}
+.wisdom-specialist-body .user-data .position {
+  padding-left: 422px;
+  position: relative;
+}
+.wisdom-specialist-body .user-data .position p {
+  line-height: 38px;
+  font-size: 16px;
+  width: 334px;
+  white-space: nowrap;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(10),
+.wisdom-specialist-body .user-data .position p:nth-child(11),
+.wisdom-specialist-body .user-data .position p:nth-child(12),
+.wisdom-specialist-body .user-data .position p:nth-child(13),
+.wisdom-specialist-body .user-data .position p:nth-child(14),
+.wisdom-specialist-body .user-data .position p:nth-child(15),
+.wisdom-specialist-body .user-data .position p:nth-child(16),
+.wisdom-specialist-body .user-data .position p:nth-child(17),
+.wisdom-specialist-body .user-data .position p:nth-child(18),
+.wisdom-specialist-body .user-data .position p:nth-child(19) {
+  position: absolute;
+  left: 775px;
+  padding-left: 90px;
+  border-left: 1px solid #f2f2f2;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(10) {
+  top: 0;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(11) {
+  top: 38px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(12) {
+  top: 76px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(13) {
+  top: 114px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(14) {
+  top: 152px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(15) {
+  top: 190px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(16) {
+  top: 228px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(17) {
+  top: 266px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(18) {
+  top: 304px;
+}
+.wisdom-specialist-body .user-data .position p:nth-child(19) {
+  top: 342px;
+}
+.wisdom-specialist-body .specialist-details-title {
+  padding-bottom: 56px;
+  border-top: 1px solid #e8e8e8;
+}
+.wisdom-specialist-body .specialist-details-title .title-en {
+  line-height: 172px;
+  font-size: 30px;
+}
+.wisdom-specialist-body .specialist-details-title .title-en span {
+  font-size: 20px;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content {
+  float: left;
+  position: relative;
+  width: 468px;
+  height: 261px;
+  padding: 0 72px;
+  overflow: hidden;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-next,
+.wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-prev {
+  background-size: 12px auto;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #000;
+  z-index: 9;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content::before,
+.wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+  content: "";
+  position: absolute;
+  width: 172px;
+  height: 361px;
+  top: -50px;
+  background-color: #FFF;
+  z-index: 8;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content::before {
+  right: -100px;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+  left: -100px;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-pagination {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+}
+.wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-pagination .swiper-pagination-bullet-active {
+  background: #FFF;
+}
+.wisdom-specialist-body .specialist-details-title .opinion-content {
+  float: right;
+  width: 588px;
+}
+.wisdom-specialist-body .specialist-details-title .opinion-content .aphorism {
+  padding-top: 20px;
+  line-height: 74px;
+  font-size: 20px;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.wisdom-specialist-body .specialist-details-title .opinion-content .aphorism-details {
+  font-size: 16px;
+  line-height: 2em;
+}
+.wisdom-specialist-body .specialist-details-title .opinion-content .more {
+  margin-top: 32px;
+  text-decoration: underline;
+  color: #000;
+  font-size: 16px;
+  display: inline-block;
+}
+.wisdom-specialist-body .specialist-details-title .education-icon li {
+  margin-left: 72px;
+  float: left;
+}
+.wisdom-specialist-body .specialist-details-title .education-icon li .title {
+  font-size: 24px;
+  line-height: 74px;
+}
+.wisdom-specialist-body .specialist-details-title .history-list li,
+.wisdom-specialist-body .specialist-details-title .honor li {
+  list-style-type: disc;
+  margin-top: 32px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+.wisdom-specialist-body .specialist-details-title .history-list li p,
+.wisdom-specialist-body .specialist-details-title .honor li p {
+  float: left;
+  line-height: 38px;
+}
+.wisdom-specialist-body .specialist-details-title .history-list li p.time,
+.wisdom-specialist-body .specialist-details-title .honor li p.time {
+  font-size: 20px;
+  width: 269px;
+  margin-right: 32px;
+  margin-left: 60px;
+}
+.wisdom-specialist-body .specialist-details-title .history-list li p.context,
+.wisdom-specialist-body .specialist-details-title .honor li p.context {
+  font-size: 16px;
+  float: right;
+  width: 856px;
+}
+.wisdom-specialist-body .specialist-details-title .honor {
+  padding-bottom: 80px;
+}
+.wisdom-specialist-body .specialist-details-title .honor li {
+  font-size: 16px;
+  padding-left: 60px;
+}
+@media screen and (max-width: 1380px) {
+  .wisdom-specialist-body {
+    width: 7.82608696rem;
+  }
+  .wisdom-specialist-body .user-data {
+    margin-top: 0.49275362rem;
+    padding-bottom: 0.4057971rem;
+  }
+  .wisdom-specialist-body .user-data .head-name .head {
+    width: 1.62318841rem;
+    height: 1.62318841rem;
+  }
+  .wisdom-specialist-body .user-data .head-name .name {
+    line-height: 0.65217391rem;
+    font-size: 0.17391304rem;
+  }
+  .wisdom-specialist-body .user-data .position {
+    padding-left: 2.31884058rem;
+  }
+  .wisdom-specialist-body .user-data .position p {
+    line-height: 0.27536232rem;
+    width: 2.49275362rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(10),
+  .wisdom-specialist-body .user-data .position p:nth-child(11),
+  .wisdom-specialist-body .user-data .position p:nth-child(12),
+  .wisdom-specialist-body .user-data .position p:nth-child(13),
+  .wisdom-specialist-body .user-data .position p:nth-child(14),
+  .wisdom-specialist-body .user-data .position p:nth-child(15),
+  .wisdom-specialist-body .user-data .position p:nth-child(16),
+  .wisdom-specialist-body .user-data .position p:nth-child(17),
+  .wisdom-specialist-body .user-data .position p:nth-child(18),
+  .wisdom-specialist-body .user-data .position p:nth-child(19) {
+    position: absolute;
+    left: 5.02898551rem;
+    padding-left: 0.36231884rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(10) {
+    top: 0;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(11) {
+    top: 0.27536232rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(12) {
+    top: 0.55072464rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(13) {
+    top: 0.82608696rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(14) {
+    top: 1.10144928rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(15) {
+    top: 1.37681159rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(16) {
+    top: 1.65217391rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(17) {
+    top: 1.92753623rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(18) {
+    top: 2.20289855rem;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(19) {
+    top: 2.47826087rem;
+  }
+  .wisdom-specialist-body .specialist-details-title {
+    padding-bottom: 0.4057971rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .title-en {
+    line-height: 1.24637681rem;
+    font-size: 0.2173913rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .title-en span {
+    font-size: 0.14492754rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content {
+    width: 3.39130435rem;
+    height: 1.89130435rem;
+    padding: 0 0.47826087rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content a {
+    display: block;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content a img {
+    display: block;
+    width: 100%;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-next,
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-prev {
+    background-size: 9px auto;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-next {
+    right: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::before,
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+    width: 0.47826087rem;
+    height: 361px;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::before {
+    right: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+    left: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content {
+    width: 3.10144928rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .aphorism {
+    padding-top: 0;
+    line-height: 0.53623188rem;
+    font-size: 0.14492754rem;
+    font-weight: bold;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .aphorism-details {
+    font-size: 14px;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .more {
+    margin-top: 0.23188406rem;
+    font-size: 14px;
+  }
+  .wisdom-specialist-body .specialist-details-title .education-icon li {
+    margin-left: 0.52173913rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .education-icon li .title {
+    font-size: 0.17391304rem;
+    line-height: 0.53623188rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li,
+  .wisdom-specialist-body .specialist-details-title .honor li {
+    margin-top: 0.23188406rem;
+    margin-left: 0.2173913rem;
+    font-size: 14px;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p,
+  .wisdom-specialist-body .specialist-details-title .honor li p {
+    line-height: 0.27536232rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p.time,
+  .wisdom-specialist-body .specialist-details-title .honor li p.time {
+    font-size: 0.14492754rem;
+    width: 1.44927536rem;
+    margin-right: 0;
+    margin-left: 0.26811594rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p.context,
+  .wisdom-specialist-body .specialist-details-title .honor li p.context {
+    font-size: 14px;
+    width: 5.36231884rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .honor {
+    padding-bottom: 0.57971014rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .honor li {
+    padding-left: 0.26811594rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .wisdom-specialist-body {
+    width: 8.53061224rem;
+  }
+  .wisdom-specialist-body .user-data {
+    margin-top: 0.49275362rem;
+    padding-bottom: 0.4057971rem;
+  }
+  .wisdom-specialist-body .user-data .head-name {
+    left: 0.70408163rem;
+  }
+  .wisdom-specialist-body .user-data .head-name .head {
+    width: 2.28571429rem;
+    height: 2.28571429rem;
+  }
+  .wisdom-specialist-body .user-data .head-name .name {
+    line-height: 0.91836735rem;
+    font-size: 0.24489796rem;
+  }
+  .wisdom-specialist-body .user-data .position {
+    padding-left: 3.97959184rem;
+  }
+  .wisdom-specialist-body .user-data .position p {
+    line-height: 0.27536232rem;
+    width: 100%;
+    line-height: 2em;
+  }
+  .wisdom-specialist-body .user-data .position p:nth-child(10),
+  .wisdom-specialist-body .user-data .position p:nth-child(11),
+  .wisdom-specialist-body .user-data .position p:nth-child(12),
+  .wisdom-specialist-body .user-data .position p:nth-child(13),
+  .wisdom-specialist-body .user-data .position p:nth-child(14),
+  .wisdom-specialist-body .user-data .position p:nth-child(15),
+  .wisdom-specialist-body .user-data .position p:nth-child(16),
+  .wisdom-specialist-body .user-data .position p:nth-child(17),
+  .wisdom-specialist-body .user-data .position p:nth-child(18),
+  .wisdom-specialist-body .user-data .position p:nth-child(19) {
+    position: relative;
+    left: 0;
+    padding-left: 0;
+    top: 0 !important;
+    border: none;
+  }
+  .wisdom-specialist-body .specialist-details-title {
+    padding-bottom: 0.4057971rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .title-en {
+    line-height: 1.24637681rem;
+    font-size: 0.30612245rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .title-en span {
+    font-size: 0.20408163rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content {
+    width: 4.7755102rem;
+    height: 2.66326531rem;
+    padding: 0 0.67346939rem;
+    float: none;
+    margin: 0.20408163rem auto;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-next,
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-prev {
+    background-size: 9px auto;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-next {
+    right: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::before,
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+    width: 0.67346939rem;
+    height: 361px;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::before {
+    right: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+    left: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content {
+    width: 4.7755102rem;
+    float: none;
+    margin: 0 auto;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .aphorism {
+    padding-top: 0;
+    line-height: 0.53623188rem;
+    font-size: 0.20408163rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .aphorism-details {
+    font-size: 14px;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .more {
+    margin-top: 0.32653061rem;
+    font-size: 14px;
+  }
+  .wisdom-specialist-body .specialist-details-title .education-icon li {
+    margin-left: 0.52173913rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .education-icon li .title {
+    font-size: 0.24489796rem;
+    line-height: 0.53623188rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li,
+  .wisdom-specialist-body .specialist-details-title .honor li {
+    margin-top: 0.23188406rem;
+    margin-left: 0.2173913rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p,
+  .wisdom-specialist-body .specialist-details-title .honor li p {
+    line-height: 0.27536232rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p.time,
+  .wisdom-specialist-body .specialist-details-title .honor li p.time {
+    font-size: 0.20408163rem;
+    width: 1.86956522rem;
+    margin-right: 0;
+    margin-left: 0.19565217rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p.context,
+  .wisdom-specialist-body .specialist-details-title .honor li p.context {
+    font-size: 14px;
+    width: 5.36231884rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .honor {
+    padding-bottom: 0.57971014rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .honor li {
+    padding-left: 0.19565217rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wisdom-specialist-body {
+    width: 9.38666667rem;
+  }
+  .wisdom-specialist-body .link-rel {
+    line-height: 0.61333333rem;
+  }
+  .wisdom-specialist-body .link-rel a {
+    font-size: 12px;
+  }
+  .wisdom-specialist-body .user-data {
+    margin-top: 0.90666667rem;
+    padding-bottom: 0.74666667rem;
+  }
+  .wisdom-specialist-body .user-data .head-name {
+    left: 0;
+  }
+  .wisdom-specialist-body .user-data .head-name .head {
+    width: 2.98666667rem;
+    height: 2.98666667rem;
+  }
+  .wisdom-specialist-body .user-data .head-name .name {
+    line-height: 1.2rem;
+    font-size: 0.32rem;
+  }
+  .wisdom-specialist-body .user-data .position {
+    padding-left: 4rem;
+  }
+  .wisdom-specialist-body .user-data .position p {
+    line-height: 0.50666667rem;
+    font-size: 12px;
+  }
+  .wisdom-specialist-body .specialist-details-title {
+    padding-bottom: 0.74666667rem;
+    position: relative;
+    border: none;
+  }
+  .wisdom-specialist-body .specialist-details-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 1px solid #e8e8e8;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform: scaleY(0.333333);
+  }
+  .wisdom-specialist-body .specialist-details-title .title-en {
+    line-height: 1.24637681rem;
+    font-size: 0.4rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .title-en span {
+    font-size: 0.26666667rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content {
+    width: 6.24rem;
+    height: 3.48rem;
+    padding: 0 0.88rem;
+    float: none;
+    margin: 0.26666667rem auto;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-next,
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-prev {
+    background-size: 9px auto;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content .swiper-button-next {
+    right: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::before,
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+    width: 0.88rem;
+    height: 361px;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::before {
+    right: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
+    left: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content {
+    width: 6.24rem;
+    float: none;
+    margin: 0 auto;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .aphorism {
+    padding-top: 0;
+    line-height: 0.98666667rem;
+    font-size: 0.26666667rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .aphorism-details {
+    font-size: 0.21333333rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .opinion-content .more {
+    margin-top: 0.42666667rem;
+    font-size: 0.21333333rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .education-icon li {
+    margin-left: 0.96rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .education-icon li img {
+    width: 1.16rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .education-icon li .title {
+    font-size: 0.32rem;
+    line-height: 0.98666667rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li,
+  .wisdom-specialist-body .specialist-details-title .honor li {
+    margin-top: 0.42666667rem;
+    margin-left: 0.4rem;
+    font-size: 0.21333333rem;
+    padding-left: 0.36rem;
+    position: relative;
+    list-style-type: none;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li::before,
+  .wisdom-specialist-body .specialist-details-title .honor li::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    left: -0.32rem;
+    top: 0.18666667rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p,
+  .wisdom-specialist-body .specialist-details-title .honor li p {
+    line-height: 0.50666667rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p.time,
+  .wisdom-specialist-body .specialist-details-title .honor li p.time {
+    font-size: 0.26666667rem;
+    width: 2.82666667rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li p.context,
+  .wisdom-specialist-body .specialist-details-title .honor li p.context {
+    font-size: 0.21333333rem;
+    width: 5.33333333rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .honor {
+    padding-bottom: 1.06666667rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .honor li {
+    padding-left: 0.36rem;
+  }
+  .wisdom-specialist-body .specialist-details-title .honor li::before {
+    top: 4px;
+  }
+}

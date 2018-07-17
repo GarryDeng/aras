@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <link rel="stylesheet" href="style/wisdom-introduction.css">
+    <link rel="stylesheet" href="style/wisdom-search.css">
+    <link rel="stylesheet" href="style/wisdom-details.css">
+    <title>院士专家详情</title>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-fixed-list">
+            <a href="./">
+                <img class="logo-pc" src="images/logo.png" alt="">
+            </a>
+            <div class="list-skip clear">
+                <div class="nav-a">
+                    <a href="">首页</a>
+                </div>
+                <div class="nav-a">
+                    <a href="">智库</a>
+                </div>
+                <div class="nav-a">
+                    <a href="">解决方案</a>
+                    <div class="second">
+                        <a href="">解决方案1</a>
+                        <a href="">解决方案1+2</a>
+                        <a href="">解决方案1+3</a>
+                    </div>
+                </div>
+                <div class="nav-a">
+                    <a href="">筑享慧万家</a>
+                </div>
+                <div class="nav-a">
+                    <a href="">关于我们</a>
+                </div>
+            </div>
+            <div class="search-input search-focus">
+                <img class="close-white" src="images/close-white.png" alt="">
+                <input type="text">
+                <img class="white" src="images/search-white.png" alt="">
+                <img class="black" src="images/search-black.png" alt="">
+                <div class="history-search">
+                    <p>最近搜索</p>
+                    <a href="">ASRS</a>
+                    <a href="">XXXXXXXX方案</a>
+                </div>
+            </div>
+            <div class="login-register">
+                <!-- 已登录情况 -->
+                <!-- <a class="registed" href=""><img src="images/register-white.png" alt=""></a> -->
+                <a href="javascript:wechatShow()">登录</a>
+                |
+                <a href="javascript:wechatShow()">注册</a>
+            </div>
+            <a class="phone-search-icon" style="display: none;" href="/phone-search.html">
+                <img src="images/search-white.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- wechat登錄頁面start -->
+    <div class="fixed-login-wechat" style="display: none;">
+        <div class="content-text">
+            <p class="title">欢迎来到ARAS</p>
+            <img class="er-code" src="images/er-code.png" alt="">
+            <p class="login-code">微信扫描二维码登录</p>
+            <div class="agreement">注册即同意
+                <a href="">《用户协议》</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function wechatShow() {
+            $(".fixed-login-wechat").fadeIn();
+        }
+        $('.fixed-login-wechat').on('click', function (ev) {
+            if ($(ev.target).parents().length == 2)
+                $(this).fadeOut();
+        })
+    </script>
+    <!-- wechat登錄頁面end -->
+    <div class="wisdom-introduction-banner">
+        <img class="banner" src="images/introduction-banner.jpg" alt="">
+        <div class="content">
+            <p class="china">
+                从设计出发，
+                <br/>打造智慧社区-智慧城市-智慧地球
+            </p>
+            <p class="en">
+                Starting from design,
+                <br/>build smart community - smart city - smart earth
+            </p>
+            <a class="join-me" href="">我要加入</a>
+        </div>
+    </div>
+    <div class="wisdom-search-list">
+        <ul class="clear">
+            <li>
+                <a href="">智库简介</a>
+            </li>
+            <li>
+                <a href="">服务介绍</a>
+            </li>
+            <li class="active">
+                <a href="">院士专家</a>
+            </li>
+            <li>
+                <a href="">技术专家</a>
+            </li>
+        </ul>
+    </div>
+    <div class="wisdom-specialist-body">
+        <div class="link-rel">
+            <a href="">院士专家 ></a>
+            <a href="">xxx专家</a>
+        </div>
+        <div class="user-data">
+            <div class="head-name">
+                <img class="head" src="images/_user_.jpg" alt="">
+                <p class="name">金德新</p>
+            </div>
+            <div class="position">
+                <p>广东省吉林松原商会 会长</p>
+                <p>珠三角产业联盟 执行会长</p>
+                <p>深圳市吉林商会 副会长</p>
+                <p>深圳市卓越绩效管理促进会 副会长</p>
+                <p>深圳市智慧城市研究会 副会长</p>
+                <p>松商联合会 副主席</p>
+                <p>中国智慧城市智慧教育行业技术专家</p>
+                <p>深圳市电子信息产业联合会 常务理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+                <p>深圳市电子商会 理事</p>
+            </div>
+        </div>
+        <div class="specialist-details-title">
+            <div class="title-en">专家观点 <span>Expert opinion</span></div>
+            <div class="clear">
+                <!-- 轮播图start -->
+                <div class="details-swiper-content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="clear" href="">
+                                <img src="images/details-opinion.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="clear" href="">
+                                <img src="images/details-opinion.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="clear" href="">
+                                <img src="images/details-opinion.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                    <!--左箭头-->
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <!--右箭头-->
+                </div>
+            <script>
+                var myName = new Swiper('.details-swiper-content', {
+                    autoplay: false,//可选选项，自动滑动
+                    // loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        // type: 'fraction',
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                })
+            </script>
+            <!-- 轮播图end -->
+                <div class="opinion-content">
+                    <div class="aphorism">
+                        陈宜言专访 / 智慧城市建设，缺你不可
+                    </div>
+                    <div class="aphorism-details">
+                        字数控制在50字以内字数控制在50字以内字数控制在50字以内字数控制在50字以内字数控制在50字以内字数控制在50字以内字数控制在50字以内字数控制在50字以内
+                    </div>
+                    <a class="more" href="">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="specialist-details-title">
+            <div class="title-en">擅长专业
+                <span>Good at professional</span>
+            </div>
+            <ul class="education-icon clear">
+                <li>
+                    <img src="images/education.png" alt="">
+                    <p class="title">智慧教育</p>
+                </li>
+            </ul>
+        </div>
+        <div class="specialist-details-title">
+            <div class="title-en">工作经历
+                <span>Work experience</span>
+            </div>
+            <ul class="history-list">
+                <li class="clear">
+                    <p class="time">1993.09-1998.10</p>
+                    <p class="context">在大型A、H股上市公司-中石油吉林化学工业股份公司工作；历任技术员、人力资源主管、团支部书记及工会主席等职。</p>
+                </li>
+                <li class="clear">
+                    <p class="time">2000.12 - 2007.07</p>
+                    <p class="context">在长城科技股份有限公司（香港上市公司）、昂纳集团（外资、香港上市公司）工作；历任人力资源经理、高级销售经理、全球市场销售总监、公司董事等职务。</p>
+                </li>
+                <li class="clear">
+                    <p class="time">2007.07 - 2009.09</p>
+                    <p class="context">深圳雅图数字视频技术有限公司董事、总经理，负责公司日常管理工作。打造了一支充满活力的团队，开拓海内外市场，组建了研发团队，不断开发新产品。</p>
+                </li>
+                <li class="clear">
+                    <p class="time">2009.09 - 至今</p>
+                    <p class="context">深圳市优视技术有限公司，任董事长兼总经理。</p>
+                </li>
+            </ul>
+        </div>
+        <div class="specialist-details-title">
+            <div class="title-en">荣誉成就
+                <span>Achievement of honor</span>
+            </div>
+            <ul class="honor">
+                <li>中国科技创新质量管理先进个人；</li>
+                <li>中国电子视像协会先进工作者；</li>
+                <li>中国中小企业创新先锋人物；</li>
+                <li>中国电子信息协会优秀企业家；</li>
+                <li>中国智慧城市专家委员会聘为智慧教育行业技术专家。</li>
+                <li>中国创新创业成果审定委员会评定为“中国创新创业先锋”。</li>
+                <li>主持创造的《基于互联网交互式的智慧课堂教育平台》被评为2016年度创新创业100强；</li>
+                <li>主持创造的《微型投影光机模组的研发和产业化》被评为2013年度优秀创新成果；</li>
+                <li>拥有发明及核心技术专利共17项。</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部start -->
+    <footer>
+        <div class="footer-common">
+            <div class="nav-common clear">
+                <a href="">智库</a>
+                <a href="">解决方案</a>
+                <a href="">筑享慧万家</a>
+                <a href="">关于我们</a>
+                <a href="">意见反馈</a>
+            </div>
+            <div class="message-common clear">
+                <div class="fl">
+                    <p class="call-mail">
+                        <span class="phone">0755-33940303</span>
+                        <span class="mial">xzl@xzlii.com</span>
+                    </p>
+                    <p class="address">广东省深圳市南山区讯美科技广场3栋14楼B06</p>
+                </div>
+                <div class="fr blogroll">
+                    <span>友情链接</span>
+                    <a href="">阿里巴巴icon</a>
+                    <a href="">阿里巴巴icon</a>
+                    <a href="">腾讯云</a>
+                    <a href="">腾讯云</a>
+                    <a href="">阿里云</a>
+                    <a href="">阿里云</a>
+                    <a href="">亚马孙云</a>
+                </div>
+            </div>
+            <p class="copyright">
+                <a href="javascript:">深圳小筑理信息技术有限公司 ©2017 粤ICP备16055522号</a>
+            </p>
+        </div>
+    </footer>
+    <!-- 底部end -->
+    <!-- 手机低栏导航start -->
+    <div class="phone-nav-header" style="display: none;">
+        <div class="link">
+            <!-- active为选中状态 -->
+            <a class="active" href="">首页</a>
+            <a href="">智库</a>
+            <a href="">解决方案</a>
+            <a href="">筑享汇</a>
+            <a href="">关于我们</a>
+        </div>
+    </div>
+    <!-- 手机低栏导航end -->
+</body>
+<script src="js/common.js"></script>
+<script>
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() != 0) {
+            $(".header-fixed-list").css({ 'top': 0 })
+        } else {
+            $(".header-fixed-list").removeAttr("style");
+        }
+    })
+</script>
+
+</html>
