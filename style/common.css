@@ -442,8 +442,8 @@ footer .copyright a {
 .fixed-login-wechat .content-text .agreement {
   background: url("../images/button.png") no-repeat center;
   background-size: cover;
-  line-height: 51px;
-  height: 51px;
+  line-height: 50px;
+  height: 49px;
   text-align: center;
   font-size: 12px;
 }
