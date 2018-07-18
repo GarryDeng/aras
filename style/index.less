@@ -337,12 +337,17 @@
     }
 }
 // 滚动条start
-.swiper-container-synopsis{
+.offer-link-margin{
+    width: 187*3px;
+    margin: 0 auto;
+}
+.swiper-container-synopsis,.swiper-container-synopsis-01,.swiper-container-synopsis-02{
     width: 187px;
     height: 40*5px;
     position: relative;
     overflow: hidden;
     margin: 0 auto 100px auto;
+    float: left;
     &::before{
         content: "";
         background: linear-gradient(to bottom, #fff, rgba(255,255,255,0), rgba(255,255,255,0), #fff);
@@ -357,7 +362,7 @@
         height: 100%;
     }
     img{
-        
+        margin: 0 auto;
     }
 }
 // 滚动条end
