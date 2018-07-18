@@ -314,7 +314,52 @@
             <p class="fl">cooperation</p>
             <p class="fr">合作伙伴</p>
         </div>
-        <img class="cooperation" src="images/cooperation.png" alt="">
+        <!-- 滚动条简介start -->
+        <div class="swiper-container-synopsis">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="images/cooperation-01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="images/cooperation-02.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="images/cooperation-03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="images/cooperation-04.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="images/cooperation-05.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="images/cooperation-06.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            var mySwiperSynopsis = new Swiper('.swiper-container-synopsis', {
+                autoplay: true,//可选选项，自动滑动
+                // autoplay:200,
+                loop: true,
+                direction: 'vertical',
+                slidesPerView: 5,
+                
+            })
+        </script>
+        <!-- 滚动条简介end -->
     </div>
     <div class="coo-con-index">
         <img class="bg" src="images/_bg_.jpg" alt="">

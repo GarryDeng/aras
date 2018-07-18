@@ -780,27 +780,27 @@ footer .copyright a {
     opacity: 1;
   }
   .phone-nav-header .link a:nth-child(1) {
-    width: 1.73333333rem;
+    width: 17.33333333%;
     background: url("../images/phone-index-nav.png") no-repeat center 0.16rem;
     background-size: 0.52rem auto;
   }
   .phone-nav-header .link a:nth-child(2) {
-    width: 2.13333333rem;
+    width: 21.33333333%;
     background: url("../images/phone-tank.png") no-repeat center 0.13333333rem;
     background-size: 0.6rem auto;
   }
   .phone-nav-header .link a:nth-child(3) {
-    width: 2.26666667rem;
+    width: 22.66666667%;
     background: url("../images/phone-scheme.png") no-repeat center 0.26666667rem;
     background-size: 0.45333333rem auto;
   }
   .phone-nav-header .link a:nth-child(4) {
-    width: 2.13333333rem;
+    width: 21.33333333%;
     background: url("../images/phone-book.png") no-repeat center 0.17333333rem;
     background-size: 0.41333333rem auto;
   }
   .phone-nav-header .link a:nth-child(5) {
-    width: 1.73333333rem;
+    width: 17.33333333%;
     background: url("../images/phone-me.png") no-repeat center 0.16rem;
     background-size: 0.45333333rem auto;
   }

@@ -336,6 +336,31 @@
         }
     }
 }
+// 滚动条start
+.swiper-container-synopsis{
+    width: 187px;
+    height: 40*5px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 100px auto;
+    &::before{
+        content: "";
+        background: linear-gradient(to bottom, #fff, rgba(255,255,255,0), rgba(255,255,255,0), #fff);
+        z-index: 990;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    img,a{
+        display: block;
+        height: 100%;
+    }
+    img{
+        
+    }
+}
+// 滚动条end
 @media screen and (max-width: 1380px) {
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
         margin-left: 7.82608696/2rem;
