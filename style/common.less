@@ -192,6 +192,7 @@ footer{
     .footer-common{
         width: 1280px;
         margin: 0 auto;
+        position: relative;
         .nav-common{
             padding-top: 130px;
             padding-bottom: 106px;
@@ -203,6 +204,62 @@ footer{
                 opacity: .8;
                 font-size: 14px;
                 float: left;
+            }
+        }
+        .message-list{
+            position: absolute;
+            right: 14px;
+            top: 130px;
+            a{
+                display: block;
+                float: left;
+                width: 22px;
+                height: 22px;
+                background: url("../images/wechat-witch.png") no-repeat center;
+                background-size: 18px auto;
+                margin: 0 16px;
+                position: relative;
+                &.sina{
+                   background: url("../images/sina.png") no-repeat center;
+                   background-size: 20px auto;
+                }
+                img{
+                    display: none;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    width: 100px;
+                    height: 100px;
+                    margin-left: -50px;
+                    z-index: 9;
+                }
+                &.public,&.service{
+                    &:hover{
+                        img{
+                            display: block;
+                        }
+                        &::before{
+                            display: block;
+                        }
+                    }
+                }
+                
+                &::before{
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    border-top: 12px solid #FFF;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    bottom: 20px;
+                    left: 50%;
+                    margin-left: -8px;
+                }
+                &.service{
+                    img{
+                        margin-left: -100+8px;
+                    }
+                }
             }
         }
         .message-common{
@@ -330,16 +387,26 @@ footer{
     // 导航start
     .header-fixed-list{
         max-width: 1080px;
-        width: 100%;
+        // width: 100%;
+        height: 60px;
+        line-height: 60px;
+        .logo-pc{
+            width: 100px;
+            top: 16px;
+        }
         .list-skip{
             margin-left: 304px;
             .nav-a{
                 margin-right: 50px;
+                line-height: 60px;
             }
         }
         .search-input{
             right: 168px;
             width: 550px;
+            .white,.black{
+                top: 20px;
+            }
         }
     }
     footer{
@@ -354,6 +421,10 @@ footer{
                 a{
                     width: 120px;
                 }
+            }
+            .message-list{
+                // right: 14px;
+                top: 130/128rem;
             }
             .message-common{
                 .call-mail{
@@ -468,18 +539,22 @@ footer{
                     width: 120px;
                 }
             }
+            .message-list{
+                // right: 14px;
+                top: 130/128rem;
+            }
             .message-common{
                 .call-mail{
                     padding-top: 40/128rem;
                     padding-bottom: 42/128rem;
                     span{
                         &.phone{
-                            padding-right: 27/128rem;
+                            padding-right: 32/98rem;
                             background-size: 14px auto;
                         }
                         &.mial{
-                            padding-left: 58/128rem;
-                            background: url(../images/mail.png) no-repeat 28/75rem center;
+                            padding-left: 63/98rem;
+                            background: url(../images/mail.png) no-repeat 23/98rem center;
                             background-size: 14px auto;
                         }
                     }
@@ -561,6 +636,9 @@ footer{
     footer{
         .footer-common{
             padding: 0 19/75rem;
+            .message-list{
+                display: none;
+            }
             .nav-common{
                 padding-top: 38/75rem;
                 padding-bottom: 30/75rem;

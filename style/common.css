@@ -320,6 +320,7 @@ footer {
 footer .footer-common {
   width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 footer .footer-common .nav-common {
   padding-top: 130px;
@@ -333,6 +334,57 @@ footer .footer-common .nav-common a {
   opacity: .8;
   font-size: 14px;
   float: left;
+}
+footer .footer-common .message-list {
+  position: absolute;
+  right: 14px;
+  top: 130px;
+}
+footer .footer-common .message-list a {
+  display: block;
+  float: left;
+  width: 22px;
+  height: 22px;
+  background: url("../images/wechat-witch.png") no-repeat center;
+  background-size: 18px auto;
+  margin: 0 16px;
+  position: relative;
+}
+footer .footer-common .message-list a.sina {
+  background: url("../images/sina.png") no-repeat center;
+  background-size: 20px auto;
+}
+footer .footer-common .message-list a img {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  z-index: 9;
+}
+footer .footer-common .message-list a.public:hover img,
+footer .footer-common .message-list a.service:hover img {
+  display: block;
+}
+footer .footer-common .message-list a.public:hover::before,
+footer .footer-common .message-list a.service:hover::before {
+  display: block;
+}
+footer .footer-common .message-list a::before {
+  content: "";
+  display: none;
+  position: absolute;
+  border-top: 12px solid #FFF;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -8px;
+}
+footer .footer-common .message-list a.service img {
+  margin-left: -92px;
 }
 footer .footer-common .message-common .call-mail {
   padding-top: 40px;
@@ -453,17 +505,27 @@ footer .copyright a {
 @media screen and (max-width: 1380px) {
   .header-fixed-list {
     max-width: 1080px;
-    width: 100%;
+    height: 60px;
+    line-height: 60px;
+  }
+  .header-fixed-list .logo-pc {
+    width: 100px;
+    top: 16px;
   }
   .header-fixed-list .list-skip {
     margin-left: 304px;
   }
   .header-fixed-list .list-skip .nav-a {
     margin-right: 50px;
+    line-height: 60px;
   }
   .header-fixed-list .search-input {
     right: 168px;
     width: 550px;
+  }
+  .header-fixed-list .search-input .white,
+  .header-fixed-list .search-input .black {
+    top: 20px;
   }
   footer .footer-common {
     max-width: 1140px;
@@ -477,6 +539,9 @@ footer .copyright a {
   }
   footer .footer-common .nav-common a {
     width: 120px;
+  }
+  footer .footer-common .message-list {
+    top: 1.015625rem;
   }
   footer .footer-common .message-common .call-mail {
     padding-top: 0.3125rem;
@@ -583,17 +648,20 @@ footer .copyright a {
   footer .footer-common .nav-common a {
     width: 120px;
   }
+  footer .footer-common .message-list {
+    top: 1.015625rem;
+  }
   footer .footer-common .message-common .call-mail {
     padding-top: 0.3125rem;
     padding-bottom: 0.328125rem;
   }
   footer .footer-common .message-common .call-mail span.phone {
-    padding-right: 0.2109375rem;
+    padding-right: 0.32653061rem;
     background-size: 14px auto;
   }
   footer .footer-common .message-common .call-mail span.mial {
-    padding-left: 0.453125rem;
-    background: url(../images/mail.png) no-repeat 0.37333333rem center;
+    padding-left: 0.64285714rem;
+    background: url(../images/mail.png) no-repeat 0.23469388rem center;
     background-size: 14px auto;
   }
   footer .footer-common .message-common .blogroll {
@@ -664,6 +732,9 @@ footer .copyright a {
   }
   footer .footer-common {
     padding: 0 0.25333333rem;
+  }
+  footer .footer-common .message-list {
+    display: none;
   }
   footer .footer-common .nav-common {
     padding-top: 0.50666667rem;
