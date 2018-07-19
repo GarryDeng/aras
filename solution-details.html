@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/solution-details.css">
+    <title>index</title>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+    <header class="whole-header-nav">
+        <div class="header-fixed-list">
+            <a href="./">
+                <img class="logo-pc" src="images/logo.png" alt="">
+            </a>
+            <div class="list-skip clear">
+                <div class="nav-a">
+                    <a href="">首页</a>
+                </div>
+                <div class="nav-a">
+                    <a href="">智库</a>
+                </div>
+                <div class="nav-a">
+                    <a href="">解决方案</a>
+                    <div class="second">
+                        <a href="">解决方案1</a>
+                        <a href="">解决方案1+2</a>
+                        <a href="">解决方案1+3</a>
+                    </div>
+                </div>
+                <div class="nav-a">
+                    <a href="">筑享慧万家</a>
+                </div>
+                <div class="nav-a">
+                    <a href="">关于我们</a>
+                </div>
+            </div>
+            <div class="search-input search-focus">
+                <img class="close-white" src="images/close-white.png" alt="">
+                <input type="text">
+                <img class="white" src="images/search-white.png" alt="">
+                <img class="black" src="images/search-black.png" alt="">
+                <div class="history-search">
+                    <p>最近搜索</p>
+                    <a href="">ASRS</a>
+                    <a href="">XXXXXXXX方案</a>
+                </div>
+            </div>
+            <div class="login-register">
+                <!-- 已登录情况 -->
+                <!-- <a class="registed" href=""><img src="images/register-white.png" alt=""></a> -->
+                <a href="javascript:wechatShow()">登录</a>
+                |
+                <a href="javascript:wechatShow()">注册</a>
+            </div>
+            <a class="phone-search-icon" style="display: none;" href="/phone-search.html">
+                <img src="images/search-white.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- wechat登錄頁面start -->
+    <div class="fixed-login-wechat" style="display: none;">
+        <div class="content-text">
+            <p class="title">欢迎来到ARAS</p>
+            <img class="er-code" src="images/er-code.png" alt="">
+            <p class="login-code">微信扫描二维码登录</p>
+            <div class="agreement">注册即同意
+                <a href="">《用户协议》</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function wechatShow() {
+            $(".fixed-login-wechat").fadeIn();
+        }
+        $('.fixed-login-wechat').on('click', function (ev) {
+            if ($(ev.target).parents().length == 2)
+                $(this).fadeOut();
+        })
+    </script>
+    <!-- wechat登錄頁面end -->
+    <div class="solution-details-header">
+        <div class="single-window">
+            <div class="icon">
+                <div class="window-icon">
+                    <img src="images/solution-window05.png" alt="">
+                </div>
+                <p class="text">梯控系统</p>
+            </div>
+            <div class="single-content">
+                <h3>梯控系统</h3>
+                <p class="content">ARAS智库汇集了智慧城市建设领域最权威的两院院士与行业技术专家。旨在以技术创新为驱动力，积极推动城市建设与管理方式的变革，帮助城市进行科学规划、公共服
+                    务、城市治理、应急指挥以及产业协同，不断提升城市运行效率和公共服务水平，为城市装上“智慧的大脑”，更高效、更优质地进行城市综合管理和运营。</p>
+            </div>
+        </div>
+    </div>
+    <ul class="solution-details-content">
+        <li class="list-left">
+            <div class="solution-scheme">
+                <h3>解决方案</h3>
+                <a href="">解决方案1</a>
+                <a href="">解决方案2</a>
+                <a href="">解决方案3</a>
+            </div>
+            <div class="find-window">
+                <h3>子系统应用</h3>
+                <a href="javascript:">门禁系统</a>
+                <a href="javascript:">停车场系统</a>
+                <a href="javascript:">视频监控系统</a>
+                <a href="javascript:">物业管理系统</a>
+                <a href="javascript:">电子巡更系统</a>
+                <a href="javascript:">智能抄表系统</a>
+                <a href="javascript:">灾情警情系统</a>
+                <a href="javascript:">商业管理系统</a>
+                <a href="javascript:">育儿管理系统</a>
+                <a href="javascript:">医疗管理系统</a>
+                <a href="javascript:">地产营销系统</a>
+                <a href="javascript:">家居管理系统</a>
+                <a href="javascript:">照明管理系统</a>
+                <a href="javascript:">智能灌溉系统</a>
+            </div>
+        </li>
+        <li class="list-right">
+            <div class="link-list clear">
+                <a class="active" href="">功能点1</a>
+                <a href="">功能点2</a>
+                <a href="">功能点3</a>
+                <a href="">智慧配套</a>
+            </div>
+            <div class="function-get">
+                <div class="solution-function-bg">
+                    <div class="content">
+                        <h3>功能点 • 一</h3>
+                        <div class="context">
+                            ARAS智库汇集了智慧城市建设领域最权威的两院院士与行业技术专家。旨在以技术创新为驱动力，积极推动城市建设与管理方式的变革，帮助城市进行科学规划、公共服务、城市治理、应急指挥以及产业协同，不断提升城市运行效率和公共服务水平，为城市装上“智慧的大脑”，更高效、更优质地进行城市综合管理和运营。
+                        </div>
+                        <img class="banner" src="images/solution-details-banner01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="solution-function-bg">
+                    <div class="content">
+                        <h3>功能点 • 二</h3>
+                        <div class="context">
+                            ARAS智库汇集了智慧城市建设领域最权威的两院院士与行业技术专家。旨在以技术创新为驱动力，积极推动城市建设与管理方式的变革，帮助城市进行科学规划、公共服务、城市治理、应急指挥以及产业协同，不断提升城市运行效率和公共服务水平，为城市装上“智慧的大脑”，更高效、更优质地进行城市综合管理和运营。
+                        </div>
+                        <img class="banner" src="images/solution-details-banner01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="solution-function-bg">
+                    <div class="content">
+                        <h3>功能点 • 三</h3>
+                        <div class="context">
+                            ARAS智库汇集了智慧城市建设领域最权威的两院院士与行业技术专家。旨在以技术创新为驱动力，积极推动城市建设与管理方式的变革，帮助城市进行科学规划、公共服务、城市治理、应急指挥以及产业协同，不断提升城市运行效率和公共服务水平，为城市装上“智慧的大脑”，更高效、更优质地进行城市综合管理和运营。
+                        </div>
+                        <img class="banner" src="images/solution-details-banner03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="enterprise">
+                <h3>企业推荐</h3>
+                <div class="enterprise-list clear">
+                    <img class="enterprise-logo" src="images/lg.png" alt="">
+                    <p class="enterprise-title">LG集团</p>
+                    <p class="enterprise-content">韩国LG集团于1947年成立于韩国首尔，位于首尔市永登浦区汝矣岛洞20号。是领导世界产业发展的国际性企业集团。 [1] LG集团目前在171个国家与地区建立了300多家海外办事机构。</p>
+                    <a href="">了解更多</a>
+                </div>
+                <div class="enterprise-list clear">
+                    <img class="enterprise-logo" src="images/lg.png" alt="">
+                    <p class="enterprise-title">LG集团</p>
+                    <p class="enterprise-content">韩国LG集团于1947年成立于韩国首尔，位于首尔市永登浦区汝矣岛洞20号。是领导世界产业发展的国际性企业集团。 [1] LG集团目前在171个国家与地区建立了300多家海外办事机构。</p>
+                    <a href="">了解更多</a>
+                </div>
+                <div class="enterprise-list clear">
+                    <img class="enterprise-logo" src="images/lg.png" alt="">
+                    <p class="enterprise-title">LG集团</p>
+                    <p class="enterprise-content">韩国LG集团于1947年成立于韩国首尔，位于首尔市永登浦区汝矣岛洞20号。是领导世界产业发展的国际性企业集团。 [1] LG集团目前在171个国家与地区建立了300多家海外办事机构。</p>
+                    <a href="">了解更多</a>
+                </div>
+                <div class="enterprise-list clear">
+                    <img class="enterprise-logo" src="images/lg.png" alt="">
+                    <p class="enterprise-title">LG集团</p>
+                    <p class="enterprise-content">韩国LG集团于1947年成立于韩国首尔，位于首尔市永登浦区汝矣岛洞20号。是领导世界产业发展的国际性企业集团。 [1] LG集团目前在171个国家与地区建立了300多家海外办事机构。</p>
+                    <a href="">了解更多</a>
+                </div>
+                <div class="enterprise-list clear">
+                    <img class="enterprise-logo" src="images/lg.png" alt="">
+                    <p class="enterprise-title">LG集团</p>
+                    <p class="enterprise-content">韩国LG集团于1947年成立于韩国首尔，位于首尔市永登浦区汝矣岛洞20号。是领导世界产业发展的国际性企业集团。 [1] LG集团目前在171个国家与地区建立了300多家海外办事机构。</p>
+                    <a href="">了解更多</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- 底部start -->
+    <footer>
+        <div class="footer-common">
+            <div class="nav-common clear">
+                <a href="">智库</a>
+                <a href="">解决方案</a>
+                <a href="">筑享慧万家</a>
+                <a href="">关于我们</a>
+                <a href="">意见反馈</a>
+            </div>
+            <div class="message-list clear">
+                <a class="public" href="javascript:">
+                    <img src="images/er-code.png" alt="">
+                </a>
+                <a class="sina" href=""></a>
+                <a class="service" href="javascript:">
+                    <img src="images/er-code.png" alt="">
+                </a>
+            </div>
+            <div class="message-common clear">
+                <div class="fl">
+                    <p class="call-mail">
+                        <span class="phone">0755-33940303</span>
+                        <span class="mial">xzl@xzlii.com</span>
+                    </p>
+                    <p class="address">广东省深圳市南山区讯美科技广场3栋14楼B06</p>
+                </div>
+                <div class="fr blogroll">
+                    <span>友情链接</span>
+                    <a href="">阿里巴巴icon</a>
+                    <a href="">阿里巴巴icon</a>
+                    <a href="">腾讯云</a>
+                    <a href="">腾讯云</a>
+                    <a href="">阿里云</a>
+                    <a href="">阿里云</a>
+                    <a href="">亚马孙云</a>
+                </div>
+            </div>
+            <p class="copyright">
+                <a href="javascript:">深圳小筑理信息技术有限公司 ©2017 粤ICP备16055522号</a>
+            </p>
+        </div>
+    </footer>
+    <!-- 底部end -->
+    <!-- 手机低栏导航start -->
+    <div class="phone-nav-header" style="display: none;">
+        <div class="link">
+            <!-- active为选中状态 -->
+            <a class="active" href="">首页</a>
+            <a href="">智库</a>
+            <a href="">解决方案</a>
+            <a href="">筑享汇</a>
+            <a href="">关于我们</a>
+        </div>
+    </div>
+    <!-- 手机低栏导航end -->
+</body>
+<script src="js/common.js"></script>
+<script>
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() != 0) {
+            $(".header-fixed-list").css({ 'top': 0 })
+        } else {
+            $(".header-fixed-list").removeAttr("style");
+        }
+    })
+</script>
+
+</html>

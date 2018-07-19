@@ -360,13 +360,16 @@
     img{
         display: block;
         width: 100%;
-        transform: scale(.96,.96);
-        opacity: .9;
+        transform: scale(.92,.92);
+        filter: grayscale(100%);
+        opacity: .3;
         transition: all .75s ease-out;
     }
     .swiper-slide-next{
         img{
             transform: scale(1,1);
+            filter: grayscale(0);
+            opacity: 1;
         }
     }
 }
