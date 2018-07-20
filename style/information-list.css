@@ -92,6 +92,10 @@
     background-size: 0.32rem auto;
   }
 }
+.wisdom-search-list ul li.swiper-slide {
+  width: auto;
+  height: auto;
+}
 .information-content-list {
   width: 1280px;
   margin: 0 auto;
@@ -279,6 +283,85 @@
     background-size: 14px auto;
   }
   .information-content-list .information-recommend .recommend-list .recommend-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  .wisdom-search-list ul li {
+    margin-right: .15rem;
+  }
+  .information-content-list {
+    width: 8.53061224rem;
+    margin-top: 40px;
+    min-height: 300px;
+  }
+  .information-content-list .information-list {
+    padding-right: 0;
+  }
+  .information-content-list .information-list .information-unit .context .list-name {
+    font-size: 12px;
+  }
+  .information-content-list .information-recommend {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wisdom-search-thinktak {
+    padding-top: 0.66666667rem;
+  }
+  .wisdom-search-list {
+    overflow: hidden;
+    position: relative;
+  }
+  .wisdom-search-list ul li {
+    margin-right: 0;
+  }
+  .wisdom-search-list ul li:nth-child(n) {
+    text-indent: 0;
+    text-align: left;
+  }
+  .information-content-list {
+    width: 9.4rem;
+    margin-top: 0.66666667rem;
+  }
+  .information-content-list .information-list {
+    padding-right: 0;
+  }
+  .information-content-list .information-list .information-unit {
+    padding-left: 3.89333333rem;
+    height: 3.89333333rem;
+    margin-bottom: 0.4rem;
+  }
+  .information-content-list .information-list .information-unit .information-img {
+    width: 3.89333333rem;
+    height: 3.89333333rem;
+  }
+  .information-content-list .information-list .information-unit .context {
+    margin: 0 0.4rem;
+  }
+  .information-content-list .information-list .information-unit .context h3 {
+    padding-top: 0;
+    line-height: 0.85333333rem;
+    font-size: 0.29333333rem;
+  }
+  .information-content-list .information-list .information-unit .context .list-name {
+    font-size: 0.18666667rem;
+  }
+  .information-content-list .information-list .information-unit .context .content {
+    font-size: 0.18666667rem;
+    line-height: 0.34666667rem;
+    height: 1.73333333rem;
+    margin-top: 0.24rem;
+    margin-bottom: 0.10666667rem;
+  }
+  .information-content-list .information-list .information-unit .read-time span {
+    font-size: 0.18666667rem;
+  }
+  .information-content-list .information-list .information-unit .read-time span.read {
+    padding-left: 0.4rem;
+    background-size: 0.24rem auto;
+  }
+  .information-content-list .information-recommend {
     display: none;
   }
 }

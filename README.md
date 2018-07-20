@@ -7,3 +7,4 @@ wisdom-specialist.html 智库专家院士
 wisdom-specialist-details.html 专家详情页
 solution.html 解决方案
 solution-details.html 子系统详情页
+information-list.html 筑享汇
