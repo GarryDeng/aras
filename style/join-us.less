@@ -1,0 +1,319 @@
+.join-us-banner{
+    position: relative;
+    width: 100%;
+    .banner{
+        display: block;
+        width: 100%;
+    }
+    .text{
+        font-size: 24px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 8;
+        line-height: 1.6em;
+    }
+}
+.join-us-flow{
+    font-size: 0;
+    text-align: center;
+    li{
+        display: inline-block;
+        line-height: 190px;
+        height: 190px;
+        position: relative;
+        padding-left: 62px;
+        padding-right: 266px;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            border: 1px solid #2aa7d8;
+            margin-top: -16px;
+        }
+        &:first-child::before{
+            background-color: #2aa7d8;
+        }
+        &::after{
+            content: "";
+            width: 182px;
+            border-top: 2px solid #e8e8e8;
+            position: absolute;
+            right: 42px;
+            top: 50%;
+            margin-top: -1px;
+        }
+        &:last-child{
+            padding-right: 0;
+            &::after{
+                display: none;
+            }
+        }
+        span{
+            font-size: 24px;
+        }
+    }
+}
+.join-us-message{
+    margin-top: 60px;
+    font-size: 0;
+    text-align: center;
+    width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 510-280px;
+    label,input,.list{
+        font-size: 20px;
+    }
+    .business-list,.relation-name,.relation-phone,.describe{
+        margin-bottom: 50px;
+        height: 50px;
+        label{
+            width: 118px;
+            text-align: justify;
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 80px;
+            vertical-align: middle;
+            i{
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        .active-text,input,textarea{
+            // height: 50px;
+            line-height: 50-16px;
+            width: 562-24px;
+            padding: 8px 12px;
+            font-size: 20px;
+            border: 1px solid #cfcfcf;
+        }
+    }
+    .business-list{
+        .list{
+            display: inline-block;
+            position: relative;
+            text-align: left;
+            .list-text{
+                display: none;
+                position: absolute;
+                left: 0;
+                width: 562-24px;
+                // max-height: 320px;
+                padding: 20px 12px;
+                background-color: #FFF;
+                z-index: 8;
+                top: 50px;
+                border: 1px solid #cfcfcf;
+                // overflow-y: scroll;
+                p{
+                    line-height: 38px;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .active-text{
+            cursor: pointer;
+        }
+    }
+    .describe{
+        label{
+            vertical-align: top;
+        }
+        textarea{
+            height: 252-16px;
+            resize: none;
+        }
+    }
+    button{
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+        background-color: #333333;
+        color: #FFF;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        display: block;
+        width: 220px;
+        margin-top: 280px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:1380px) {
+    .join-us-flow{
+        li{
+            padding-right: 266/138rem;
+            &::after{
+                width: 182/138rem;
+            }
+        }
+    }
+    .join-us-message{
+        width: 1080/138rem;
+        .business-list,.relation-name,.relation-phone,.describe{
+            .active-text,input,textarea{
+                width: (562-24)/138rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:980px) {
+    .join-us-banner{
+        .text{
+            font-size: 24/138rem;
+        }
+    }
+    .join-us-flow{
+        li{
+            line-height: 190/138rem;
+            height: 190/138rem;
+            padding-left: 62/138rem;
+            padding-right: 266/138rem;
+            &::before{
+                height: 32/138rem;
+                width: 32/138rem;
+                margin-top: -16/138rem;
+            }
+            &::after{
+                width: 182/138rem;
+                right: 42/138rem;
+            }
+            span{
+                font-size: 24/138rem;
+            }
+        }
+    }
+    .join-us-message{
+        margin-top: 60/138rem;
+        width: 810/138rem;
+        padding-bottom: (510-280)/138rem;
+        label,input,.list{
+            font-size: 20/138rem;
+        }
+        .business-list,.relation-name,.relation-phone,.describe{
+            margin-bottom: 50/138rem;
+            height: 50/138rem;
+            label{
+                width: 118/138rem;
+                font-size: 20/138rem;
+                margin-right: 80/138rem;
+            }
+            .active-text,input,textarea{
+                line-height: (50-16)/138rem;
+                width: (562-24)/138rem;
+                padding: 8/138rem 12/138rem;
+                font-size: 20/138rem;
+            }
+        }
+        .business-list{
+            .list{
+                .list-text{
+                    width: (562-24)/138rem;
+                    padding: 20/138rem 12/138rem;
+                    top: 50/138rem;
+                    p{
+                        line-height: 38/138rem;
+                        font-size: 18/138rem;
+                    }
+                }
+            }
+        }
+        .describe{
+            textarea{
+                height: (252-16)/138rem;
+            }
+        }
+        button{
+            margin-top: 280/138rem;
+            height: 52/138rem;
+            line-height: 52/138rem;
+            font-size: 20/138rem;
+            width: 220/138rem;
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .join-us-banner{
+        .text{
+            font-size: 24/75rem;
+        }
+    }
+    .join-us-flow{
+        margin-top: 10/75rem;
+        li{
+            line-height: 170/75rem;
+            height: 170/75rem;
+            padding-left: 60/75rem;
+            padding-right: 105/75rem;
+            &::before{
+                height: 30/75rem;
+                width: 30/75rem;
+                margin-top: -15/75rem;
+            }
+            &::after{
+                width: 60/75rem;
+                right: 26/75rem;
+            }
+            span{
+                font-size: 24/75rem;
+            }
+        }
+    }
+    .join-us-message{
+        margin-top: 0;
+        width: 10rem;
+        padding-bottom: (440-280)/75rem;
+        label,input,.list{
+            font-size: 20/75rem;
+        }
+        .business-list,.relation-name,.relation-phone,.describe{
+            margin-bottom: 50/75rem;
+            height: 50/75rem;
+            label{
+                width: 100/75rem;
+                font-size: 20/75rem;
+                margin-right: 50/75rem;
+            }
+            .active-text,input,textarea{
+                line-height: (50-16)/75rem;
+                width: (550-24)/75rem;
+                padding: 8/75rem 12/75rem;
+                font-size: 20/75rem;
+            }
+        }
+        .business-list{
+            .list{
+                .list-text{
+                    width: (562-24)/75rem;
+                    padding: 20/75rem 12/75rem;
+                    top: 50/75rem;
+                    p{
+                        line-height: 38/75rem;
+                        font-size: 18/75rem;
+                    }
+                }
+            }
+        }
+        .describe{
+            textarea{
+                height: (252-16)/75rem;
+            }
+        }
+        button{
+            margin-top: 280/75rem;
+            height: 52/75rem;
+            line-height: 52/75rem;
+            font-size: 20/75rem;
+            width: 220/75rem;
+        }
+    }
+}

@@ -7,26 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/bind-phone.css">
-    <title>个人中心</title>
+    <title>绑定手机</title>
     <script src="js/rem.js"></script>
     <script src="js/jquery-1.7.2.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <!-- 首页外 另外种className whole-header-nav-->
+    <header class="whole-header-nav">
         <div class="header-fixed-list">
             <a href="./">
                 <img class="logo-pc" src="images/logo.png" alt="">
             </a>
             <div class="list-skip clear">
                 <div class="nav-a">
-                    <a href="">首页</a>
+                    <a href="./">首页</a>
                 </div>
                 <div class="nav-a">
-                    <a href="">智库</a>
+                    <a href="wisdom-search.html">智库</a>
+                    <div class="second">
+                        <a href="wisdom-introduction.html">智库简介</a>
+                        <a href="wisdom-service.html">服务咨询</a>
+                        <a href="wisdom-specialist.html">专家院士</a>
+                    </div>
                 </div>
                 <div class="nav-a">
-                    <a href="">解决方案</a>
+                    <a href="solution.html">解决方案</a>
                     <div class="second">
                         <a href="">解决方案1</a>
                         <a href="">解决方案1+2</a>
@@ -34,10 +40,10 @@
                     </div>
                 </div>
                 <div class="nav-a">
-                    <a href="">筑享慧万家</a>
+                    <a href="information-list.html">筑享慧万家</a>
                 </div>
                 <div class="nav-a">
-                    <a href="">关于我们</a>
+                    <a href="about-us.html">关于我们</a>
                 </div>
             </div>
             <div class="search-input search-focus">
@@ -53,7 +59,7 @@
             </div>
             <div class="login-register">
                 <!-- 已登录情况 -->
-                <!-- <a class="registed" href=""><img src="images/register-white.png" alt=""></a> -->
+                <!-- <a class="registed" href="bind-phone.html"><img src="images/register-white.png" alt=""></a> -->
                 <a href="javascript:wechatShow()">登录</a>
                 |
                 <a href="javascript:wechatShow()">注册</a>
@@ -84,17 +90,128 @@
         })
     </script>
     <!-- wechat登錄頁面end -->
-    
+    <div class="user-history-banner">
+        <img class="bg" src="images/user-history-banner.jpg" alt="">
+        <div class="user-head">
+            <img src="images/_user_.jpg" alt="">
+        </div>
+        <div class="user-name">用户名</div>
+    </div>
+    <div class="user-history-nav">
+        <ul class="user-nav clear">
+            <!-- active为选中当前页 -->
+            <li>
+                <a href="user-history.html">提交记录</a>
+            </li>
+            <li class="active">
+                <a href="bind-phone.html">绑定手机</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bind-phone-number">
+        <form action="">
+            <h3 class="title">绑定手机</h3>
+            <div class="send-phone">
+                <input placeholder="请输入手机号码" type="text">
+            </div>
+            <div class="send-code">
+                <input placeholder="请输入短信验证码" type="text">
+                <p class="get-code">获取验证码</p>
+            </div>
+            <button class="bind-post" type="submit">绑定</button>
+        </form>
+    </div>
+    <script>
+        var _time = 180;
+        //请求验证码
+        $('.bind-phone-number .get-code').on('click',function () {
+            var _phoneNumber = $(".send-phone input").val();
+            var _this = $(this);
+            //判断请求的手机格式是否正确
+            if(!_phoneNumber || !phone(_phoneNumber)){
+                return alert("手机格式错误！");
+            }
+            //判断是否短时间内重复请求
+            if(_this.text() != '获取验证码') return false;
+            //code here
+            //请求成功执行的code
+            var _countDown = setInterval(function () {
+                _time--;
+                if (_time === 0) {
+                    _this.text('获取验证码');
+                    _time = 180;
+                    return clearInterval(_countDown);
+                }
+                _this.text(_time + 's');
+            },1000);
+        });
+        //提交绑定前判断
+        $(".bind-post").on('click',function (ev) {
+            var _phoneNumber = $(".send-phone input").val();
+            var _code = $(".send-code input").val();
+            if(!_phoneNumber || !phone(_phoneNumber)) {
+                alert('手机号码格式错误');
+                return ev.preventDefault();
+            }
+            if (!_code) {
+                alert('请输入验证码');
+                return ev.preventDefault();
+            }
+        });
+    </script>
     <!-- 底部start -->
     <footer>
         <div class="footer-common">
             <div class="nav-common clear">
-                <a href="">智库</a>
-                <a href="">解决方案</a>
-                <a href="">筑享慧万家</a>
-                <a href="">关于我们</a>
-                <a href="">意见反馈</a>
+                <a href="wisdom-search.html">智库</a>
+                <a href="solution.html">解决方案</a>
+                <a href="information-list.html">筑享慧万家</a>
+                <a href="about-us.html">关于我们</a>
+                <a href="join-us.html">意见反馈</a>
             </div>
+           v class="message-list clear">
+            <a class="public" href="javascript:">
+                <img src="images/er-code.png" alt="">
+            </a>
+            <a class="sina" href="javascript:"></a>
+            <a class="service" href="javascript:">
+                <img src="images/er-code.png" alt="">
+            </a>
+        </div>
+        <!-- //新浪分享 -->
+        <script>
+            var title = "我是标题";
+            // 新浪分享
+            var sinaShare = [],
+                nawest = [];
+            $('.footer-common .message-list a.sina').click(function () {
+                var tex = title;
+                sinaShare.sharetitle = tex + "@小筑理";//分享内容
+                sinaShare.shareUrl = nawest;//分享显示图片
+                share();
+            });
+            function share() {
+                //d指的是window
+                (function (s, d, e) {
+                    try { }
+                    catch (e) { }
+                    var f = 'http://v.t.sina.com.cn/share/share.php?',
+                        u = d.location.href,
+                        p = ['url=', e(u),
+                            '&title=', e(sinaShare.sharetitle), '' +
+                            '&appkey=2924220432',
+                            '&pic=', e(sinaShare.shareUrl)].join('');
+                    function a() {
+                        if (!window.open([f, p].join(''), 'mb',
+                            ['toolbar=0,status=0,resizable=1,width=620,height=450,left=',
+                                (s.width - 620) / 2, ',top=', (s.height - 450) / 2]
+                                .join(''))) u.href = [f, p].join('');
+                    };
+                    if (/Firefox/.test(navigator.userAgent)) { setTimeout(a, 0) } else { a() }
+                })
+                    (screen, document, encodeURIComponent);
+            }
+        </script>
             <div class="message-common clear">
                 <div class="fl">
                     <p class="call-mail">
@@ -124,14 +241,15 @@
     <div class="phone-nav-header" style="display: none;">
         <div class="link">
             <!-- active为选中状态 -->
-            <a class="active" href="">首页</a>
-            <a href="">智库</a>
-            <a href="">解决方案</a>
-            <a href="">筑享汇</a>
-            <a href="">关于我们</a>
+            <a class="active" href="./">首页</a>
+            <a href="wisdom-search.html">智库</a>
+            <a href="solution.html">解决方案</a>
+            <a href="information-list.html">筑享汇</a>
+            <a href="about-us.html">关于我们</a>
         </div>
     </div>
     <!-- 手机低栏导航end -->
 </body>
 <script src="js/common.js"></script>
+
 </html>

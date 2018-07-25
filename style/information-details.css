@@ -16,9 +16,10 @@
   color: #000;
 }
 .information-details-content .title-time-read {
-  line-height: 66px;
+  line-height: 36px;
+  padding: 15px 0;
   font-size: 30px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .information-details-content .title-time-read .time-read {
   font-size: 16px;
@@ -50,5 +51,47 @@
 @media screen and (max-width: 1380px) {
   .information-details-content {
     width: 7.82608696rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .information-details-content {
+    width: 8.53061224rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .information-details-content {
+    width: 9.4rem;
+  }
+  .information-details-content .list-link {
+    padding-top: 0;
+    line-height: 1.2rem;
+  }
+  .information-details-content .list-link a {
+    font-size: 0.24rem;
+  }
+  .information-details-content .title-time-read {
+    line-height: 0.52rem;
+    padding: 0;
+    font-size: 0.4rem;
+    margin-bottom: 0.66666667rem;
+  }
+  .information-details-content .title-time-read .time-read {
+    font-size: 0.21333333rem;
+  }
+  .information-details-content .title-time-read .time-read .read {
+    background: url("../images/read.png") no-repeat left center;
+    background-size: 0.24rem auto;
+    padding-left: 0.34666667rem;
+  }
+  .information-details-content .title-time-read .time-read .time {
+    padding-left: 0.24rem;
+  }
+  .information-details-content .next-up {
+    line-height: 1.46666667rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1.06666667rem;
+  }
+  .information-details-content .next-up a {
+    font-size: 0.26666667rem;
   }
 }

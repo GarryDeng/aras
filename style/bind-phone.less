@@ -1,0 +1,189 @@
+@import "user-history.less";
+.bind-phone-number{
+    position: relative;
+    width: 540px;
+    height: 638px;
+    margin: 75px auto 123px auto;
+    box-shadow:  1px  1px 5px 1px #eeeeee;
+    .title{
+        padding-top: 80px;
+        line-height: 1em;
+        padding-bottom: 86px;
+        font-size: 24px;
+        font-weight: normal;
+        text-align: center;
+    }
+    .send-phone,.send-code,.old-phone{
+        position: relative;
+        margin-bottom: 38px;
+        input{
+            display: block;
+            width: 440-90px;
+            line-height: 30px;
+            padding: 15px 0;
+            border: 1px solid #e4e4e4;
+            border-radius: 6px;
+            padding-left: 90px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+    }
+    //修改手机号码
+    .old-phone{
+        input{
+            width: 440-146px;
+            padding-left: 146px;
+        }
+        .old-number{
+            font-size: 20px;
+            color: #333;
+            opacity: .3;
+            position: absolute;
+            left: 44px;
+            top: 0;
+            bottom: 0;
+            width: 146px;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+    .send-phone{
+        &::before{
+            content: "";
+            position: absolute;
+            width: 68px;
+            height: 38px;
+            border-right: 1px solid #999;
+            left: 44px;
+            top: (62-38)/2px;
+            background: url("../images/phone-number.png") no-repeat center;
+            background-size: 38px auto;
+            opacity: .3;
+        }
+    }
+    .bind-post{
+        display: block;
+        width: 440px;
+        margin: 0 auto;
+        line-height: 60px;
+        border-radius: 6px;
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        border: none;
+        background-color: #333;
+    }
+    .send-code{
+        margin-bottom: 78px;
+        input{
+            display: block;
+            width: 440-140px;
+            padding-left: 20px;
+            padding-right: 120px;
+        }
+        .get-code{
+            position: absolute;
+            right: 44px;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 120px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background-color: #cccccc;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 62px;
+        }
+    }
+    //绑定手机成功页面
+    .bind-phone-succeed{
+        padding-top: 145px;
+        width: 138px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background: url("../images/bind-phone-succeed.png") no-repeat center top;
+        background-size: 108px auto;
+        text-align: center;
+        line-height: 1.2em;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:750px) {
+    .bind-phone-number{
+        width: 540/75rem;
+        height: 638/75rem;
+        margin: 75/75rem auto 123/75rem auto;
+        .title{
+            padding-top: 80/75rem;
+            padding-bottom: 86/75rem;
+            font-size: 24/75rem;
+        }
+        .send-phone,.send-code,.old-phone{
+            margin-bottom: 38/75rem;
+            input{
+                width: (440-90)/75rem;
+                line-height: 30/75rem;
+                padding: 15/75rem 0;
+                border-radius: 6/75rem;
+                padding-left: 90/75rem;
+                font-size: 20/75rem;
+            }
+        }
+        //修改手机号码
+        .old-phone{
+            input{
+                width: (440-146)/75rem;
+                padding-left: 146/75rem;
+            }
+            .old-number{
+                font-size: 20/75rem;
+                left: 44/75rem;
+                width: 146/75rem;
+                line-height: 60/75rem;
+            }
+        }
+        .send-phone{
+            &::before{
+                width: 68/75rem;
+                height: 38/75rem;
+                left: 44/75rem;
+                top: (62-38)/2/75rem;
+                // background: url("../images/phone-number.png") no-repeat center;
+                background-size: 38/75rem auto;
+            }
+        }
+        .bind-post{
+            width: 440/75rem;
+            line-height: 60/75rem;
+            border-radius: 6/75rem;
+            font-size: 24/75rem;
+        }
+        .send-code{
+            margin-bottom: 78/75rem;
+            input{
+                width: (440-140)/75rem;
+                padding-left: 20/75rem;
+                padding-right: 120/75rem;
+            }
+            .get-code{
+                right: 44/75rem;
+                width: 120/75rem;
+                border-top-right-radius: 6/75rem;
+                border-bottom-right-radius: 6/75rem;
+                font-size: 16/75rem;
+                line-height: 62/75rem;
+            }
+        }
+        //绑定手机成功页面
+        .bind-phone-succeed{
+            padding-top: 145/75rem;
+            width: 138/75rem;
+            background-size: 108/75rem auto;
+            font-size: 24/75rem;
+        }
+    }
+}

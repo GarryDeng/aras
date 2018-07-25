@@ -57,7 +57,7 @@
   text-align: center;
   color: #000;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #FFF;
 }
 .wisdom-introduction-synopsis {
@@ -194,7 +194,7 @@
   .wisdom-introduction-banner .content .join-me {
     line-height: 0.28985507rem;
     width: 1.02898551rem;
-    font-size: 0.14492754rem;
+    font-size: 0.13043478rem;
   }
   .wisdom-introduction-synopsis {
     width: 7.82608696rem;
@@ -296,7 +296,7 @@
   .wisdom-introduction-banner .content .join-me {
     line-height: 0.40816327rem;
     width: 1.44897959rem;
-    font-size: 0.20408163rem;
+    font-size: 0.18367347rem;
   }
   .wisdom-introduction-synopsis {
     width: 8.57142857rem;
@@ -378,7 +378,7 @@
     left: 0;
     line-height: 0.42666667rem;
     width: 1.44rem;
-    font-size: 0.26666667rem;
+    font-size: 0.24rem;
   }
   .wisdom-introduction-synopsis {
     width: 9.38666667rem;

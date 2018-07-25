@@ -519,6 +519,9 @@ footer .copyright a {
     margin-right: 50px;
     line-height: 60px;
   }
+  .header-fixed-list .list-skip .nav-a .second {
+    top: 60px;
+  }
   .header-fixed-list .search-input {
     right: 168px;
     width: 550px;

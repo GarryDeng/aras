@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/wisdom-introduction.css">
-    <link rel="stylesheet" href="style/wisdom-search.css">
-    <link rel="stylesheet" href="style/wisdom-service.css">
-    <title>智库服务介绍</title>
+    <link rel="stylesheet" href="style/bind-phone.css">
+    <title>修改绑定手机</title>
     <script src="js/rem.js"></script>
     <script src="js/jquery-1.7.2.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <!-- 首页外 另外种className whole-header-nav-->
+    <header class="whole-header-nav">
         <div class="header-fixed-list">
             <a href="./">
                 <img class="logo-pc" src="images/logo.png" alt="">
@@ -91,71 +90,84 @@
         })
     </script>
     <!-- wechat登錄頁面end -->
-    <div class="wisdom-introduction-banner">
-        <img class="banner" src="images/introduction-banner.jpg" alt="">
-        <div class="content">
-            <p class="china">
-                从设计出发，
-                <br/>打造智慧社区-智慧城市-智慧地球
-            </p>
-            <p class="en">
-                Starting from design,
-                <br/>build smart community - smart city - smart earth
-            </p>
-            <a class="join-me" href="">我要加入</a>
+    <div class="user-history-banner">
+        <img class="bg" src="images/user-history-banner.jpg" alt="">
+        <div class="user-head">
+            <img src="images/_user_.jpg" alt="">
         </div>
+        <div class="user-name">用户名</div>
     </div>
-    <div class="wisdom-search-list">
-        <ul class="clear">
+    <div class="user-history-nav">
+        <ul class="user-nav clear">
+            <!-- active为选中当前页 -->
             <li>
-                <a href="">智库简介</a>
+                <a href="user-history.html">提交记录</a>
             </li>
             <li class="active">
-                <a href="">服务介绍</a>
-            </li>
-            <li>
-                <a href="">院士专家</a>
-            </li>
-            <li>
-                <a href="">技术专家</a>
+                <a href="bind-phone.html">绑定手机</a>
             </li>
         </ul>
     </div>
-    <div class="wisdom-service-content">
-        <div class="content-text">
-            <div class="title">
-                <p class="china">智库定位</p>
-                <p class="en">Think-tank positioning</p>
+    <div class="bind-phone-number">
+        <form action="">
+            <h3 class="title">绑定手机</h3>
+            <div class="old-phone">
+                <input placeholder="请输入旧手机号码" type="text">
+                <p class="old-number">原绑定号码</p>
             </div>
-            <div class="details">
-                 ARAS智库自创建以来，逐渐成长为拥有十数位在智慧城市建设领域领军级的两院院士及近百位各专业工程技术专家的工作沟通及学术交流平台。
-                 促进智慧城市创建形成科学有效的方法论和价值观。希冀形成世界一流的、
-                 特色鲜明的智慧城市建设模式与范例，为创新国家和经济新常态提供刚性产能支撑，为城市病的解决和城市辅助决策，构建有力抓手。
+            <div class="send-phone">
+                <input placeholder="请输入手机号码" type="text">
             </div>
-        </div>
+            <div class="send-code">
+                <input placeholder="请输入短信验证码" type="text">
+                <p class="get-code">获取验证码</p>
+            </div>
+            <button class="bind-post" type="submit">绑定</button>
+        </form>
     </div>
-    <div class="wisdom-service-content" style="background-color: #ebebeb;">
-        <div class="clear content-text">
-            <div class="title">
-                <p class="china">服务内容</p>
-                <p class="en">Service content</p>
-            </div>
-            <div class="details">
-                在智慧城市、智慧建筑、智慧医院、智慧学校、智慧交通、智慧水利、智慧能源、智慧政务等数十个领域，ARAS智库为各方提供完整或专项的，贯穿项目生命周期的智慧化设计的规划、咨询、顾问、审查、评估等服务。
-            </div>
-        </div>
-    </div>
-    <div class="wisdom-service-content">
-        <div class="content-text">
-            <div class="title">
-                <p class="china">合作联系</p>
-                <p class="en">Coo&Con</p>
-            </div>
-            <div class="details">
-                寻求智库专家帮助与合作，或者您想加入ARAS智库，均可以直接与我们联系。
-            </div>
-        </div>
-    </div>
+    <script>
+        var _time = 180;
+        //请求验证码
+        $('.bind-phone-number .get-code').on('click', function () {
+            var _phoneNumber = $(".send-phone input").val();
+            var _this = $(this);
+            //判断请求的手机格式是否正确
+            if (!_phoneNumber || !phone(_phoneNumber)) {
+                return alert("手机格式错误！");
+            }
+            //判断是否短时间内重复请求
+            if (_this.text() != '获取验证码') return false;
+            //code here
+            //请求成功执行的code
+            var _countDown = setInterval(function () {
+                _time--;
+                if (_time === 0) {
+                    _this.text('获取验证码');
+                    _time = 180;
+                    return clearInterval(_countDown);
+                }
+                _this.text(_time + 's');
+            }, 1000);
+        });
+        //提交绑定前判断
+        $(".bind-post").on('click', function (ev) {
+            var _oldNumber = $(".old-phone input").val();
+            var _phoneNumber = $(".send-phone input").val();
+            var _code = $(".send-code input").val();
+            if (!_oldNumber || !phone(_oldNumber)) {
+                alert('旧号码格式错误');
+                return ev.preventDefault();
+            }
+            if (!_phoneNumber || !phone(_phoneNumber)) {
+                alert('新号码格式错误');
+                return ev.preventDefault();
+            }
+            if (!_code) {
+                alert('请输入验证码');
+                return ev.preventDefault();
+            }
+        });
+    </script>
     <!-- 底部start -->
     <footer>
         <div class="footer-common">
@@ -248,14 +260,5 @@
     <!-- 手机低栏导航end -->
 </body>
 <script src="js/common.js"></script>
-<script>
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() != 0) {
-            $(".header-fixed-list").css({ 'top': 0 })
-        } else {
-            $(".header-fixed-list").removeAttr("style");
-        }
-    })
-</script>
 
 </html>

@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style/swiper.min.css">
     <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/wisdom-introduction.css">
-    <link rel="stylesheet" href="style/wisdom-search.css">
-    <link rel="stylesheet" href="style/wisdom-service.css">
-    <title>智库服务介绍</title>
+    <link rel="stylesheet" href="style/about-us.css">
+    <title>智库简介</title>
     <script src="js/rem.js"></script>
     <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -60,10 +60,13 @@
             </div>
             <div class="login-register">
                 <!-- 已登录情况 -->
-                <!-- <a class="registed" href="bind-phone.html"><img src="images/register-white.png" alt=""></a> -->
-                <a href="javascript:wechatShow()">登录</a>
-                |
-                <a href="javascript:wechatShow()">注册</a>
+                <a class="registed" href="bind-phone.html">
+                    <img src="images/register-white.png" alt="">
+                </a>
+                <!-- 未登录情况 -->
+                <!-- <a href="javascript:wechatShow()">登录</a>
+                            |
+                            <a href="javascript:wechatShow()">注册</a> -->
             </div>
             <a class="phone-search-icon" style="display: none;" href="/phone-search.html">
                 <img src="images/search-white.png" alt="">
@@ -92,70 +95,113 @@
     </script>
     <!-- wechat登錄頁面end -->
     <div class="wisdom-introduction-banner">
-        <img class="banner" src="images/introduction-banner.jpg" alt="">
+        <img class="banner" src="images/about-us-banner.jpg" alt="">
         <div class="content">
             <p class="china">
-                从设计出发，
-                <br/>打造智慧社区-智慧城市-智慧地球
+                 ABOUT US
             </p>
             <p class="en">
-                Starting from design,
-                <br/>build smart community - smart city - smart earth
+                关于我们
             </p>
-            <a class="join-me" href="">我要加入</a>
+            <!-- <a class="join-me" href="">我要加入</a> -->
         </div>
     </div>
-    <div class="wisdom-search-list">
-        <ul class="clear">
-            <li>
-                <a href="">智库简介</a>
-            </li>
-            <li class="active">
-                <a href="">服务介绍</a>
-            </li>
-            <li>
-                <a href="">院士专家</a>
-            </li>
-            <li>
-                <a href="">技术专家</a>
-            </li>
-        </ul>
-    </div>
-    <div class="wisdom-service-content">
-        <div class="content-text">
-            <div class="title">
-                <p class="china">智库定位</p>
-                <p class="en">Think-tank positioning</p>
-            </div>
-            <div class="details">
-                 ARAS智库自创建以来，逐渐成长为拥有十数位在智慧城市建设领域领军级的两院院士及近百位各专业工程技术专家的工作沟通及学术交流平台。
-                 促进智慧城市创建形成科学有效的方法论和价值观。希冀形成世界一流的、
-                 特色鲜明的智慧城市建设模式与范例，为创新国家和经济新常态提供刚性产能支撑，为城市病的解决和城市辅助决策，构建有力抓手。
+    <div class="about-content-box">
+        <div class="content">
+            <h3 class="about-us-title">企业介绍</h3>
+            <div class="context">
+                 ARAS.中国于2016年2月挂牌成立，总部位于深圳，是一家以整合智慧城市建设资源、
+                 提供智慧城市建设解决方案为主的服务商。 ARAS.中国汇集了智慧城市建设领域最权威的院士、专家。
+                 在智慧城市顶层设计、楼宇、园区、社区、交通、水利、教育、医疗、政务等数十个领域，<br/><br/>
+                 ARAS.中国为政府、企业提供贯穿项目生命周期，从课题调研、顶层规划到设计实施、运营管理等综合服务，并已经获得多项国家软件著作权、专利。<br/><br/>
+                ARAS.中国将在“打造世界级智慧城市综合资源平台”的愿景之路上加速前行，依托深圳市建筑设计研究总院、C&Y开朴艺洲、华汇设计（HDD）等建筑设计院，
+                中国智慧城市建设投资联盟、深圳市智慧城市研究会等专业机构，以及智慧城市建设领域的设备供应商，进一步推动智慧城市产业发展，争创智慧城市建设领域第一品牌。
             </div>
         </div>
     </div>
-    <div class="wisdom-service-content" style="background-color: #ebebeb;">
-        <div class="clear content-text">
-            <div class="title">
-                <p class="china">服务内容</p>
-                <p class="en">Service content</p>
-            </div>
-            <div class="details">
-                在智慧城市、智慧建筑、智慧医院、智慧学校、智慧交通、智慧水利、智慧能源、智慧政务等数十个领域，ARAS智库为各方提供完整或专项的，贯穿项目生命周期的智慧化设计的规划、咨询、顾问、审查、评估等服务。
-            </div>
-        </div>
-    </div>
-    <div class="wisdom-service-content">
-        <div class="content-text">
-            <div class="title">
-                <p class="china">合作联系</p>
-                <p class="en">Coo&Con</p>
-            </div>
-            <div class="details">
-                寻求智库专家帮助与合作，或者您想加入ARAS智库，均可以直接与我们联系。
+    <div class="about-content-box" style="background-color: #ebebeb;">
+        <div class="content">
+            <h3 class="about-us-title">企业介绍</h3>
+            <div class="context">
+                 ARAS.中国于2016年2月挂牌成立，总部位于深圳，是一家以整合智慧城市建设资源、 提供智慧城市建设解决方案为主的服务商。 ARAS.中国汇集了智慧城市建设领域最权威的院士、专家。 在智慧城市顶层设计、楼宇、园区、社区、交通、水利、教育、医疗、政务等数十个领域，
+                <br/>
+                <br/> ARAS.中国为政府、企业提供贯穿项目生命周期，从课题调研、顶层规划到设计实施、运营管理等综合服务，并已经获得多项国家软件著作权、专利。
+                <br/>
+                <br/> ARAS.中国将在“打造世界级智慧城市综合资源平台”的愿景之路上加速前行，依托深圳市建筑设计研究总院、C&Y开朴艺洲、华汇设计（HDD）等建筑设计院， 中国智慧城市建设投资联盟、深圳市智慧城市研究会等专业机构，以及智慧城市建设领域的设备供应商，进一步推动智慧城市产业发展，争创智慧城市建设领域第一品牌。
             </div>
         </div>
     </div>
+    <!-- 滚动条简介start -->
+    <h3 class="about-us-title">发展历程</h3>
+    <div class="swiper-container-synopsis">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="">
+                    <span class="time">2017/04</span>
+                    <span class="context">加入小筑理智库的院士人数10。</span>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <span class="time">2017/04</span>
+                    <span class="context">与某某公司达成战略合作协议 本原设计研究中心</span>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <span class="time">2017/04</span>
+                    <span class="context">与某某公司达成战略合作协议 设计院</span>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <span class="time">2017/04</span>
+                    <span class="context">与某某公司达成战略合作协议 设计院</span>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <span class="time">2017/04</span>
+                    <span class="context">与某某公司达成战略合作协议 设计院</span>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <span class="time">2017/04</span>
+                    <span class="context">与某某公司达成战略合作协议 设计院</span>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <span class="time">2017/04</span>
+                    <span class="context">与某某公司达成战略合作协议 设计院</span>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-button-black"></div>
+        <!--左箭头-->
+        <div class="swiper-button-next swiper-button-black"></div>
+        <!--右箭头-->
+    </div>
+    <script>
+        var mySwiperSynopsis = new Swiper('.swiper-container-synopsis', {
+            autoplay: false,//可选选项，自动滑动
+            direction: 'vertical',
+            slidesPerView: 6,
+            // centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+                // bulletActiveClass: 'my-bullet-active',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+    <!-- 滚动条简介end -->
     <!-- 底部start -->
     <footer>
         <div class="footer-common">

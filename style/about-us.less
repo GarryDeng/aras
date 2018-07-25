@@ -1,0 +1,105 @@
+@import 'wisdom-search.less';
+@import 'wisdom-introduction.less';
+.about-content-box{
+    padding-bottom: 100px;
+    .content{
+        width: 1280px;
+        margin: 0 auto;
+    }
+    .context{
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+    .about-us-title{
+        padding-top: 80px;
+        padding-bottom: 120px;
+        &::before{
+            display: block;
+        }
+    }
+}
+.about-us-title{
+    position: relative;
+    line-height: 1.2em;
+    padding-top: 90px;
+    font-weight: normal;
+    font-size: 30px;
+    width: 1280px;
+    margin: 0 auto;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 24px;
+        background-color: #000;
+        left: 0;
+        bottom: 60px;
+        display: none;
+    }
+}
+@media screen and (max-width:1380px) {
+    .about-content-box{
+        padding-bottom: 86px;
+        .content{
+            width: 1080/138rem;
+        }
+        .context{
+            font-size: 20/75rem;
+        }
+        .about-us-title{
+            padding-top: 65px;
+            padding-bottom: 120px;
+        }
+    }
+    .about-us-title{
+        padding-top: 76px;
+        width: 1080/138rem;
+        &::before{
+            bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width:980px) {
+    .about-content-box{
+        padding-bottom: 66px;
+        .content{
+            width: 8.53061224rem;
+        }
+        .about-us-title{
+            padding-top: 65px;
+            padding-bottom: 92px;
+        }
+    }
+    .about-us-title{
+        padding-top: 76px;
+        width: 8.53061224rem;
+    }
+}
+@media screen and (max-width:750px) {
+    .wisdom-introduction-banner .content .en{
+        display: block;
+        font-size: 35/75rem;
+        line-height: 1.2em;
+    }
+    .about-content-box{
+        padding-bottom: 66/75rem;
+        .content{
+            width: 9.4rem;
+        }
+        .about-us-title{
+            padding-top: 40/75rem;
+            padding-bottom: 86/75rem;
+            font-size: 30/75rem;
+        }
+    }
+    .about-us-title{
+        padding-top: 52/75rem;
+        width: 9.4rem;
+        font-size: 30/75rem;
+        &::before{
+            bottom: 40/75rem;
+            height: 5/75rem;
+            width: 24/75rem;
+        }
+    }
+}

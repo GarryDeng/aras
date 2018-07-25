@@ -20,13 +20,18 @@
             </a>
             <div class="list-skip clear">
                 <div class="nav-a">
-                    <a href="">首页</a>
+                    <a href="./">首页</a>
                 </div>
                 <div class="nav-a">
-                    <a href="">智库</a>
+                    <a href="wisdom-search.html">智库</a>
+                    <div class="second">
+                        <a href="wisdom-introduction.html">智库简介</a>
+                        <a href="wisdom-service.html">服务咨询</a>
+                        <a href="wisdom-specialist.html">专家院士</a>
+                    </div>
                 </div>
                 <div class="nav-a">
-                    <a href="">解决方案</a>
+                    <a href="solution.html">解决方案</a>
                     <div class="second">
                         <a href="">解决方案1</a>
                         <a href="">解决方案1+2</a>
@@ -34,10 +39,10 @@
                     </div>
                 </div>
                 <div class="nav-a">
-                    <a href="">筑享慧万家</a>
+                    <a href="information-list.html">筑享慧万家</a>
                 </div>
                 <div class="nav-a">
-                    <a href="">关于我们</a>
+                    <a href="about-us.html">关于我们</a>
                 </div>
             </div>
             <div class="search-input search-focus">
@@ -53,7 +58,7 @@
             </div>
             <div class="login-register">
                 <!-- 已登录情况 -->
-                <!-- <a class="registed" href=""><img src="images/register-white.png" alt=""></a> -->
+                <!-- <a class="registed" href="bind-phone.html"><img src="images/register-white.png" alt=""></a> -->
                 <a href="javascript:wechatShow()">登录</a>
                 |
                 <a href="javascript:wechatShow()">注册</a>
@@ -200,21 +205,55 @@
     <footer>
         <div class="footer-common">
             <div class="nav-common clear">
-                <a href="">智库</a>
-                <a href="">解决方案</a>
-                <a href="">筑享慧万家</a>
-                <a href="">关于我们</a>
-                <a href="">意见反馈</a>
+                <a href="wisdom-search.html">智库</a>
+                <a href="solution.html">解决方案</a>
+                <a href="information-list.html">筑享慧万家</a>
+                <a href="about-us.html">关于我们</a>
+                <a href="join-us.html">意见反馈</a>
             </div>
             <div class="message-list clear">
                 <a class="public" href="javascript:">
                     <img src="images/er-code.png" alt="">
                 </a>
-                <a class="sina" href=""></a>
+                <a class="sina" href="javascript:"></a>
                 <a class="service" href="javascript:">
                     <img src="images/er-code.png" alt="">
                 </a>
             </div>
+            <!-- //新浪分享 -->
+            <script>
+                var title = "我是标题";
+                // 新浪分享
+                var sinaShare = [],
+                    nawest = [];
+                $('.footer-common .message-list a.sina').click(function () {
+                    var tex = title;
+                    sinaShare.sharetitle = tex + "@小筑理";//分享内容
+                    sinaShare.shareUrl = nawest;//分享显示图片
+                    share();
+                });
+                function share() {
+                    //d指的是window
+                    (function (s, d, e) {
+                        try { }
+                        catch (e) { }
+                        var f = 'http://v.t.sina.com.cn/share/share.php?',
+                            u = d.location.href,
+                            p = ['url=', e(u),
+                                '&title=', e(sinaShare.sharetitle), '' +
+                                '&appkey=2924220432',
+                                '&pic=', e(sinaShare.shareUrl)].join('');
+                        function a() {
+                            if (!window.open([f, p].join(''), 'mb',
+                                ['toolbar=0,status=0,resizable=1,width=620,height=450,left=',
+                                    (s.width - 620) / 2, ',top=', (s.height - 450) / 2]
+                                    .join(''))) u.href = [f, p].join('');
+                        };
+                        if (/Firefox/.test(navigator.userAgent)) { setTimeout(a, 0) } else { a() }
+                    })
+                        (screen, document, encodeURIComponent);
+                }
+            </script>
             <div class="message-common clear">
                 <div class="fl">
                     <p class="call-mail">
@@ -244,11 +283,11 @@
     <div class="phone-nav-header" style="display: none;">
         <div class="link">
             <!-- active为选中状态 -->
-            <a class="active" href="">首页</a>
-            <a href="">智库</a>
-            <a href="">解决方案</a>
-            <a href="">筑享汇</a>
-            <a href="">关于我们</a>
+            <a class="active" href="./">首页</a>
+            <a href="wisdom-search.html">智库</a>
+            <a href="solution.html">解决方案</a>
+            <a href="information-list.html">筑享汇</a>
+            <a href="about-us.html">关于我们</a>
         </div>
     </div>
     <!-- 手机低栏导航end -->
