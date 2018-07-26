@@ -110,7 +110,8 @@
 .user-post-history .list dd span:nth-child(4) {
   width: 35%;
   padding: 37px 0;
-  line-height: 30px;
+  line-height: 1.8em;
+  font-size: 12px;
 }
 .user-post-history .list dt span:nth-child(5),
 .user-post-history .list dd span:nth-child(5) {

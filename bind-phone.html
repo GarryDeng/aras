@@ -93,7 +93,7 @@
     <div class="user-history-banner">
         <img class="bg" src="images/user-history-banner.jpg" alt="">
         <div class="user-head">
-            <img src="images/_user_.jpg" alt="">
+            <img src="images/co.jpg" alt="">
         </div>
         <div class="user-name">用户名</div>
     </div>
@@ -169,49 +169,49 @@
                 <a href="about-us.html">关于我们</a>
                 <a href="join-us.html">意见反馈</a>
             </div>
-           v class="message-list clear">
-            <a class="public" href="javascript:">
-                <img src="images/er-code.png" alt="">
-            </a>
-            <a class="sina" href="javascript:"></a>
-            <a class="service" href="javascript:">
-                <img src="images/er-code.png" alt="">
-            </a>
-        </div>
-        <!-- //新浪分享 -->
-        <script>
-            var title = "我是标题";
-            // 新浪分享
-            var sinaShare = [],
-                nawest = [];
-            $('.footer-common .message-list a.sina').click(function () {
-                var tex = title;
-                sinaShare.sharetitle = tex + "@小筑理";//分享内容
-                sinaShare.shareUrl = nawest;//分享显示图片
-                share();
-            });
-            function share() {
-                //d指的是window
-                (function (s, d, e) {
-                    try { }
-                    catch (e) { }
-                    var f = 'http://v.t.sina.com.cn/share/share.php?',
-                        u = d.location.href,
-                        p = ['url=', e(u),
-                            '&title=', e(sinaShare.sharetitle), '' +
-                            '&appkey=2924220432',
-                            '&pic=', e(sinaShare.shareUrl)].join('');
-                    function a() {
-                        if (!window.open([f, p].join(''), 'mb',
-                            ['toolbar=0,status=0,resizable=1,width=620,height=450,left=',
-                                (s.width - 620) / 2, ',top=', (s.height - 450) / 2]
-                                .join(''))) u.href = [f, p].join('');
-                    };
-                    if (/Firefox/.test(navigator.userAgent)) { setTimeout(a, 0) } else { a() }
-                })
-                    (screen, document, encodeURIComponent);
-            }
-        </script>
+            <div class="message-list clear">
+                <a class="public" href="javascript:">
+                    <img src="images/er-code.png" alt="">
+                </a>
+                <a class="sina" href="javascript:"></a>
+                <a class="service" href="javascript:">
+                    <img src="images/er-code.png" alt="">
+                </a>
+            </div>
+            <!-- //新浪分享 -->
+            <script>
+                var title = "我是标题";
+                // 新浪分享
+                var sinaShare = [],
+                    nawest = [];
+                $('.footer-common .message-list a.sina').click(function () {
+                    var tex = title;
+                    sinaShare.sharetitle = tex + "@小筑理";//分享内容
+                    sinaShare.shareUrl = nawest;//分享显示图片
+                    share();
+                });
+                function share() {
+                    //d指的是window
+                    (function (s, d, e) {
+                        try { }
+                        catch (e) { }
+                        var f = 'http://v.t.sina.com.cn/share/share.php?',
+                            u = d.location.href,
+                            p = ['url=', e(u),
+                                '&title=', e(sinaShare.sharetitle), '' +
+                                '&appkey=2924220432',
+                                '&pic=', e(sinaShare.shareUrl)].join('');
+                        function a() {
+                            if (!window.open([f, p].join(''), 'mb',
+                                ['toolbar=0,status=0,resizable=1,width=620,height=450,left=',
+                                    (s.width - 620) / 2, ',top=', (s.height - 450) / 2]
+                                    .join(''))) u.href = [f, p].join('');
+                        };
+                        if (/Firefox/.test(navigator.userAgent)) { setTimeout(a, 0) } else { a() }
+                    })
+                        (screen, document, encodeURIComponent);
+                }
+            </script>
             <div class="message-common clear">
                 <div class="fl">
                     <p class="call-mail">

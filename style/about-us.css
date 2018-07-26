@@ -11,6 +11,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 24.5px;
 }
 .wisdom-search-input .search-input .send-input {
   display: block;
@@ -86,7 +87,7 @@
   font-size: 20px;
 }
 .wisdom-search-thinktak .headline .look-more {
-  font-size: 20px;
+  font-size: 14px;
   color: #000;
 }
 .wisdom-search-thinktak .wisdom-specialist {
@@ -124,7 +125,7 @@
   color: #000;
   right: 22px;
   bottom: 18px;
-  opacity: .5;
+  opacity: .4;
   font-size: 14px;
   z-index: 9;
   transition: all .3s;
@@ -222,6 +223,9 @@
   opacity: .4;
 }
 @media screen and (max-width: 1380px) {
+  .wisdom-search-input .search-input {
+    margin-top: 0.17753623rem;
+  }
   .wisdom-search-input .search-input .send-input {
     width: 5.02898551rem;
     line-height: 0.2173913rem;
@@ -326,6 +330,9 @@
   }
 }
 @media screen and (max-width: 980px) {
+  .wisdom-search-input .search-input {
+    margin-top: 0.25rem;
+  }
   .wisdom-search-input .search-input .send-input {
     width: 7.08163265rem;
     line-height: 0.30612245rem;
@@ -627,7 +634,7 @@
   text-align: center;
   color: #000;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #FFF;
 }
 .wisdom-introduction-synopsis {
@@ -764,7 +771,7 @@
   .wisdom-introduction-banner .content .join-me {
     line-height: 0.28985507rem;
     width: 1.02898551rem;
-    font-size: 0.14492754rem;
+    font-size: 0.13043478rem;
   }
   .wisdom-introduction-synopsis {
     width: 7.82608696rem;
@@ -866,7 +873,7 @@
   .wisdom-introduction-banner .content .join-me {
     line-height: 0.40816327rem;
     width: 1.44897959rem;
-    font-size: 0.20408163rem;
+    font-size: 0.18367347rem;
   }
   .wisdom-introduction-synopsis {
     width: 8.57142857rem;
@@ -948,7 +955,7 @@
     left: 0;
     line-height: 0.42666667rem;
     width: 1.44rem;
-    font-size: 0.26666667rem;
+    font-size: 0.24rem;
   }
   .wisdom-introduction-synopsis {
     width: 9.38666667rem;
@@ -1037,6 +1044,9 @@
 .about-content-box .about-us-title::before {
   display: block;
 }
+.about-content-box:nth-child(2n) {
+  background-color: #ebebeb;
+}
 .about-us-title {
   position: relative;
   line-height: 1.2em;
@@ -1062,9 +1072,6 @@
   }
   .about-content-box .content {
     width: 7.82608696rem;
-  }
-  .about-content-box .context {
-    font-size: 0.26666667rem;
   }
   .about-content-box .about-us-title {
     padding-top: 65px;

@@ -32,11 +32,11 @@
 }
 .wisdom-search-thinktak .page-total a.prev {
   background: url("../images/prev.png") no-repeat center;
-  background-size: 32px auto;
+  background-size: 26px auto;
 }
 .wisdom-search-thinktak .page-total a.next {
   background: url("../images/next.png") no-repeat center;
-  background-size: 32px auto;
+  background-size: 26px auto;
 }
 @media screen and (max-width: 1380px) {
   .wisdom-search-thinktak .wisdom-specialist li:nth-child(4n) {

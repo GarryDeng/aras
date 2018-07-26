@@ -147,7 +147,9 @@
             <!-- 资讯列表start -->
             <!-- 资讯1 -->
             <a href="" class="information-unit">
-                <img class="information-img" src="images/information-list.jpg" alt="">
+                <div class="information-img">
+                    <img src="images/information-list.jpg" alt="">
+                </div>
                 <div class="context">
                     <h3>物联网基本安全的三个简单步骤</h3>
                     <p class="list-name">文章分类名称</p>
@@ -161,7 +163,9 @@
             </a>
             <!-- 资讯2 -->
             <a href="" class="information-unit">
-                <img class="information-img" src="images/information-list.jpg" alt="">
+                <div class="information-img">
+                    <img src="images/information-list.jpg" alt="">
+                </div>
                 <div class="context">
                     <h3>物联网基本安全的三个简单步骤</h3>
                     <p class="list-name">文章分类名称</p>
@@ -175,7 +179,9 @@
             </a>
             <!-- 资讯3 -->
             <a href="" class="information-unit">
-                <img class="information-img" src="images/information-list.jpg" alt="">
+                <div class="information-img">
+                    <img src="images/information-list.jpg" alt="">
+                </div>
                 <div class="context">
                     <h3>物联网基本安全的三个简单步骤</h3>
                     <p class="list-name">文章分类名称</p>
@@ -189,7 +195,9 @@
             </a>
             <!-- 资讯4 -->
             <a href="" class="information-unit">
-                <img class="information-img" src="images/information-list.jpg" alt="">
+                <div class="information-img">
+                    <img src="images/information-list.jpg" alt="">
+                </div>
                 <div class="context">
                     <h3>物联网基本安全的三个简单步骤</h3>
                     <p class="list-name">文章分类名称</p>
@@ -358,9 +366,9 @@
 <script>
     $(window).on('scroll', function () {
         if ($(this).scrollTop() != 0) {
-            $(".header-fixed-list").css({ 'top': 0 })
+            $(".header-fixed-list").addClass('add-head-before');
         } else {
-            $(".header-fixed-list").removeAttr("style");
+            $(".header-fixed-list").removeClass('add-head-before');
         }
     })
 </script>
