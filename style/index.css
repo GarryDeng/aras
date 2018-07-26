@@ -78,10 +78,6 @@
   width: 40px;
   margin-left: -20px;
 }
-.offer-index .classify-index li:hover .english,
-.offer-index .classify-index li:hover .china {
-  transform: scale(1.08);
-}
 .offer-index .classify-index li img {
   margin: 60px auto;
   display: block;
@@ -96,8 +92,6 @@
   text-align: center;
   height: 82px;
   padding-top: 12px;
-  transition: transform .3s;
-  transform: scale(1);
 }
 .offer-index .classify-index li .china {
   line-height: 74px;
@@ -105,8 +99,6 @@
   color: #000;
   font-size: 20px;
   position: relative;
-  transition: transform .3s;
-  transform: scale(1);
 }
 .offer-index .classify-index li .china::after {
   content: "";
