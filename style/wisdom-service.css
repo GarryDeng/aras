@@ -1,6 +1,9 @@
 .wisdom-service-content {
   background-color: #FFF;
 }
+.wisdom-service-content:nth-child(2n-1) {
+  background-color: #ebebeb;
+}
 .wisdom-service-content .content-text {
   width: 1280px;
   margin: 0 auto;

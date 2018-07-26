@@ -134,7 +134,7 @@
             </div>
         </div>
     </div>
-    <div class="wisdom-service-content" style="background-color: #ebebeb;">
+    <div class="wisdom-service-content">
         <div class="clear content-text">
             <div class="title">
                 <p class="china">服务内容</p>
@@ -251,9 +251,9 @@
 <script>
     $(window).on('scroll', function () {
         if ($(this).scrollTop() != 0) {
-            $(".header-fixed-list").css({ 'top': 0 })
+            $(".header-fixed-list").addClass('add-head-before');
         } else {
-            $(".header-fixed-list").removeAttr("style");
+            $(".header-fixed-list").removeClass('add-head-before');
         }
     })
 </script>

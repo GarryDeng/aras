@@ -194,7 +194,10 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-        })
+        });
+        $(".swiper-container-synopsis .swiper-slide").hover(function () {
+            $(this).addClass("swiper-slide-active").siblings().removeClass("swiper-slide-active");
+        });
     </script>
     <!-- 滚动条简介end -->
     <!-- 底部start -->
@@ -292,9 +295,9 @@
 <script>
     $(window).on('scroll', function () {
         if ($(this).scrollTop() != 0) {
-            $(".header-fixed-list").css({ 'top': 0 })
+            $(".header-fixed-list").addClass('add-head-before');
         } else {
-            $(".header-fixed-list").removeAttr("style");
+            $(".header-fixed-list").removeClass('add-head-before');
         }
     })
 </script>

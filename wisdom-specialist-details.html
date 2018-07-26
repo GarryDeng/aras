@@ -354,9 +354,9 @@
 <script>
     $(window).on('scroll', function () {
         if ($(this).scrollTop() != 0) {
-            $(".header-fixed-list").css({ 'top': 0 })
+            $(".header-fixed-list").addClass('add-head-before');
         } else {
-            $(".header-fixed-list").removeAttr("style");
+            $(".header-fixed-list").removeClass('add-head-before');
         }
     })
 </script>

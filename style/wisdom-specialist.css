@@ -38,15 +38,6 @@
   background: url("../images/next.png") no-repeat center;
   background-size: 26px auto;
 }
-@media screen and (max-width: 1380px) {
-  .wisdom-search-thinktak .wisdom-specialist li:nth-child(4n) {
-    margin-right: 0.95652174rem;
-    display: block;
-  }
-  .wisdom-search-thinktak .wisdom-specialist li:nth-child(3n) {
-    margin-right: 0;
-  }
-}
 @media screen and (max-width: 980px) {
   .wisdom-search-thinktak .wisdom-specialist li:nth-child(n) {
     margin-right: 2.06122449rem;

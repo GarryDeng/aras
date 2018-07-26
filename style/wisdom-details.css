@@ -119,6 +119,7 @@
   height: 34px;
   border: 1px solid #000;
   z-index: 9;
+  right: 0;
 }
 .wisdom-specialist-body .specialist-details-title .details-swiper-content::before,
 .wisdom-specialist-body .specialist-details-title .details-swiper-content::after {
@@ -184,10 +185,21 @@
 }
 .wisdom-specialist-body .specialist-details-title .history-list li,
 .wisdom-specialist-body .specialist-details-title .honor li {
-  list-style-type: disc;
   margin-top: 32px;
   margin-left: 20px;
   font-size: 16px;
+  position: relative;
+}
+.wisdom-specialist-body .specialist-details-title .history-list li::before,
+.wisdom-specialist-body .specialist-details-title .honor li::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #000;
+  border-radius: 50%;
+  left: -20px;
+  top: 18px;
 }
 .wisdom-specialist-body .specialist-details-title .history-list li p,
 .wisdom-specialist-body .specialist-details-title .honor li p {
@@ -214,6 +226,9 @@
   font-size: 16px;
   padding-left: 60px;
 }
+.wisdom-specialist-body .specialist-details-title .honor li::before {
+  top: 9px;
+}
 @media screen and (max-width: 1380px) {
   .wisdom-specialist-body {
     width: 7.82608696rem;
@@ -235,6 +250,7 @@
   }
   .wisdom-specialist-body .user-data .position p {
     line-height: 0.27536232rem;
+    font-size: 14px;
     width: 2.49275362rem;
   }
   .wisdom-specialist-body .user-data .position p:nth-child(10),
@@ -502,6 +518,9 @@
     font-size: 14px;
     width: 5.36231884rem;
   }
+  .wisdom-specialist-body .specialist-details-title .history-list li::before {
+    top: 0.12244898rem;
+  }
   .wisdom-specialist-body .specialist-details-title .honor {
     padding-bottom: 0.57971014rem;
   }
@@ -625,18 +644,6 @@
     font-size: 0.21333333rem;
     padding-left: 0.36rem;
     position: relative;
-    list-style-type: none;
-  }
-  .wisdom-specialist-body .specialist-details-title .history-list li::before,
-  .wisdom-specialist-body .specialist-details-title .honor li::before {
-    content: "";
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: #000;
-    border-radius: 50%;
-    left: -0.32rem;
-    top: 0.18666667rem;
   }
   .wisdom-specialist-body .specialist-details-title .history-list li p,
   .wisdom-specialist-body .specialist-details-title .honor li p {
