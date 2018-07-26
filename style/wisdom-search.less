@@ -170,9 +170,22 @@
                     background: rgba(0, 0, 0, .8);
                     top: 0;
                 }
+                .scheme{
+                    img{
+                        transform: scale(1.08);
+                    }
+                }
             }
             .scheme{
                 height: 302px;
+                position: relative;
+                overflow: hidden;
+                img{
+                    display: block;
+                    width: 100%;
+                    transform: scale(1);
+                    transition: 0.6s transform cubic-bezier(0.165, 0.84, 0.44, 1);
+                }
             }
             .scheme-text{
                 line-height: 130px;
@@ -260,35 +273,35 @@
                     font-size: 20/138rem;
                 }
             }
-            .look-more{
-                font-size: 20/138rem;
-            }
+            // .look-more{
+            //     font-size: 14px;
+            // }
         }
         .wisdom-specialist{
             width: 1080/138rem;
             margin-top: 24/138rem;
             padding-bottom: 80/138rem;
             li{
-                width: 272/138rem;
-                margin-right: 132/138rem;
-                height: 432/138rem;
+                width: 272/138*0.88rem;
+                margin-right: .28rem;
+                height: 432/138*0.88rem;
                 .user{
-                    height: 322/138rem;
+                    height: 322/138*0.88rem;
                 }
                 .scheme{
-                    height: 302/138rem;
+                    height: 302/138*0.88rem;
                 }
                 .building{
-                    height: 274/138rem;
+                    height: 274/138*0.88rem;
                 }
-                &:nth-child(3){
-                    margin-right: 0;
-                }
-                &:nth-child(4){
-                    display: none;
-                }
+                // &:nth-child(3){
+                //     margin-right: 0;
+                // }
+                // &:nth-child(4){
+                //     display: none;
+                // }
                 .more{
-                    height: 110/138rem;
+                    height: 110/138*0.88rem;
                     a{
                         right: 22/138rem;
                         bottom: 18/138rem;
@@ -296,11 +309,11 @@
                     }
                 }
                 .content-text{
-                    top: 322/138rem;
+                    top: 322/138*0.88rem;
                     padding: 0 12/138rem;
                     .name{
                         font-size: 24/138rem;
-                        line-height: 70/138rem;
+                        line-height: 0.35rem;
                     }
                     .college{
                         font-size: 16/138rem;
@@ -309,12 +322,12 @@
                         font-size: 16/138rem;
                     }
                     .honor{
-                        margin-top: 40/138rem;
+                        margin-top: 0.089855rem;
                         line-height: 12*2.4/138rem;
                     }
                 }
                 .scheme-text{
-                    line-height: 130/138rem;
+                    line-height: 130/138*0.88rem;
                     font-size: 22/138rem;
                 }
                 .building-content{
@@ -376,9 +389,9 @@
                     font-size: 20/98rem;
                 }
             }
-            .look-more{
-                font-size: 20/98rem;
-            }
+            // .look-more{
+            //     font-size: 20/98rem;
+            // }
         }
         .wisdom-specialist{
             width: 748/98rem;
