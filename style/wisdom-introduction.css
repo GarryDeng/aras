@@ -106,8 +106,8 @@
 .swiper-container-synopsis .swiper-slide::before {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #000;
   left: 0;
@@ -128,9 +128,9 @@
   width: 366px;
 }
 .swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
-  width: 18px;
-  height: 18px;
-  margin-top: -9px;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
   margin-left: 0;
 }
 .swiper-container-synopsis .swiper-slide.swiper-slide-active span {

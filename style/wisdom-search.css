@@ -173,15 +173,18 @@
   background: rgba(0, 0, 0, 0.8);
   top: 0;
 }
-.wisdom-search-thinktak .wisdom-specialist li:hover .scheme img {
+.wisdom-search-thinktak .wisdom-specialist li:hover .scheme img,
+.wisdom-search-thinktak .wisdom-specialist li:hover .building img {
   transform: scale(1.08);
 }
-.wisdom-search-thinktak .wisdom-specialist li .scheme {
+.wisdom-search-thinktak .wisdom-specialist li .scheme,
+.wisdom-search-thinktak .wisdom-specialist li .building {
   height: 302px;
   position: relative;
   overflow: hidden;
 }
-.wisdom-search-thinktak .wisdom-specialist li .scheme img {
+.wisdom-search-thinktak .wisdom-specialist li .scheme img,
+.wisdom-search-thinktak .wisdom-specialist li .building img {
   display: block;
   width: 100%;
   transform: scale(1);
@@ -232,6 +235,12 @@
   border-top: 1px solid #000;
   position: absolute;
   opacity: .4;
+  transform: scaleY(0.33333);
+}
+.wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock .fr {
+  padding-left: 22px;
+  background: url("../images/read.png") no-repeat left center;
+  background-size: 16px auto;
 }
 @media screen and (max-width: 1380px) {
   .wisdom-search-input .search-input {
@@ -297,7 +306,7 @@
   }
   .wisdom-search-thinktak .wisdom-specialist li .content-text .name {
     font-size: 0.17391304rem;
-    line-height: 0.35rem;
+    line-height: 0.4rem;
   }
   .wisdom-search-thinktak .wisdom-specialist li .content-text .college {
     font-size: 0.11594203rem;
@@ -314,21 +323,21 @@
     font-size: 0.15942029rem;
   }
   .wisdom-search-thinktak .wisdom-specialist li .building-content {
-    padding: 0 0.13043478rem;
+    padding: 0 0.11478261rem;
   }
   .wisdom-search-thinktak .wisdom-specialist li .building-content .title {
     font-size: 0.15942029rem;
-    line-height: 0.43478261rem;
+    line-height: 0.3826087rem;
   }
   .wisdom-search-thinktak .wisdom-specialist li .building-content .details {
     font-size: 12px;
-    height: 0.33333333rem;
-    line-height: 0.17391304rem;
+    height: 0.29333333rem;
+    line-height: 0.15304348rem;
   }
   .wisdom-search-thinktak .wisdom-specialist li .building-content .date-lock {
-    margin-top: 0.10144928rem;
+    margin-top: 0.08927536rem;
     font-size: 12px;
-    line-height: 0.27536232rem;
+    line-height: 0.24231884rem;
   }
 }
 @media screen and (max-width: 980px) {

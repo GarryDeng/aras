@@ -170,13 +170,13 @@
                     background: rgba(0, 0, 0, .8);
                     top: 0;
                 }
-                .scheme{
+                .scheme,.building{
                     img{
                         transform: scale(1.08);
                     }
                 }
             }
-            .scheme{
+            .scheme,.building{
                 height: 302px;
                 position: relative;
                 overflow: hidden;
@@ -230,6 +230,12 @@
                         border-top: 1px solid #000;
                         position: absolute;
                         opacity: .4;
+                        transform: scaleY(.33333);
+                    }
+                    .fr{
+                        padding-left: 22px;
+                        background: url("../images/read.png") no-repeat left center;
+                        background-size: 16px auto;
                     }
                 }
             }
@@ -313,7 +319,7 @@
                     padding: 0 12/138rem;
                     .name{
                         font-size: 24/138rem;
-                        line-height: 0.35rem;
+                        line-height: 0.4rem;
                     }
                     .college{
                         font-size: 16/138rem;
@@ -331,20 +337,20 @@
                     font-size: 22/138rem;
                 }
                 .building-content{
-                    padding: 0 18/138rem;
+                    padding: 0 18/138*0.88rem;
                     .title{
                         font-size: 22/138rem;
-                        line-height: 60/138rem;
+                        line-height: 60/138*0.88rem;
                     }
                     .details{
                         font-size: 12px;
-                        height: 46/138rem;
-                        line-height: 24/138rem;
+                        height: 46/138*0.88rem;
+                        line-height: 24/138*0.88rem;
                     }
                     .date-lock{
-                        margin-top: 14/138rem;
+                        margin-top: 14/138*0.88rem;
                         font-size: 12px;
-                        line-height: 38/138rem;
+                        line-height: 38/138*0.88rem;
                     }
                 }
             }
