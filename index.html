@@ -120,7 +120,10 @@
     </div>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
-            autoplay: true,//可选选项，自动滑动
+            speed: 1000,
+            autoplay: {
+                delay: 5000,//1秒切换一次
+            },
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -188,28 +191,36 @@
         <ul class="information-index clear">
             <li>
                 <a href="">
-                    <img src="images/_img_.jpg" alt="">
+                    <div class="head-img">
+                        <img src="images/_img_.jpg" alt="">
+                    </div>
                     <p class="time-date">05 MAY 2018</p>
                     <p class="content">中国首座“双标准，三认证”绿色· 智慧超高层建筑标杆——达实......</p>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/_img_.jpg" alt="">
+                    <div class="head-img">
+                        <img src="images/_img_.jpg" alt="">
+                    </div>
                     <p class="time-date">05 MAY 2018</p>
                     <p class="content">中国首座“双标准，三认证”绿色· 智慧超高层建筑标杆——达实......</p>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/_img_.jpg" alt="">
+                    <div class="head-img">
+                        <img src="images/_img_.jpg" alt="">
+                    </div>
                     <p class="time-date">05 MAY 2018</p>
                     <p class="content">中国首座“双标准，三认证”绿色· 智慧超高层建筑标杆——达实......</p>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/_img_.jpg" alt="">
+                    <div class="head-img">
+                        <img src="images/_img_.jpg" alt="">
+                    </div>
                     <p class="time-date">05 MAY 2018</p>
                     <p class="content">中国首座“双标准，三认证”绿色· 智慧超高层建筑标杆——达实......</p>
                 </a>
@@ -453,9 +464,9 @@
 <script>
     $(window).on('scroll',function(){
         if($(this).scrollTop()!=0){
-            $(".header-fixed-list").css({'top':0})
+            $(".header-fixed-list").parent().addClass('whole-header-nav');
         }else{
-            $(".header-fixed-list").removeAttr("style");
+            $(".header-fixed-list").parent().removeClass('whole-header-nav');
         }
     })
 </script>

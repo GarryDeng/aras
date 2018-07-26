@@ -74,7 +74,7 @@
             }
             &:hover{
                 img{
-                    transform: scale(1.15);
+                    transform: scale(1);
                 }
                 .china{
                     &::after{
@@ -82,7 +82,7 @@
                         margin-left: -20px;
                     }
                 }
-                .english{
+                .english,.china{
                     transform: scale(1.08);
                 }
             }
@@ -92,7 +92,7 @@
                 width: 56px;
                 height: 56px;
                 transition: all .3s;
-                transform: scale(1);
+                transform: scale(0.92);
             }
             .english{
                 color: #000;
@@ -109,6 +109,8 @@
                 color: #000;
                 font-size: 20px;
                 position: relative;
+                transition: transform .3s;
+                transform: scale(1);
                 &::after{
                     content: "";
                     position: absolute;
@@ -136,10 +138,23 @@
             &:nth-child(4){
                 display: none;
             }
-            img{
+            .head-img{
+                position: relative;
                 width: 340px;
                 height: 340px;
+                overflow: hidden;
+            }
+            img{
+                width: 100%;
+                height: 100%;
                 display: block; 
+                transform: scale(1);
+                transition: .6s transform cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+            &:hover{
+                img{
+                    transform: scale(1.08);
+                }
             }
             p{
                 background-color: #FFF;
@@ -268,6 +283,14 @@
             }
             .icon{
                 float: left;
+                transform: scale(1);
+                transition: transform .3s;
+            }
+            &:hover{
+                .icon{
+                    transform: scale(1.08);
+                    transition: transform .3s;
+                }
             }
             .content{
                 float: right;
@@ -385,13 +408,14 @@
     }
     .offer-index{
         width: 1080/138rem;
+        overflow: hidden;
         .english-china{
-            line-height: 200/138rem;
+            line-height: 200*0.8px;
             .fl{
-                font-size: 34/138rem;
+                font-size: 34*0.8px;
             }
             .fr{
-                font-size: 18/138rem;
+                font-size: 18*0.8px;
             }
         }
         .classify-index{
@@ -424,9 +448,11 @@
                 width: 340/138rem;
                 padding-bottom: 24/138rem;
                 box-shadow: 2px 2px 7px -1px #ababab;
-                img{
+                .head-img{
+                    position: relative;
                     width: 340/138rem;
                     height: 340/138rem;
+                    overflow: hidden;
                 }
                 p{
                     padding: 0 24/138rem;
@@ -444,7 +470,7 @@
             }
         }
         .get-more{
-            font-size: 20/138rem;
+            font-size: 18/138rem;
             margin-top: 56/138rem;
             padding-bottom: 76/138rem;
         }
@@ -479,25 +505,29 @@
                 bottom: 0;
                 left: 434/138rem;
                 width: 110/138rem;
-                font-size: 20/138rem;
-                line-height: 34/138rem;
+                font-size: 18/138rem;
+                line-height: 30/138rem;
             }
             .swiper-button-prev,.swiper-button-next{
-                height: 34/138rem;
-                width: 34/138rem;
+                height: 30/138rem;
+                width: 30/138rem;
                 background-size: 8/138rem auto;
             }
             .swiper-button-prev{
                 left: 400/138rem;
             }
             .swiper-button-next{
-                left: (400+110+34)/138rem;
+                left: (400+110+30)/138rem;
             }
         }
         .service-index{
             padding-bottom: 100/138rem;
+            width: 10rem;
+            left: -.9rem;
+            position: relative;
             li{
-                width: 360/138rem;
+                // width: 360/138rem;
+                width: 31.7%;
                 margin-right: 0;
                 padding: 0;
                 .icon{

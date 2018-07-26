@@ -145,7 +145,8 @@ header.whole-header-nav .header-fixed-list::before {
   top: 0;
   height: 70px;
   position: fixed;
-  box-shadow: 0 0px 12px 1px #FFF;
+  box-shadow: 0 0px 8px 1px #989898;
+  z-index: 0;
 }
 .header-fixed-list {
   max-width: 1400px;
@@ -161,6 +162,17 @@ header.whole-header-nav .header-fixed-list::before {
   z-index: 999;
   transition: all .3s;
 }
+.header-fixed-list::before {
+  content: "";
+  left: 0;
+  right: 0;
+  background-color: #000;
+  top: 0;
+  height: 0;
+  position: fixed;
+  box-shadow: 0 0 0 0 #989898;
+  transition: box-shadow 3s;
+}
 .header-fixed-list .logo-pc {
   height: auto;
   width: 120px;
@@ -170,18 +182,21 @@ header.whole-header-nav .header-fixed-list::before {
   display: block;
 }
 .header-fixed-list .list-skip {
-  float: left;
-  margin-left: 454px;
+  text-align: center;
+  font-size: 0;
 }
 .header-fixed-list .list-skip .nav-a {
-  font-size: 14px;
   margin-right: 82px;
-  line-height: 70px;
-  float: left;
+  margin-top: -1em;
+  vertical-align: top;
+  display: inline-block;
+  height: 70px;
   position: relative;
+  -webkit-text-size-adjust: none;
 }
 .header-fixed-list .list-skip .nav-a a {
   color: #FFF;
+  font-size: 14px;
 }
 .header-fixed-list .list-skip .nav-a:last-child {
   margin-right: 0;
@@ -280,6 +295,7 @@ header.whole-header-nav .header-fixed-list::before {
 }
 .header-fixed-list .search-input.search-focus {
   width: 30px;
+  background-color: transparent;
 }
 .header-fixed-list .search-input.search-focus input,
 .header-fixed-list .search-input.search-focus .close-white,
@@ -296,10 +312,12 @@ header.whole-header-nav .header-fixed-list::before {
   font-size: 14px;
   position: absolute;
   right: 52px;
+  top: 0;
 }
 .header-fixed-list .login-register a {
   color: #FFF;
   padding: 0 5px;
+  margin: 0 10px;
 }
 .header-fixed-list .login-register a.registed {
   padding: 0;
@@ -313,6 +331,7 @@ header.whole-header-nav .header-fixed-list::before {
 }
 .header-fixed-list .login-register a.registed img {
   width: 100%;
+  display: block;
 }
 footer {
   background-color: #000;
@@ -343,10 +362,10 @@ footer .footer-common .message-list {
 footer .footer-common .message-list a {
   display: block;
   float: left;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   background: url("../images/wechat-witch.png") no-repeat center;
-  background-size: 18px auto;
+  background-size: 24px auto;
   margin: 0 16px;
   position: relative;
 }
@@ -357,7 +376,7 @@ footer .footer-common .message-list a.sina {
 footer .footer-common .message-list a img {
   display: none;
   position: absolute;
-  bottom: 30px;
+  bottom: 32px;
   left: 50%;
   width: 100px;
   height: 100px;
@@ -379,7 +398,7 @@ footer .footer-common .message-list a::before {
   border-top: 12px solid #FFF;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  bottom: 20px;
+  bottom: 24px;
   left: 50%;
   margin-left: -8px;
 }
@@ -503,27 +522,39 @@ footer .copyright a {
   color: #000;
 }
 @media screen and (max-width: 1380px) {
+  header.whole-header-nav {
+    height: 60px;
+    position: relative;
+  }
+  header.whole-header-nav .header-fixed-list::before {
+    height: 60px;
+  }
   .header-fixed-list {
     max-width: 1080px;
     height: 60px;
     line-height: 60px;
   }
+  .header-fixed-list .login-register {
+    right: 0.6122449rem;
+  }
+  .header-fixed-list .login-register a.registed {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+  }
   .header-fixed-list .logo-pc {
     width: 100px;
     top: 16px;
   }
-  .header-fixed-list .list-skip {
-    margin-left: 304px;
-  }
   .header-fixed-list .list-skip .nav-a {
     margin-right: 50px;
-    line-height: 60px;
+    height: 60px;
   }
   .header-fixed-list .list-skip .nav-a .second {
     top: 60px;
   }
   .header-fixed-list .search-input {
-    right: 168px;
+    right: 220px;
     width: 550px;
   }
   .header-fixed-list .search-input .white,
@@ -541,7 +572,7 @@ footer .copyright a {
     padding-bottom: 0.828125rem;
   }
   footer .footer-common .nav-common a {
-    width: 120px;
+    width: 1.234375rem;
   }
   footer .footer-common .message-list {
     top: 1.015625rem;
@@ -572,21 +603,6 @@ footer .copyright a {
   }
 }
 @media screen and (max-width: 980px) {
-  header {
-    height: 60px;
-  }
-  header.whole-header-nav {
-    height: 60px;
-    position: relative;
-  }
-  header.whole-header-nav .header-fixed-list::before {
-    height: 60px;
-  }
-  .header-fixed-list {
-    top: 0;
-    height: 60px;
-    line-height: 60px;
-  }
   .header-fixed-list .login-register {
     right: 0.6122449rem;
   }
@@ -595,20 +611,11 @@ footer .copyright a {
     left: 0.6122449rem;
     top: 17px;
   }
-  .header-fixed-list .list-skip {
-    margin-left: 0;
-    float: right;
-    margin-right: 230px;
-  }
   .header-fixed-list .list-skip .nav-a {
     margin-right: 0.30612245rem;
-    line-height: 60px;
-  }
-  .header-fixed-list .list-skip .nav-a .second {
-    top: 60px;
   }
   .header-fixed-list .search-input {
-    right: 168px;
+    right: 180px;
     width: 5.20408163rem;
   }
   .header-fixed-list .search-input .white,

@@ -16,7 +16,8 @@ header{
                 top: 0;
                 height: 70px;
                 position: fixed;
-                box-shadow: 0 0px 12px 1px #FFF;
+                box-shadow: 0 0px 8px 1px #989898;
+                z-index: 0;
             }
         }
     }
@@ -35,6 +36,17 @@ header{
     margin: 0 auto;
     z-index: 999;
     transition: all .3s;
+    &::before{
+        content: "";
+        left: 0;
+        right: 0;
+        background-color: #000;
+        top: 0;
+        height: 0;
+        position: fixed;
+        box-shadow: 0 0 0 0 #989898;
+        transition: box-shadow 3s;
+    }
     .logo-pc{
         height: auto;
         width: 120px;
@@ -44,16 +56,23 @@ header{
         display: block;
     }
     .list-skip{
-        float: left;
-        margin-left: 454px;
+        // float: left;
+        // margin-left: 454px;
+        text-align: center;
+        // height: 70px;
+        font-size: 0;
         .nav-a{
-            font-size: 14px;
             margin-right: 82px;
-            line-height: 70px;
-            float: left;
+            margin-top: -1em;
+            vertical-align: top;
+            display: inline-block;
+            // float: left;
+            height: 70px;
             position: relative;
+            -webkit-text-size-adjust:none;
             a{
                 color: #FFF;
+                font-size: 14px;
             }
             &:last-child{
                 margin-right: 0;
@@ -154,6 +173,7 @@ header{
         }
         &.search-focus{
             width: 30px;
+            background-color: transparent;
             input,.close-white,.history-search{
                 opacity: 0;
             }
@@ -168,9 +188,11 @@ header{
         font-size: 14px;
         position: absolute;
         right: 52px;
+        top: 0;
         a{
             color: #FFF;
             padding: 0 5px;
+            margin: 0 10px;
             &.registed{
                 padding: 0;
                 width: 38px;
@@ -182,6 +204,7 @@ header{
                 position: relative;
                 img{
                     width: 100%;
+                    display: block;
                 }
             }
         }
@@ -213,10 +236,10 @@ footer{
             a{
                 display: block;
                 float: left;
-                width: 22px;
-                height: 22px;
+                width: 24px;
+                height: 24px;
                 background: url("../images/wechat-witch.png") no-repeat center;
-                background-size: 18px auto;
+                background-size: 24px auto;
                 margin: 0 16px;
                 position: relative;
                 &.sina{
@@ -226,7 +249,7 @@ footer{
                 img{
                     display: none;
                     position: absolute;
-                    bottom: 30px;
+                    bottom: 32px;
                     left: 50%;
                     width: 100px;
                     height: 100px;
@@ -251,7 +274,7 @@ footer{
                     border-top: 12px solid #FFF;
                     border-left: 8px solid transparent;
                     border-right: 8px solid transparent;
-                    bottom: 20px;
+                    bottom: 24px;
                     left: 50%;
                     margin-left: -8px;
                 }
@@ -384,28 +407,48 @@ footer{
     }
 }
 @media screen and (max-width: 1380px) {
+    header{
+        // height: 60px;
+        &.whole-header-nav{
+            height: 60px;
+            position: relative;
+            .header-fixed-list{
+                &::before{
+                    height: 60px;
+                }
+            }
+        }
+    }
     // 导航start
     .header-fixed-list{
         max-width: 1080px;
         // width: 100%;
         height: 60px;
         line-height: 60px;
+        .login-register{
+            right: 60/98rem;
+            a.registed{
+                margin-top: 15px;
+                width: 30px;
+                height: 30px;
+            }
+        }
         .logo-pc{
             width: 100px;
             top: 16px;
         }
         .list-skip{
-            margin-left: 304px;
+            // margin-left: 304px;
             .nav-a{
                 margin-right: 50px;
-                line-height: 60px;
+                height: 60px;
                 .second{
                     top: 60px;
                 }
             }
         }
         .search-input{
-            right: 168px;
+            right: 220px;
             width: 550px;
             .white,.black{
                 top: 20px;
@@ -422,7 +465,7 @@ footer{
                 padding-top: 130/128rem;
                 padding-bottom: 106/128rem;
                 a{
-                    width: 120px;
+                    width: 158/128rem;
                 }
             }
             .message-list{
@@ -461,23 +504,11 @@ footer{
     }
 }
 @media screen and (max-width: 980px) {
-    header{
-        height: 60px;
-        &.whole-header-nav{
-            height: 60px;
-            position: relative;
-            .header-fixed-list{
-                &::before{
-                    height: 60px;
-                }
-            }
-        }
-    }
     // 导航start
     .header-fixed-list{
-        top: 0;
-        height: 60px;
-        line-height: 60px;
+        // top: 0;
+        // height: 60px;
+        // line-height: 60px;
         .login-register{
             right: 60/98rem;
         }
@@ -487,19 +518,19 @@ footer{
             top: (60-26)/2px;
         }
         .list-skip{
-            margin-left: 0;
-            float: right;
-            margin-right: 230px;
+            // margin-left: 0;
+            // float: right;
+            // margin-right: 230px;
             .nav-a{
                 margin-right: 30/98rem;
-                line-height: 60px;
-                .second{
-                    top: 60px;
-                }
+                // line-height: 60px;
+                // .second{
+                //     top: 60px;
+                // }
             }
         }
         .search-input{
-            right: 168px;
+            right: 180px;
             width: 510/98rem;
             .white,.black{
                 top: (60-20)/2px;
