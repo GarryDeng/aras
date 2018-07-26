@@ -172,7 +172,6 @@ header.whole-header-nav .header-fixed-list::before {
   left: 0;
   right: 0;
   height: 70px;
-  box-shadow: 0 0px 8px 1px #989898;
 }
 .header-fixed-list::before {
   content: "";
