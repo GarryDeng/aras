@@ -578,38 +578,38 @@ footer .copyright a {
     box-sizing: border-box;
   }
   footer .footer-common .nav-common {
-    padding-top: 1.015625rem;
-    padding-bottom: 0.828125rem;
+    padding-top: 0.46376812rem;
+    padding-bottom: 0.39855072rem;
   }
   footer .footer-common .nav-common a {
-    width: 1.234375rem;
+    width: 1.14492754rem;
   }
   footer .footer-common .message-list {
-    top: 1.015625rem;
+    top: 0.46376812rem;
   }
   footer .footer-common .message-common .call-mail {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.328125rem;
+    padding-top: 0.28985507rem;
+    padding-bottom: 0.30434783rem;
   }
   footer .footer-common .message-common .call-mail span.phone {
-    padding-right: 0.2109375rem;
+    padding-right: 0.19565217rem;
     background-size: 16px auto;
   }
   footer .footer-common .message-common .call-mail span.mial {
-    padding-left: 0.453125rem;
-    background: url("../images/mail.png") no-repeat 0.2265625rem center;
+    padding-left: 0.42028986rem;
+    background: url("../images/mail.png") no-repeat 0.21014493rem center;
     background-size: 14px auto;
   }
   footer .footer-common .message-common .blogroll {
-    width: 3.7109375rem;
+    width: 3.44202899rem;
     margin-top: 0.2125rem;
-    line-height: 0.4375rem;
+    line-height: 0.4057971rem;
   }
   footer .footer-common .message-common .blogroll span {
-    left: -0.78125rem;
+    left: -0.72463768rem;
   }
   footer .copyright {
-    margin-top: 0.9375rem;
+    margin-top: 0.33333333rem;
   }
 }
 @media screen and (max-width: 980px) {
@@ -668,18 +668,18 @@ footer .copyright a {
     box-sizing: border-box;
   }
   footer .footer-common .nav-common {
-    padding-top: 1.015625rem;
-    padding-bottom: 0.828125rem;
+    padding-top: 0.40816327rem;
+    padding-bottom: 0.40816327rem;
   }
   footer .footer-common .nav-common a {
-    width: 120px;
+    width: 1.32653061rem;
   }
   footer .footer-common .message-list {
-    top: 1.015625rem;
+    top: 0.40816327rem;
   }
   footer .footer-common .message-common .call-mail {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.328125rem;
+    padding-top: 0.28985507rem;
+    padding-bottom: 0.30434783rem;
   }
   footer .footer-common .message-common .call-mail span.phone {
     padding-right: 0.32653061rem;
@@ -691,15 +691,15 @@ footer .copyright a {
     background-size: 14px auto;
   }
   footer .footer-common .message-common .blogroll {
-    width: 3.7109375rem;
-    margin-top: 0.203125rem;
-    line-height: 0.515625rem;
+    width: 3.44202899rem;
+    margin-top: 0.1884058rem;
+    line-height: 0.47826087rem;
   }
   footer .footer-common .message-common .blogroll span {
-    left: -0.78125rem;
+    left: -0.72463768rem;
   }
   footer .copyright {
-    margin-top: 0.9375rem;
+    margin-top: 0.37755102rem;
   }
 }
 @media screen and (max-width: 750px) {
