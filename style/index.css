@@ -502,7 +502,7 @@
     position: relative;
   }
   .offer-index .service-index li {
-    width: 31.7%;
+    width: 32%;
     margin-right: 0;
     padding: 0;
   }
@@ -622,7 +622,7 @@
   .offer-index .information-index li:nth-child(2n) {
     margin-right: 0;
   }
-  .offer-index .information-index li img {
+  .offer-index .information-index li .head-img {
     width: 3.46938776rem;
     height: 3.46938776rem;
   }
@@ -696,9 +696,10 @@
   }
   .offer-index .service-index {
     padding-bottom: 0.72463768rem;
+    left: -0.7rem;
   }
   .offer-index .service-index li {
-    width: 2.85714286rem;
+    width: 3.3rem;
     margin-right: 0;
     padding: 0;
   }
@@ -816,7 +817,7 @@
     margin-right: 0;
     margin-left: 0;
   }
-  .offer-index .information-index li img {
+  .offer-index .information-index li .head-img {
     width: 4.53333333rem;
     height: 4.53333333rem;
   }
@@ -898,7 +899,7 @@
     line-height: .35rem;
   }
   .offer-index .service-index {
-    padding-bottom: 0.72463768rem;
+    left: 0;
   }
   .offer-index .service-index li {
     width: auto;

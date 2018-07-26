@@ -35,17 +35,28 @@ header{
     right: 0;
     margin: 0 auto;
     z-index: 999;
-    transition: all .3s;
+    transition: top .3s;
+    &.add-head-before{
+        top: 0;
+        &::before{
+            top: 0;
+            max-width: 100%;
+            background-color: #000;
+            left: 0;
+            right: 0;
+            height: 70px;
+            box-shadow: 0 0px 8px 1px #989898;
+        }
+    }
     &::before{
         content: "";
-        left: 0;
-        right: 0;
-        background-color: #000;
-        top: 0;
-        height: 0;
         position: fixed;
-        box-shadow: 0 0 0 0 #989898;
-        transition: box-shadow 3s;
+        max-width: 1400px;
+        width: 100%;
+        top: 30px;
+        margin: 0 auto;
+        box-shadow: 0 0 0 0 transparent;
+        transition: all .3s;
     }
     .logo-pc{
         height: auto;
@@ -506,9 +517,10 @@ footer{
 @media screen and (max-width: 980px) {
     // 导航start
     .header-fixed-list{
-        // top: 0;
-        // height: 60px;
-        // line-height: 60px;
+        top: 0;
+        &::before{
+            display: none;
+        }
         .login-register{
             right: 60/98rem;
         }
