@@ -391,6 +391,8 @@ footer .footer-common .message-list a img {
   height: 100px;
   margin-left: -50px;
   z-index: 9;
+  box-sizing: border-box;
+  border: 4px solid #FFF;
 }
 footer .footer-common .message-list a.public:hover img,
 footer .footer-common .message-list a.service:hover img {

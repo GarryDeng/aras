@@ -123,7 +123,7 @@
             <script>
                 // 显示隐藏下拉框
                 $(".business-list .list").on("click", function () {
-                    $(this).find('.list-text').slideToggle();
+                    $(this).find('.list-text').slideToggle().siblings('.active-text').toggleClass('rotate-edg');
                 });
                 // 模拟下拉框并赋值给隐藏的input
                 $('.business-list .list-text p').on('click', function (ev) {

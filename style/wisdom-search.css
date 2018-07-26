@@ -139,6 +139,7 @@
   padding: 0 12px;
   height: 432px;
   transition: all .3s;
+  color: #000;
 }
 .wisdom-search-thinktak .wisdom-specialist li .content-text .name {
   line-height: 70px;

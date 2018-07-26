@@ -1,4 +1,20 @@
 @import "user-history.less";
+*::-webkit-input-placeholder{
+    color:#000!important;
+    opacity: .4!important;
+}
+*::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#000!important;
+    opacity: .4!important;
+}
+*:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#000!important;
+    opacity: .4!important;
+}
+*:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#000!important;
+    opacity: .4!important;
+}
 .bind-phone-number{
     position: relative;
     width: 540px;
@@ -25,7 +41,7 @@
             border-radius: 6px;
             padding-left: 90px;
             margin: 0 auto;
-            font-size: 20px;
+            font-size: 16px;
         }
     }
     //修改手机号码

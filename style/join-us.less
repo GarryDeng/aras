@@ -71,6 +71,22 @@
     label,input,.list{
         font-size: 20px;
     }
+    *::-webkit-input-placeholder{
+        color:#000!important;
+        opacity: .4!important;
+    }
+    *::-moz-placeholder{   /* Mozilla Firefox 19+ */
+        color:#000!important;
+        opacity: .4!important;
+    }
+    *:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+        color:#000!important;
+        opacity: .4!important;
+    }
+    *:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+        color:#000!important;
+        opacity: .4!important;
+    }
     .business-list,.relation-name,.relation-phone,.describe{
         margin-bottom: 50px;
         height: 50px;
@@ -91,7 +107,7 @@
             line-height: 50-16px;
             width: 562-24px;
             padding: 8px 12px;
-            font-size: 20px;
+            font-size: 16px;
             border: 1px solid #cfcfcf;
         }
     }
@@ -121,6 +137,24 @@
         }
         .active-text{
             cursor: pointer;
+            position: relative;
+            &.rotate-edg{
+                &::before{
+                    transform: rotate(180deg);
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 38px;
+                background: url("../images/down-arr.png") no-repeat center;
+                background-size: 30px auto;
+                opacity: .5;
+                transition: all .3s;
+            }
         }
     }
     .describe{
@@ -151,9 +185,29 @@
 @media screen and (max-width:1380px) {
     .join-us-flow{
         li{
-            padding-right: 266/138rem;
+            
             &::after{
                 width: 182/138rem;
+            }
+        }
+    }
+    .join-us-flow{
+        li{
+            line-height: 190/138rem;
+            height: 190/138rem;
+            padding-left: 50px;
+            padding-right: 266/138rem;
+            &::before{
+                height: 20px;
+                width: 20px;
+                margin-top: -10px;
+            }
+            &::after{
+                width: 182/138rem;
+                right: 42/138rem;
+            }
+            span{
+                font-size: 18px;
             }
         }
     }
@@ -162,6 +216,13 @@
         .business-list,.relation-name,.relation-phone,.describe{
             .active-text,input,textarea{
                 width: (562-24)/138rem;
+            }
+        }
+        .business-list{
+            .list{
+                .list-text{
+                    width: (562-24)/138rem;
+                }
             }
         }
     }

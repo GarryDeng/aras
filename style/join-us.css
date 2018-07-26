@@ -74,6 +74,25 @@
 .join-us-message .list {
   font-size: 20px;
 }
+.join-us-message *::-webkit-input-placeholder {
+  color: #000!important;
+  opacity: .4!important;
+}
+.join-us-message *::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #000!important;
+  opacity: .4!important;
+}
+.join-us-message *:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #000!important;
+  opacity: .4!important;
+}
+.join-us-message *:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #000!important;
+  opacity: .4!important;
+}
 .join-us-message .business-list,
 .join-us-message .relation-name,
 .join-us-message .relation-phone,
@@ -114,7 +133,7 @@
   line-height: 34px;
   width: 538px;
   padding: 8px 12px;
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid #cfcfcf;
 }
 .join-us-message .business-list .list {
@@ -140,6 +159,22 @@
 }
 .join-us-message .business-list .active-text {
   cursor: pointer;
+  position: relative;
+}
+.join-us-message .business-list .active-text.rotate-edg::before {
+  transform: rotate(180deg);
+}
+.join-us-message .business-list .active-text::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 38px;
+  background: url("../images/down-arr.png") no-repeat center;
+  background-size: 30px auto;
+  opacity: .5;
+  transition: all .3s;
 }
 .join-us-message .describe label {
   vertical-align: top;
@@ -164,11 +199,26 @@
   cursor: pointer;
 }
 @media screen and (max-width: 1380px) {
+  .join-us-flow li::after {
+    width: 1.31884058rem;
+  }
   .join-us-flow li {
+    line-height: 1.37681159rem;
+    height: 1.37681159rem;
+    padding-left: 50px;
     padding-right: 1.92753623rem;
+  }
+  .join-us-flow li::before {
+    height: 20px;
+    width: 20px;
+    margin-top: -10px;
   }
   .join-us-flow li::after {
     width: 1.31884058rem;
+    right: 0.30434783rem;
+  }
+  .join-us-flow li span {
+    font-size: 18px;
   }
   .join-us-message {
     width: 7.82608696rem;
@@ -185,6 +235,9 @@
   .join-us-message .relation-name textarea,
   .join-us-message .relation-phone textarea,
   .join-us-message .describe textarea {
+    width: 3.89855072rem;
+  }
+  .join-us-message .business-list .list .list-text {
     width: 3.89855072rem;
   }
 }
