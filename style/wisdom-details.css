@@ -185,7 +185,7 @@
 }
 .wisdom-specialist-body .specialist-details-title .history-list li,
 .wisdom-specialist-body .specialist-details-title .honor li {
-  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 20px;
   font-size: 16px;
   position: relative;
@@ -365,7 +365,7 @@
   }
   .wisdom-specialist-body .specialist-details-title .history-list li,
   .wisdom-specialist-body .specialist-details-title .honor li {
-    margin-top: 0.23188406rem;
+    margin-bottom: 0.23188406rem;
     margin-left: 0.2173913rem;
     font-size: 14px;
   }
@@ -499,7 +499,7 @@
   }
   .wisdom-specialist-body .specialist-details-title .history-list li,
   .wisdom-specialist-body .specialist-details-title .honor li {
-    margin-top: 0.23188406rem;
+    margin-bottom: 0.23188406rem;
     margin-left: 0.2173913rem;
   }
   .wisdom-specialist-body .specialist-details-title .history-list li p,
@@ -639,7 +639,7 @@
   }
   .wisdom-specialist-body .specialist-details-title .history-list li,
   .wisdom-specialist-body .specialist-details-title .honor li {
-    margin-top: 0.42666667rem;
+    margin-bottom: 0.42666667rem;
     margin-left: 0.4rem;
     font-size: 0.21333333rem;
     padding-left: 0.36rem;

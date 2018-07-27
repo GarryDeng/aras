@@ -206,7 +206,7 @@
     line-height: 1.37681159rem;
     height: 1.37681159rem;
     padding-left: 50px;
-    padding-right: 1.92753623rem;
+    padding-right: 1.42028986rem;
   }
   .join-us-flow li::before {
     height: 20px;
@@ -214,8 +214,8 @@
     margin-top: -10px;
   }
   .join-us-flow li::after {
-    width: 1.31884058rem;
-    right: 0.30434783rem;
+    width: 0.94202899rem;
+    right: 0.23913043rem;
   }
   .join-us-flow li span {
     font-size: 18px;

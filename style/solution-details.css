@@ -44,6 +44,34 @@
   line-height: 1.5em;
   text-align: center;
 }
+.wisdom-search-list {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.wisdom-search-list ul {
+  width: auto;
+}
+.wisdom-search-list ul li {
+  margin-right: 0;
+  font-size: 0;
+}
+.wisdom-search-list ul li a {
+  display: inline-block;
+  position: relative;
+}
+.wisdom-search-list ul li.active {
+  border: none;
+}
+.wisdom-search-list ul li.active a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 1px solid #000;
+  transform: scaleY(0.333333);
+}
 .solution-details-content {
   width: 1280px;
   margin: 35px auto 0 auto;

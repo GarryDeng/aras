@@ -864,6 +864,11 @@
     padding-top: 0.56rem;
     font-size: 0.24rem;
     line-height: 1.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
   .offer-index .name-container .swiper-pagination {
     bottom: 0;

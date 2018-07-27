@@ -44,6 +44,36 @@
         }
     }
 }
+.wisdom-search-list{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    ul{
+        width: auto;
+        li{
+            margin-right: 0;
+            font-size: 0;
+            a{
+                display: inline-block;
+                position: relative;
+            }
+            &.active{
+                border: none;
+                a{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        bottom: 0;
+                        border-bottom: 1px solid #000;
+                        transform: scaleY(.333333);
+                    }
+                }
+            }
+        }
+    }
+} 
 .solution-details-content{
     width: 1280px;
     margin: 35px auto 0 auto;
