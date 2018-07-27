@@ -188,7 +188,7 @@
   border-bottom: 1px solid #f4f4f4;
 }
 .information-content-list .information-recommend .recommend-list {
-  padding: 47px 0 47px 126px;
+  padding: 20px 0 20px 126px;
   position: relative;
   margin: 0 16px;
   border-bottom: 1px solid #f4f4f4;
@@ -225,7 +225,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 47px;
+  top: 20px;
 }
 @media screen and (max-width: 1380px) {
   .wisdom-search-list ul li {
