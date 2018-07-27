@@ -54,7 +54,7 @@
 }
 .wisdom-search-list ul li {
   float: left;
-  /* margin-right: 106px; */
+  margin-right: 106px;
 }
 .wisdom-search-list ul li:last-child {
   margin-right: 0;
