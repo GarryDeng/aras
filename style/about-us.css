@@ -139,6 +139,7 @@
   padding: 0 12px;
   height: 432px;
   transition: all .3s;
+  color: #000;
 }
 .wisdom-search-thinktak .wisdom-specialist li .content-text .name {
   line-height: 70px;
@@ -586,6 +587,7 @@
 .wisdom-introduction-banner {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 .wisdom-introduction-banner::before {
   content: "";
@@ -691,14 +693,14 @@
 .swiper-container-synopsis .swiper-slide::before {
   content: "";
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: #000;
   left: 0;
   top: 50%;
-  margin-top: -5px;
-  margin-left: 4px;
+  margin-top: -3px;
+  margin-left: 3px;
   position: absolute;
   transition: all .3s;
 }
@@ -713,8 +715,8 @@
   width: 366px;
 }
 .swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   margin-top: -7px;
   margin-left: 0;
 }
@@ -815,9 +817,9 @@
     height: 0.46376812rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
-    width: 10px;
-    height: 10px;
-    margin-top: -5px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
     margin-left: 4px;
   }
   .swiper-container-synopsis .swiper-slide::after {
@@ -844,9 +846,9 @@
     white-space: nowrap;
   }
   .swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
-    width: 16px;
-    height: 16px;
-    margin-top: -8px;
+    width: 12px;
+    height: 12px;
+    margin-top: -6px;
   }
   .swiper-container-synopsis .swiper-slide.swiper-slide-active span {
     font-size: 20px;

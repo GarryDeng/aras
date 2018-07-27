@@ -1,6 +1,7 @@
 .wisdom-introduction-banner {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 .wisdom-introduction-banner::before {
   content: "";

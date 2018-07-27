@@ -1,6 +1,7 @@
 .wisdom-search-input {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .wisdom-search-input .bg {
   display: block;
