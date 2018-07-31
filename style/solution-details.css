@@ -76,6 +76,7 @@
   width: 1280px;
   margin: 35px auto 0 auto;
   position: relative;
+  min-height: 1390px;
 }
 .solution-details-content .list-left {
   position: absolute;
@@ -185,6 +186,12 @@
 .solution-details-content .list-right {
   padding-left: 350px;
 }
+.solution-details-content .list-right .fixed-search-list {
+  left: auto;
+  right: 50%;
+  width: 930px;
+  margin-right: -640px;
+}
 .solution-details-content .list-right .link-list {
   line-height: 60px;
   border-bottom: 1px solid #f7f7f7;
@@ -220,6 +227,9 @@
 .solution-details-content .list-right .function-get .solution-function-bg {
   padding-bottom: 62px;
   border-bottom: 2px solid #e5e5e5;
+}
+.solution-details-content .list-right .function-get .solution-function-bg:nth-child(2n) {
+  background-color: #ebebeb;
 }
 .solution-details-content .list-right .function-get .solution-function-bg .content h3 {
   line-height: 138px;
@@ -312,6 +322,21 @@
   .solution-details-content .list-right {
     padding-left: 240px;
   }
+  .solution-details-content .list-right .fixed-search-list {
+    width: 7.82608696rem;
+    transform: translateX(240px);
+    margin-right: -3.91304348rem;
+  }
+  .solution-details-content .list-right .fixed-search-list::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #FFF;
+    z-index: 7;
+    width: 240px;
+  }
   .solution-details-content .list-right .link-list a {
     margin-right: 0.47826087rem;
   }
@@ -348,6 +373,14 @@
   }
   .solution-details-content .list-right {
     padding-left: 168px;
+  }
+  .solution-details-content .list-right .fixed-search-list {
+    width: 8.57142857rem;
+    transform: translateX(168px);
+    margin-right: -4.28571429rem;
+  }
+  .solution-details-content .list-right .fixed-search-list::before {
+    width: 168px;
   }
   .solution-details-content .list-right .link-list a {
     margin-right: 0.67346939rem;
@@ -387,6 +420,7 @@
     font-size: 0.21333333rem;
   }
   .solution-details-content {
+    min-height: auto;
     width: 9.4rem;
     margin: 0 auto;
   }
@@ -395,6 +429,18 @@
   }
   .solution-details-content .list-right {
     padding-left: 0;
+  }
+  .solution-details-content .list-right .fixed-search-list {
+    width: 10rem;
+    padding: 0 .3rem;
+    transform: translateX(0);
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .solution-details-content .list-right .fixed-search-list::before {
+    width: 0;
   }
   .solution-details-content .list-right .link-list {
     line-height: 1.33333333rem;

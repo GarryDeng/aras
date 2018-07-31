@@ -143,16 +143,16 @@
             <div class="wisdom-search-list">
                 <ul class="swiper-wrapper clear">
                     <li class="active swiper-slide">
-                        <a href="">功能点1</a>
+                        <a href="javascript:">功能点1</a>
                     </li>
                     <li class=" swiper-slide">
-                        <a href="">功能点2</a>
+                        <a href="javascript:">功能点2</a>
                     </li>
                     <li class="swiper-slide">
-                        <a href="">功能点3</a>
+                        <a href="javascript:">功能点3</a>
                     </li>
                     <li class="swiper-slide">
-                        <a href="">智慧配套</a>
+                        <a href="javascript:">智慧配套</a>
                     </li>
                 </ul>
             </div>
@@ -323,13 +323,41 @@
 </body>
 <script src="js/common.js"></script>
 <script>
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() != 0) {
-            $(".header-fixed-list").addClass('add-head-before');
-        } else {
-            $(".header-fixed-list").removeClass('add-head-before');
-        }
-    })
+    $(function () {
+        var wTop = $('.wisdom-search-list').offset().top - $('.header-fixed-list').height();
+        var paddTop = $('.header-fixed-list').height();
+        var cHeight = paddTop + $('.wisdom-search-list').height();
+        $(window).on('scroll', function () {
+            for (var i = 0; i < $(".solution-function-bg").length; i++) {
+                if ($(this).scrollTop() >= $(".solution-function-bg").eq(i).offset().top - cHeight && !$(".wisdom-search-list li").eq(i).hasClass('active')) {
+                    $(".wisdom-search-list li").eq(i).addClass('active').siblings().removeClass('active');
+                }
+            }
+            if ($(this).scrollTop() >= $(".solution-function-bg").parent().next().offset().top - cHeight && !$(".wisdom-search-list li").eq(-1).hasClass('active')) {
+                $(".wisdom-search-list li").eq(-1).addClass('active').siblings().removeClass('active');
+            }
+            if ($(this).scrollTop() != 0) {
+                $(".header-fixed-list").addClass('add-head-before');
+            } else {
+                $(".header-fixed-list").removeClass('add-head-before');
+            }
+            if ($(this).scrollTop() >= wTop) {
+                $('.wisdom-search-list').addClass("fixed-search-list");
+                $('body').css('padding-top', paddTop + 'px');
+            } else {
+                $('.wisdom-search-list').removeClass("fixed-search-list");
+                $('body').css('padding-top', 0);
+            }
+        });
+        $(".wisdom-search-list li a").on('click', function () {
+            var soSet = $(".solution-function-bg").eq($(this).parent().index()).offset();
+            $(this).parent().addClass('active').siblings('li').removeClass('active');
+            if (!soSet) {
+                return $('html,body').animate({ scrollTop: $(".solution-function-bg").parent().next().offset().top - cHeight + 'px' }, 600);
+            }
+            $('html,body').animate({ scrollTop: soSet.top - cHeight + 'px' }, 600);
+        });
+    });
 </script>
 
 </html>

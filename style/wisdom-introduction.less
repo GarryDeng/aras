@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: 900/192rem;
     &::before{
         content: "";
         display: block;
@@ -125,6 +126,14 @@
             &.time{
                 padding-left: 100px;
                 width: 366px;
+                vertical-align: top;
+            }
+            &.context{
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 620px;
             }
         }
         &.swiper-slide-active{
@@ -253,10 +262,6 @@
                 }
                 &.context{
                     width: 620/138rem;
-                    position: relative;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
                 }
             }
             &.swiper-slide-active{
@@ -285,6 +290,7 @@
 }
 @media screen and (max-width: 980px) {
     .wisdom-introduction-banner{
+        height: 352/75rem;
         .content{
             width: 840/98rem;
             padding-top: 50/98rem;

@@ -1,3 +1,6 @@
+.solution-function-bg:nth-child(2n) {
+  background-color: #ebebeb;
+}
 .solution-function-bg .content {
   width: 1280px;
   margin: 0 auto;
@@ -17,6 +20,9 @@
   height: 5px;
   width: 30px;
   background: #000;
+}
+.solution-function-bg .content .vessel {
+  max-width: 100% !important;
 }
 .solution-function-bg .content .context {
   margin-top: 22px;

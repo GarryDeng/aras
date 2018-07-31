@@ -78,6 +78,7 @@
     width: 1280px;
     margin: 35px auto 0 auto;
     position: relative;
+    min-height: 1390px;
     .list-left{
         position: absolute;
         left: 0;
@@ -187,6 +188,12 @@
     }
     .list-right{
         padding-left: 350px;
+        .fixed-search-list{
+            left: auto;
+            right: 50%;
+            width: 930px;
+            margin-right: -1280/2px;
+        }
         .link-list{
             line-height: 60px;
             border-bottom: 1px solid #f7f7f7;
@@ -221,6 +228,9 @@
             .solution-function-bg{
                 padding-bottom: 62px;
                 border-bottom: 2px solid #e5e5e5;
+                &:nth-child(2n){
+                    background-color: #ebebeb;
+                }
                 .content{
                     h3{
                         position: relative;
@@ -325,6 +335,21 @@
         }
         .list-right{
             padding-left: 240px;
+            .fixed-search-list{
+                width: 1080/138rem;
+                transform: translateX(240px);
+                margin-right: -1080/2/138rem;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background: #FFF;
+                    z-index: 7;
+                    width: 240px;
+                }
+            }
             .link-list{
                 a{
                     margin-right: 66/138rem;
@@ -372,6 +397,14 @@
         }
         .list-right{
             padding-left: 168px;
+            .fixed-search-list{
+                width: 840/98rem;
+                transform: translateX(168px);
+                margin-right: -840/2/98rem;
+                &::before{
+                    width: 168px;
+                }
+            }
             .link-list{
                 a{
                     margin-right: 66/98rem;
@@ -416,6 +449,7 @@
         }
     }
     .solution-details-content{
+        min-height: auto;
         width: 9.4rem;
         margin: 0 auto;
         .list-left{
@@ -423,6 +457,18 @@
         }
         .list-right{
             padding-left: 0;
+            .fixed-search-list{
+                width: 10rem;
+                padding: 0 .3rem;
+                transform: translateX(0);
+                margin-right: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                &::before{
+                    width: 0;
+                }
+            }
             .link-list{
                 line-height: 100/75rem;
                 a{

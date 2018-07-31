@@ -30,6 +30,10 @@ canvas {
   margin: 0;
   padding: 0;
 }
+html {
+  position: relative;
+  overflow-x: hidden;
+}
 address,
 cite,
 dfn,
@@ -344,6 +348,8 @@ header.whole-header-nav .header-fixed-list::before {
 }
 footer {
   background-color: #000;
+  position: relative;
+  z-index: 2;
 }
 footer .footer-common {
   width: 1280px;
@@ -391,8 +397,6 @@ footer .footer-common .message-list a img {
   height: 100px;
   margin-left: -50px;
   z-index: 9;
-  box-sizing: border-box;
-  border: 4px solid #FFF;
 }
 footer .footer-common .message-list a.public:hover img,
 footer .footer-common .message-list a.service:hover img {

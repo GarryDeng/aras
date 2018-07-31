@@ -2,6 +2,16 @@
   padding: 0.32rem 0.26666667rem 0.21333333rem 0.26666667rem;
   position: relative;
 }
+.phone-input-send .down-arr {
+  display: block;
+  position: absolute;
+  width: .8rem;
+  left: 0;
+  transform: rotate(90deg);
+  top: 50%;
+  margin-top: -0.36rem;
+  opacity: .6;
+}
 .phone-input-send::before {
   content: "";
   display: block;
@@ -23,6 +33,7 @@
   box-sizing: border-box;
   color: #000;
   font-size: 0.26666667rem;
+  margin-left: .5rem;
 }
 .phone-input-send .close {
   display: block;

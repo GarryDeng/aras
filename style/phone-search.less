@@ -1,6 +1,16 @@
 .phone-input-send{
     padding: 24/75rem 20/75rem 16/75rem 20/75rem;
     position: relative;
+    .down-arr{
+        display: block;
+        position: absolute;
+        width: .8rem;
+        left: 0;
+        transform: rotate(90deg);
+        top: 50%;
+        margin-top: -.36rem;
+        opacity: .6;
+    }
     &::before{
         content: "";
         display: block;
@@ -22,6 +32,7 @@
         box-sizing: border-box;
         color: #000;
         font-size: 20/75rem;
+        margin-left: .5rem;
     }
     .close{
         display: block;

@@ -38,15 +38,6 @@
   background: url("../images/next.png") no-repeat center;
   background-size: 26px auto;
 }
-@media screen and (max-width: 1380px) {
-  .wisdom-search-thinktak .wisdom-specialist li:nth-child(4n) {
-    margin-right: 0.95652174rem;
-    display: block;
-  }
-  .wisdom-search-thinktak .wisdom-specialist li:nth-child(3n) {
-    margin-right: 0;
-  }
-}
 @media screen and (max-width: 980px) {
   .wisdom-search-thinktak .wisdom-specialist li:nth-child(n) {
     margin-right: 2.06122449rem;
@@ -181,6 +172,13 @@
   top: 0;
   box-shadow: 2px 2px 5px 1px #ececec;
 }
+.information-content-list .information-recommend.fixed-information-recommend {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  margin-left: 280px;
+  z-index: 0;
+}
 .information-content-list .information-recommend h5 {
   font-size: 24px;
   font-weight: normal;
@@ -271,13 +269,18 @@
   .information-content-list .information-recommend {
     width: 212px;
   }
+  .information-content-list .information-recommend.fixed-information-recommend {
+    top: 60px;
+    margin-left: 3.91304348rem;
+    transform: translateX(-212px);
+  }
   .information-content-list .information-recommend h5 {
     font-size: 20px;
     line-height: 76px;
     text-indent: 19px;
   }
   .information-content-list .information-recommend .recommend-list {
-    padding: 29px 0;
+    padding: 18px 0;
   }
   .information-content-list .information-recommend .recommend-list .content {
     font-size: 14px;

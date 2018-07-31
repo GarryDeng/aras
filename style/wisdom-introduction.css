@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 4.6875rem;
 }
 .wisdom-introduction-banner::before {
   content: "";
@@ -127,6 +128,14 @@
 .swiper-container-synopsis .swiper-slide span.time {
   padding-left: 100px;
   width: 366px;
+  vertical-align: top;
+}
+.swiper-container-synopsis .swiper-slide span.context {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 620px;
 }
 .swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
   width: 12px;
@@ -254,10 +263,6 @@
   }
   .swiper-container-synopsis .swiper-slide span.context {
     width: 4.49275362rem;
-    position: relative;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
   .swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
     width: 12px;
@@ -281,6 +286,9 @@
   }
 }
 @media screen and (max-width: 980px) {
+  .wisdom-introduction-banner {
+    height: 4.69333333rem;
+  }
   .wisdom-introduction-banner .content {
     width: 8.57142857rem;
     padding-top: 0.51020408rem;

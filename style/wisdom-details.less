@@ -94,12 +94,22 @@
             }
         }
         .details-swiper-content{
-            float: left;
             position: relative;
-            width: 468px;
-            height: 261px;
-            padding: 0 72px;
+            width: 100%;
             overflow: hidden;
+            .opinion-img{
+                float: left;
+                position: relative;
+                width: 468px;
+                height: 261px;
+                padding: 0 72px;
+                overflow: hidden;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             .swiper-button-next, .swiper-button-prev{
                 background-size: 12px auto;
                 border-radius: 50%;
@@ -109,25 +119,29 @@
                 z-index: 9;
                 right: 0;
             }
-            &::before,&::after{
-                content: "";
-                position: absolute;
-                width: 72+100px;
-                height: 261+100px;
-                top: -50px;
-                background-color: #FFF;
-                z-index: 8;
+            .swiper-button-next{
+                left: 468+72+72-34px;
             }
-            &::before{
-                right: -100px;
-            }
-            &::after{
-                left: -100px;
-            }
+            // &::before,&::after{
+            //     content: "";
+            //     position: absolute;
+            //     width: 72+20px;
+            //     height: 261+100px;
+            //     top: -50px;
+            //     background-color: #FFF;
+            //     z-index: 8;
+            // }
+            // &::before{
+            //     left: 468+72px;
+            // }
+            // &::after{
+            //     left: -100px;
+            // }
             .swiper-pagination{
-                width: 100%;
+                width: 468px;
                 left: 0;
                 bottom: 0;
+                padding: 0 72px;
                 text-align: center;
                 .swiper-pagination-bullet{
                     width: 6px;
@@ -291,9 +305,11 @@
                 }
             }
             .details-swiper-content{
-                width: 468/138rem;
-                height: 261/138rem;
-                padding: 0 66/138rem;
+                .opinion-img{
+                    width: 468/138rem;
+                    height: 261/138rem;
+                    padding: 0 66/138rem;
+                }
                 a{
                     display: block;
                     img{
@@ -308,17 +324,22 @@
                     margin-top: -10px;
                 }
                 .swiper-button-next{
-                    right: 0;
+                    left: (66*2+468)/138rem;
+                    margin-left: -22px;
                 }
-                &::before,&::after{
-                    width: 66/138rem;
-                    height: 261+100px;
-                }
-                &::before{
-                    right: 0;
-                }
-                &::after{
-                    left: 0;
+                // &::before,&::after{
+                //     width: 66/138rem;
+                //     height: 261+100px;
+                // }
+                // &::before{
+                //     right: 0;
+                // }
+                // &::after{
+                //     left: 0;
+                // }
+                .swiper-pagination{
+                    width: 468/138rem;
+                    padding: 0 66/138rem;
                 }
             }
             .opinion-content{
@@ -420,29 +441,43 @@
                 }
             }
             .details-swiper-content{
-                width: 468/98rem;
-                height: 261/98rem;
-                padding: 0 66/98rem;
-                float: none;
-                margin: 20/98rem auto;
+                width: (468+120)/98rem;
+                margin: 0 auto;
+                .opinion-img{
+                    width: 468/98rem;
+                    height: 261/98rem;
+                    padding: 0;
+                    float: none;
+                    margin: 20/98rem auto;
+                }
                 .swiper-button-next, .swiper-button-prev{
                     background-size: 9px auto;
                     width: 20px;
                     height: 20px;
+                    top: (261+20*2)/2/98rem;
                     margin-top: -10px;
                 }
                 .swiper-button-next{
                     right: 0;
+                    left: auto;
                 }
-                &::before,&::after{
-                    width: 66/98rem;
-                    height: 261+100px;
-                }
-                &::before{
-                    right: 0;
-                }
-                &::after{
-                    left: 0;
+                // &::before,&::after{
+                //     width: 66/98rem;
+                //     height: 261+100px;
+                // }
+                // &::before{
+                //     right: 0;
+                // }
+                // &::after{
+                //     left: 0;
+                // }
+                .swiper-pagination{
+                    width: 468/98rem;
+                    padding: 0;
+                    bottom: auto;
+                    top: (261+20)/98rem;
+                    margin: 0 auto;
+                    margin-top: -30px;
                 }
             }
             .opinion-content{
@@ -560,30 +595,33 @@
                 }
             }
             .details-swiper-content{
-                width: 468/75rem;
-                height: 261/75rem;
-                padding: 0 66/75rem;
-                float: none;
-                margin: 20/75rem auto;
+                width: (468+100)/75rem;
+                .opinion-img{
+                    width: 468/75rem;
+                    height: 261/75rem;
+                    // padding: 0 66/75rem;
+                    margin: 20/75rem auto;
+                }
                 .swiper-button-next, .swiper-button-prev{
                     background-size: 9px auto;
-                    width: 20px;
-                    height: 20px;
-                    margin-top: -10px;
+                    width: 40/75rem;
+                    height: 40/75rem;
+                    margin-top: -20/75rem;
+                    top: (261+20*2)/2/75rem;
                 }
                 .swiper-button-next{
                     right: 0;
                 }
-                &::before,&::after{
-                    width: 66/75rem;
-                    height: 261+100px;
-                }
-                &::before{
-                    right: 0;
-                }
-                &::after{
-                    left: 0;
-                }
+                // &::before,&::after{
+                //     width: 66/75rem;
+                //     height: 261+100px;
+                // }
+                // &::before{
+                //     right: 0;
+                // }
+                // &::after{
+                //     left: 0;
+                // }
             }
             .opinion-content{
                 width: 468/75rem;

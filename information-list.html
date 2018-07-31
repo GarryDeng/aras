@@ -364,12 +364,20 @@
 </body>
 <script src="js/common.js"></script>
 <script>
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() != 0) {
-            $(".header-fixed-list").addClass('add-head-before');
-        } else {
-            $(".header-fixed-list").removeClass('add-head-before');
-        }
+    $(function(){
+        var oTop = $(".information-recommend").offset().top;
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() != 0) {
+                $(".header-fixed-list").addClass('add-head-before');
+            } else {
+                $(".header-fixed-list").removeClass('add-head-before');
+            }
+            if($(this).scrollTop()>= oTop){
+                $(".information-recommend").addClass('fixed-information-recommend');
+            }else{
+                $(".information-recommend").removeClass('fixed-information-recommend');
+            }
+        })
     })
 </script>
 

@@ -94,6 +94,13 @@
         width: 360px;
         top: 0;
         box-shadow: 2px 2px 5px 1px #ececec;
+        &.fixed-information-recommend{
+            position: fixed;
+            top: 70px;
+            left: 50%;
+            margin-left: 1280/2-360px;
+            z-index: 0;
+        }
         h5{
             font-size: 24px;
             font-weight: normal;
@@ -101,7 +108,7 @@
             border-bottom: 1px solid #f4f4f4;
         }
         .recommend-list{
-            padding: 47px 0 47px 126px;
+            padding: 20px 0 20px 126px;
             position: relative;
             margin: 0 16px;
             border-bottom: 1px solid #f4f4f4;
@@ -110,6 +117,7 @@
             &:last-child{
                 border: none;
             }
+           
             .content{
                 font-size: 16px;
                 // margin-top: 3px;
@@ -140,7 +148,7 @@
                 display: block;
                 position: absolute;
                 left: 0;
-                top: 47px;
+                top: 20px;
             }
         }
     }
@@ -189,13 +197,18 @@
         }
         .information-recommend{
             width: 212px;
+            &.fixed-information-recommend{
+                top: 60px;
+                margin-left: 1080/2/138rem;
+                transform: translateX(-212px);
+            }
             h5{
                 font-size: 20px;
                 line-height: 38*2px;
                 text-indent: 19px;
             }
             .recommend-list{
-                padding: 29px 0;
+                padding: 18px 0;
                 .content{
                     font-size: 14px;
                     height: 14*1.2*3px;

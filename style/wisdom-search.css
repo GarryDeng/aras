@@ -14,6 +14,14 @@
   transform: translate(-50%, -50%);
   margin-top: 24.5px;
 }
+.wisdom-search-input .search-input .click-button {
+  position: absolute;
+  display: block;
+  width: 38px;
+  right: 18px;
+  top: 8px;
+  cursor: pointer;
+}
 .wisdom-search-input .search-input .send-input {
   display: block;
   width: 694px;
@@ -46,6 +54,14 @@
 }
 .wisdom-search-list {
   border-bottom: 1px solid #f8f8f8;
+}
+.wisdom-search-list.fixed-search-list {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  right: 0;
+  z-index: 9;
+  background-color: #FFF;
 }
 .wisdom-search-list ul {
   width: 1280px;
@@ -248,6 +264,11 @@
   .wisdom-search-input .search-input {
     margin-top: 0.17753623rem;
   }
+  .wisdom-search-input .search-input .click-button {
+    width: 0.27536232rem;
+    right: 0.13043478rem;
+    top: 0.05797101rem;
+  }
   .wisdom-search-input .search-input .send-input {
     width: 5.02898551rem;
     line-height: 0.2173913rem;
@@ -256,6 +277,9 @@
   }
   .wisdom-search-input .search-input .history-list {
     padding-top: 0.2173913rem;
+  }
+  .wisdom-search-list.fixed-search-list {
+    top: 60px;
   }
   .wisdom-search-list ul {
     width: 7.82608696rem;
@@ -345,6 +369,11 @@
 @media screen and (max-width: 980px) {
   .wisdom-search-input .search-input {
     margin-top: 0.25rem;
+  }
+  .wisdom-search-input .search-input .click-button {
+    width: 0.3877551rem;
+    right: 0.18367347rem;
+    top: 0.08163265rem;
   }
   .wisdom-search-input .search-input .send-input {
     width: 7.08163265rem;
@@ -460,6 +489,9 @@
   .wisdom-search-list {
     line-height: 1.09333333rem;
     height: 1.09333333rem;
+  }
+  .wisdom-search-list.fixed-search-list {
+    top: 1.26666667rem;
   }
   .wisdom-search-list ul {
     line-height: 1.09333333rem;
