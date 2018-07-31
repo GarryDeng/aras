@@ -24,6 +24,9 @@
 .solution-function-bg .content .vessel {
   max-width: 100% !important;
 }
+.solution-function-bg .content .vessel img {
+  max-width: 100% !important;
+}
 .solution-function-bg .content .context {
   margin-top: 22px;
   line-height: 2em;
@@ -79,6 +82,7 @@
 }
 .solution-window-icon .window-list li a p {
   line-height: 1.4em;
+  padding: 0 6px;
 }
 @media screen and (max-width: 1380px) {
   .solution-function-bg .content {
@@ -195,7 +199,7 @@
     margin-right: 0;
   }
   .solution-window-icon .window-list li a {
-    padding-top: 1.46666667rem;
+    padding-top: 1.33333333rem;
     font-size: 0.21333333rem;
     line-height: 1em;
   }
@@ -203,5 +207,9 @@
     display: block;
     height: 0.49333333rem;
     width: auto;
+  }
+  .solution-window-icon .window-list li a p {
+    line-height: 1.2em;
+    padding: 0 3px;
   }
 }
