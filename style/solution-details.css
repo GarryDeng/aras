@@ -15,6 +15,12 @@
   line-height: 112px;
   font-size: 24px;
 }
+.solution-details-header .single-window .single-content .vessel {
+  max-width: 100% !important;
+}
+.solution-details-header .single-window .single-content .vessel * {
+  max-width: 100% !important;
+}
 .solution-details-header .single-window .single-content .content {
   font-size: 16px;
   line-height: 1.6em;
