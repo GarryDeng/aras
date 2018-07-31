@@ -15,12 +15,6 @@
   line-height: 112px;
   font-size: 24px;
 }
-.solution-details-header .single-window .single-content .vessel {
-  max-width: 100% !important;
-}
-.solution-details-header .single-window .single-content .vessel * {
-  max-width: 100% !important;
-}
 .solution-details-header .single-window .single-content .content {
   font-size: 16px;
   line-height: 1.6em;
@@ -234,9 +228,6 @@
   padding-bottom: 62px;
   border-bottom: 2px solid #e5e5e5;
 }
-.solution-details-content .list-right .function-get .solution-function-bg:nth-child(2n) {
-  background-color: #ebebeb;
-}
 .solution-details-content .list-right .function-get .solution-function-bg .content h3 {
   line-height: 138px;
   font-weight: normal;
@@ -251,6 +242,12 @@
   border-bottom: 6px solid #000;
   left: 0;
   position: absolute;
+}
+.solution-details-content .list-right .function-get .solution-function-bg .content .vessel {
+  max-width: 100% !important;
+}
+.solution-details-content .list-right .function-get .solution-function-bg .content .vessel * {
+  max-width: 100% !important;
 }
 .solution-details-content .list-right .function-get .solution-function-bg .content .context {
   margin-top: 52px;
