@@ -178,7 +178,10 @@
                 </a>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="pagination">
+            <span class="present">1</span> /
+            <span class="tatol"></span>
+        </div>
         <div class="swiper-button-prev swiper-button-black"></div>
         <!--左箭头-->
         <div class="swiper-button-next swiper-button-black"></div>
@@ -190,19 +193,26 @@
             direction: 'vertical',
             slidesPerView: 6,
             // centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-                // bulletActiveClass: 'my-bullet-active',
-            },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     type: 'fraction',
+            //     // bulletActiveClass: 'my-bullet-active',
+            // },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
-        $(".swiper-container-synopsis .swiper-slide").hover(function(){
-            $(this).addClass("swiper-slide-active").siblings().removeClass("swiper-slide-active");
+        $(".swiper-container-synopsis .swiper-slide").hover(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $('.pagination .present').text($(this).index() + 1);//计算单个当前位置
         });
+        $(function () {
+            var newNumber = 1;//单前放大个数
+            $('.pagination .tatol').text($(".swiper-container-synopsis").find('.swiper-slide').length);//计算总算
+            $('.pagination .present').text(newNumber);//计算单个当前位置
+            $(".swiper-container-synopsis").find('.swiper-slide').eq(newNumber - 1).addClass('active');
+        })
     </script>
     <!-- 滚动条简介end -->
     <!-- 底部start -->

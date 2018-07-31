@@ -329,11 +329,11 @@
         var cHeight = paddTop + $('.wisdom-search-list').height();
         $(window).on('scroll', function () {
             for (var i = 0; i < $(".solution-function-bg").length; i++) {
-                if ($(this).scrollTop() >= $(".solution-function-bg").eq(i).offset().top - cHeight && !$(".wisdom-search-list li").eq(i).hasClass('active')) {
+                if ($(this).scrollTop() >= $(".solution-function-bg").eq(i).offset().top - cHeight -10&& !$(".wisdom-search-list li").eq(i).hasClass('active')) {
                     $(".wisdom-search-list li").eq(i).addClass('active').siblings().removeClass('active');
                 }
             }
-            if ($(this).scrollTop() >= $(".solution-function-bg").parent().next().offset().top - cHeight && !$(".wisdom-search-list li").eq(-1).hasClass('active')) {
+            if ($(this).scrollTop() >= $(".solution-function-bg").parent().next().offset().top - cHeight -10&& !$(".wisdom-search-list li").eq(-1).hasClass('active')) {
                 $(".wisdom-search-list li").eq(-1).addClass('active').siblings().removeClass('active');
             }
             if ($(this).scrollTop() != 0) {
@@ -351,7 +351,7 @@
         });
         $(".wisdom-search-list li a").on('click', function () {
             var soSet = $(".solution-function-bg").eq($(this).parent().index()).offset();
-            $(this).parent().addClass('active').siblings('li').removeClass('active');
+            // $(this).parent().addClass('active').siblings('li').removeClass('active');
             if (!soSet) {
                 return $('html,body').animate({ scrollTop: $(".solution-function-bg").parent().next().offset().top - cHeight + 'px' }, 600);
             }

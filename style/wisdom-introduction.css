@@ -100,6 +100,14 @@
   overflow: hidden;
   height: 384px;
 }
+.swiper-container-synopsis .pagination {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(-50%);
+  line-height: 22px;
+  font-size: 14px;
+}
 .swiper-container-synopsis .swiper-slide {
   line-height: 64px;
   height: 64px;
@@ -137,13 +145,13 @@
   white-space: nowrap;
   width: 620px;
 }
-.swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
+.swiper-container-synopsis .swiper-slide.active::before {
   width: 12px;
   height: 12px;
   margin-top: -7px;
   margin-left: 0;
 }
-.swiper-container-synopsis .swiper-slide.swiper-slide-active span {
+.swiper-container-synopsis .swiper-slide.active span {
   font-size: 24px;
 }
 .swiper-container-synopsis .swiper-button-next,
@@ -264,12 +272,12 @@
   .swiper-container-synopsis .swiper-slide span.context {
     width: 4.49275362rem;
   }
-  .swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
+  .swiper-container-synopsis .swiper-slide.active::before {
     width: 12px;
     height: 12px;
     margin-top: -6px;
   }
-  .swiper-container-synopsis .swiper-slide.swiper-slide-active span {
+  .swiper-container-synopsis .swiper-slide.active span {
     font-size: 20px;
   }
   .swiper-container-synopsis .swiper-button-next,
@@ -348,7 +356,7 @@
   .swiper-container-synopsis .swiper-slide span.context {
     width: 4.49275362rem;
   }
-  .swiper-container-synopsis .swiper-slide.swiper-slide-active span {
+  .swiper-container-synopsis .swiper-slide.active span {
     font-size: 18px;
   }
   .swiper-container-synopsis .swiper-button-next,
@@ -439,13 +447,13 @@
   .swiper-container-synopsis .swiper-slide span.context {
     width: 5.94666667rem;
   }
-  .swiper-container-synopsis .swiper-slide.swiper-slide-active::before {
+  .swiper-container-synopsis .swiper-slide.active::before {
     width: 10px;
     height: 10px;
     margin-top: -5px;
     margin-left: 0;
   }
-  .swiper-container-synopsis .swiper-slide.swiper-slide-active span {
+  .swiper-container-synopsis .swiper-slide.active span {
     font-size: 0.29333333rem;
   }
   .swiper-container-synopsis .swiper-button-next,
