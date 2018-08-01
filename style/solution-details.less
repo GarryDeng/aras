@@ -123,66 +123,76 @@
                 font-size: 16px;
                 padding-left: 123px;
                 line-height: 72px;
-                &:nth-child(2){
-                    background: url("../images/solution-window04.png") no-repeat 19px center;
-                    background-size: auto 38px;
+                position: relative;
+                img{
+                    display: block;
+                    position: absolute;
+                    left: 28px;
+                    height: 35px;
+                    width: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
-                &:nth-child(3){
-                    background: url("../images/solution-window03.png") no-repeat 19px center;
-                    background-size: auto 36px;
-                }
-                &:nth-child(4){
-                    background: url("../images/solution-window02.png") no-repeat 19px center;
-                    background-size: auto 32px;
-                }
-                &:nth-child(5){
-                    background: url("../images/solution-window01.png") no-repeat 19px center;
-                    background-size: auto 35px;
-                }
-                &:nth-child(6){
-                    background: url("../images/solution-window06.png") no-repeat 19px center;
-                    background-size: auto 33px;
-                }
-                &:nth-child(7){
-                    background: url("../images/solution-window07.png") no-repeat 19px center;
-                    background-size: auto 32px;
-                }
-                &:nth-child(8){
-                    background: url("../images/solution-window08.png") no-repeat 19px center;
-                    background-size: auto 38px;
-                }
-                &:nth-child(9){
-                    background: url("../images/solution-window09.png") no-repeat 19px center;
-                    background-size: auto 30px;
-                }
-                &:nth-child(10){
-                    background: url("../images/solution-window10.png") no-repeat 19px center;
-                    background-size: auto 29px;
-                }
-                &:nth-child(10){
-                    background: url("../images/solution-window10.png") no-repeat 19px center;
-                    background-size: auto 29px;
-                }
-                &:nth-child(11){
-                    background: url("../images/solution-window11.png") no-repeat 19px center;
-                    background-size: auto 30px;
-                }
-                &:nth-child(12){
-                    background: url("../images/solution-window12.png") no-repeat 19px center;
-                    background-size: auto 28px;
-                }
-                &:nth-child(13){
-                    background: url("../images/solution-window13.png") no-repeat 19px center;
-                    background-size: auto 31px;
-                }
-                &:nth-child(14){
-                    background: url("../images/solution-window14.png") no-repeat 19px center;
-                    background-size: auto 31px;
-                }
-                &:nth-child(15){
-                    background: url("../images/solution-window15.png") no-repeat 19px center;
-                    background-size: auto 35px;
-                }
+                // &:nth-child(2){
+                //     background: url("../images/solution-window04.png") no-repeat 19px center;
+                //     background-size: auto 38px;
+                // }
+                // &:nth-child(3){
+                //     background: url("../images/solution-window03.png") no-repeat 19px center;
+                //     background-size: auto 36px;
+                // }
+                // &:nth-child(4){
+                //     background: url("../images/solution-window02.png") no-repeat 19px center;
+                //     background-size: auto 32px;
+                // }
+                // &:nth-child(5){
+                //     background: url("../images/solution-window01.png") no-repeat 19px center;
+                //     background-size: auto 35px;
+                // }
+                // &:nth-child(6){
+                //     background: url("../images/solution-window06.png") no-repeat 19px center;
+                //     background-size: auto 33px;
+                // }
+                // &:nth-child(7){
+                //     background: url("../images/solution-window07.png") no-repeat 19px center;
+                //     background-size: auto 32px;
+                // }
+                // &:nth-child(8){
+                //     background: url("../images/solution-window08.png") no-repeat 19px center;
+                //     background-size: auto 38px;
+                // }
+                // &:nth-child(9){
+                //     background: url("../images/solution-window09.png") no-repeat 19px center;
+                //     background-size: auto 30px;
+                // }
+                // &:nth-child(10){
+                //     background: url("../images/solution-window10.png") no-repeat 19px center;
+                //     background-size: auto 29px;
+                // }
+                // &:nth-child(10){
+                //     background: url("../images/solution-window10.png") no-repeat 19px center;
+                //     background-size: auto 29px;
+                // }
+                // &:nth-child(11){
+                //     background: url("../images/solution-window11.png") no-repeat 19px center;
+                //     background-size: auto 30px;
+                // }
+                // &:nth-child(12){
+                //     background: url("../images/solution-window12.png") no-repeat 19px center;
+                //     background-size: auto 28px;
+                // }
+                // &:nth-child(13){
+                //     background: url("../images/solution-window13.png") no-repeat 19px center;
+                //     background-size: auto 31px;
+                // }
+                // &:nth-child(14){
+                //     background: url("../images/solution-window14.png") no-repeat 19px center;
+                //     background-size: auto 31px;
+                // }
+                // &:nth-child(15){
+                //     background: url("../images/solution-window15.png") no-repeat 19px center;
+                //     background-size: auto 35px;
+                // }
             }
         }
     }
@@ -327,7 +337,12 @@
             text-indent: 16px;
             .find-window{
                 a{
-                    padding-left: 66px;
+                    padding-left: 56px;
+                    font-size: 14px;
+                    img{
+                        height: 30px;
+                        left: 19px;
+                    }
                 }
             }
             .solution-scheme{
@@ -375,7 +390,7 @@
             }
             .single-content{
                 padding-top: 60px;
-                padding-bottom: 70px;
+                padding-bottom: 100px;
             }
         }
     }
@@ -387,9 +402,12 @@
             .find-window{
                 a{
                     padding-left: 0;
-                    &:nth-child(n){
-                        background: none;
+                    img{
+                        display: none;
                     }
+                    // &:nth-child(n){
+                    //     background: none;
+                    // }
                 }
             }
             .solution-scheme{

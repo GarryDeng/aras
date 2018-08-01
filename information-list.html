@@ -365,7 +365,7 @@
 <script src="js/common.js"></script>
 <script>
     $(function(){
-        var oTop = $(".information-recommend").offset().top;
+        var oTop = $(".information-recommend").offset().top - $('.header-fixed-list').height();
         $(window).on('scroll', function () {
             if ($(this).scrollTop() != 0) {
                 $(".header-fixed-list").addClass('add-head-before');

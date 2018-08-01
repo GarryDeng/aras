@@ -68,7 +68,7 @@
         li{
             float: left;
             margin-right: 106px;
-            width: auto;
+            width: auto !important;
             height: auto;
             &:last-child{
                 margin-right: 0;
@@ -129,6 +129,19 @@
                 display: block;
                 width: 100%;
                 height: 322px;
+            }
+            .user{
+                position: relative;
+                overflow: hidden;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
             }
             .more{
                 height: 110px;
