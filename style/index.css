@@ -353,7 +353,7 @@
 }
 .swiper-container-synopsis img {
   display: block;
-  height: 100%;
+  width: 100%;
   transform: scale(0.92, 0.92);
   filter: grayscale(100%);
   opacity: .3;
