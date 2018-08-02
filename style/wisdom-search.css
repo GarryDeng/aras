@@ -72,8 +72,10 @@
 .wisdom-search-list ul li {
   float: left;
   margin-right: 106px;
-  width: auto !important;
   height: auto;
+}
+.wisdom-search-list ul li.swiper-slide {
+  width: auto !important;
 }
 .wisdom-search-list ul li:last-child {
   margin-right: 0;
