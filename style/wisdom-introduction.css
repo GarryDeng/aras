@@ -99,7 +99,7 @@
   margin: 93px auto 150px auto;
   position: relative;
   overflow: hidden;
-  height: 384px;
+  height: 480px;
 }
 .swiper-container-synopsis .pagination {
   position: absolute;
@@ -110,8 +110,7 @@
   font-size: 14px;
 }
 .swiper-container-synopsis .swiper-slide {
-  line-height: 64px;
-  height: 64px;
+  line-height: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -141,12 +140,13 @@
   vertical-align: top;
 }
 .swiper-container-synopsis .swiper-slide span.context {
-  position: relative;
+  position: absolute;
+  right: 190px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 620px;
-  line-height: 32px;
+  line-height: 26px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -250,11 +250,10 @@
   .swiper-container-synopsis {
     width: 7.82608696rem;
     margin: 0.67391304rem auto 1.08695652rem auto;
-    height: 2.7826087rem;
+    height: 3.47826087rem;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.46376812rem;
-    height: 0.46376812rem;
+    line-height: 0.57971014rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 6px;
@@ -279,8 +278,9 @@
     width: 2.02898551rem;
   }
   .swiper-container-synopsis .swiper-slide span.context {
-    width: 4.49275362rem;
-    line-height: 0.23188406rem;
+    width: 4.92753623rem;
+    line-height: 0.1884058rem;
+    right: 0.86956522rem;
   }
   .swiper-container-synopsis .swiper-slide.active::before {
     width: 12px;
@@ -347,11 +347,10 @@
   }
   .swiper-container-synopsis {
     width: 8.57142857rem;
-    height: 3.42857143rem;
+    height: 6.48979592rem;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.57142857rem;
-    height: 0.57142857rem;
+    line-height: 0.81632653rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 0.10204082rem;
@@ -367,11 +366,14 @@
     width: 2.02898551rem;
   }
   .swiper-container-synopsis .swiper-slide span.context {
-    width: 4.49275362rem;
-    line-height: 0.28571429rem;
+    line-height: 0.26530612rem;
+    right: 1rem;
   }
   .swiper-container-synopsis .swiper-slide.active span {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .swiper-container-synopsis .swiper-slide.active span.context {
+    font-size: 14px;
   }
   .swiper-container-synopsis .swiper-button-next,
   .swiper-container-synopsis .swiper-button-prev {
@@ -438,15 +440,14 @@
   }
   .swiper-container-synopsis {
     width: 9.38666667rem;
-    height: 4rem;
+    height: 6rem;
     margin: 0.66666667rem auto;
   }
   .swiper-container-synopsis .pagination {
     display: none;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.66666667rem;
-    height: 0.66666667rem;
+    line-height: 1rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 4px;

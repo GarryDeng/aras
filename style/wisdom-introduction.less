@@ -100,7 +100,7 @@
     margin: 93px auto 150px auto;
     position: relative;
     overflow: hidden;
-    height: 64*6px;
+    height: 80*6px;
     .pagination{
         position: absolute;
         right: 0;
@@ -110,8 +110,7 @@
         font-size: 14px;
     }
     .swiper-slide{
-        line-height: 64px;
-        height: 64px;
+        line-height: 80px;
         position: relative;
         overflow: hidden;
         &::before{
@@ -139,13 +138,13 @@
                 vertical-align: top;
             }
             &.context{
-                position: relative;
+                position: absolute;
+                right: 190px;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 width: 620px;
-                line-height: 32px;
-                // height: 32px;
+                line-height: 26px;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -161,8 +160,6 @@
                 font-size: 24px;
                 &.context{
                     font-size: 18px;
-                    // line-height: 32px;
-                    // height: 64px;
                     white-space: normal;
                 }
             }
@@ -255,10 +252,9 @@
     .swiper-container-synopsis{
         width: 1080/138rem;
         margin: 93/138rem auto 150/138rem auto;
-        height: 64*6/138rem;
+        height: 80*6/138rem;
         .swiper-slide{
-            line-height: 64/138rem;
-            height: 64/138rem;
+            line-height: 80/138rem;
             &::before{
                 width: 6px;
                 height: 6px;
@@ -281,8 +277,9 @@
                     width: 280/138rem;
                 }
                 &.context{
-                    width: 620/138rem;
-                    line-height: 64/2/138rem;
+                    width: 680/138rem;
+                    line-height: 26/138rem;
+                    right: 120/138rem;
                 }
             }
             &.active{
@@ -355,10 +352,9 @@
     }
     .swiper-container-synopsis{
         width: 840/98rem;
-        height: 56*6/98rem;
+        height: 106*6/98rem;
         .swiper-slide{
-            line-height: 56/98rem;
-            height: 56/98rem;
+            line-height: 80/98rem;
             &::before{
                 width: 10/98rem;
                 height: 10/98rem;
@@ -372,8 +368,9 @@
                     width: 280/138rem;
                 }
                 &.context{
-                    width: 620/138rem;
-                    line-height: 56/2/98rem;
+                    // width: 640/98rem;
+                    line-height: 26/98rem;
+                    right: 1rem;
                 }
             }
             &.active{
@@ -383,7 +380,10 @@
                 //     margin-top: -8/98rem;
                 // }
                 span{
-                    font-size: 18px;
+                    font-size: 16px;
+                    &.context{
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -454,14 +454,13 @@
     }
     .swiper-container-synopsis{
         width: 9.38666667rem;
-        height: 50/75*6rem;
+        height: 75/75*6rem;
         margin: 50/75rem auto;
         .pagination{
             display: none;
         }
         .swiper-slide{
-            line-height: 50/75rem;
-            height: 50/75rem;
+            line-height: 75/75rem;
             &::before{
                 width: 4px;
                 height: 4px;
