@@ -133,10 +133,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding-top: constant(safe-area-inset-top);
-  padding-left: constant(safe-area-inset-left);
-  padding-right: constant(safe-area-inset-right);
-  padding-bottom: constant(safe-area-inset-bottom);
 }
 header.whole-header-nav {
   height: 70px;
@@ -235,9 +231,6 @@ header.whole-header-nav .header-fixed-list::before {
 }
 .header-fixed-list .list-skip .nav-a .second a:last-child {
   border: none;
-}
-.header-fixed-list .list-skip .nav-a:hover .second {
-  display: block;
 }
 .header-fixed-list .search-input {
   position: absolute;
