@@ -47,11 +47,26 @@
             font-size: 20px;
         }
     }
+    @keyframes top-bottom-keys {
+        0%{
+            top: 60px;
+        }
+        39%{
+            top: 50px;
+        }
+        70%{
+            top: 70px;
+        }
+        100%{
+            top: 50px;
+        }
+    }
     .classify-index{
         padding-bottom: 94px;
         li{
             float: left;
             width: 20%;
+            position: relative;
             &:nth-child(1){
                 margin-right: 8%;
                 width: 12%;
@@ -74,7 +89,9 @@
             }
             &:hover{
                 img{
-                    transform: scale(1);
+                    // transform: scale(1);
+                    top: 50px;
+                    animation: top-bottom-keys .7s ease alternate;
                 }
                 .china{
                     &::after{
@@ -87,19 +104,23 @@
                 // }
             }
             img{
-                margin: 60px auto;
+                // margin: 60px auto;
                 display: block;
                 width: 56px;
                 height: 56px;
                 transition: all .3s;
-                transform: scale(0.92);
+                // transform: scale(0.92);
+                position: absolute;
+                left: 50%;
+                top: 60px;
+                transform: translateX(-50%);
             }
             .english{
                 color: #000;
                 font-size: 24px;
                 text-align: center;
                 height: 82px;
-                padding-top: 12px;
+                padding-top: 12+176px;
                 // transition: transform .3s;
                 // transform: scale(1);
             }
@@ -422,14 +443,14 @@
             padding-bottom: 94/138rem;
             li{
                 img{
-                    margin: 60/138rem auto;
+                    top: 60/138rem;
                     width: 60/138rem;
                     height: 60/138rem;
                 }
                 .english{
                     font-size: 25/138rem;
                     height: 82/138rem;
-                    padding-top: 12/138rem;
+                    padding-top: (12+176)/138rem;
                 }
                 .china{
                     line-height: 74/138rem;
@@ -617,8 +638,12 @@
                     margin-left: 8%;
                     width: 12%;
                 }
+                a{
+                    display: block;
+                    padding-top: (12+176)/138rem;
+                }
                 img{
-                    margin: 60/98rem auto;
+                    top: 60/98rem;
                     width: 60/138rem;
                     height: 60/138rem;
                 }
@@ -818,8 +843,19 @@
                     margin-right: 3%;
                     margin-left: 5%;
                 }
+                &:hover{
+                    img{
+                        top: 44/75rem;
+                        width: 56/75rem;
+                        height: 56/75rem;
+                        animation: none;
+                    }
+                }
+                a{
+                    padding-top: 150/75rem;
+                }
                 img{
-                    margin: 44/75rem auto;
+                    top: 44/75rem;
                     width: 56/75rem;
                     height: 56/75rem;
                 }

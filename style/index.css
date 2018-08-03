@@ -48,12 +48,27 @@
 .offer-index .english-china .fr {
   font-size: 20px;
 }
+@keyframes top-bottom-keys {
+  0% {
+    top: 60px;
+  }
+  39% {
+    top: 50px;
+  }
+  70% {
+    top: 70px;
+  }
+  100% {
+    top: 50px;
+  }
+}
 .offer-index .classify-index {
   padding-bottom: 94px;
 }
 .offer-index .classify-index li {
   float: left;
   width: 20%;
+  position: relative;
 }
 .offer-index .classify-index li:nth-child(1) {
   margin-right: 8%;
@@ -72,26 +87,29 @@
   width: 16%;
 }
 .offer-index .classify-index li:hover img {
-  transform: scale(1);
+  top: 50px;
+  animation: top-bottom-keys 0.7s ease alternate;
 }
 .offer-index .classify-index li:hover .china::after {
   width: 40px;
   margin-left: -20px;
 }
 .offer-index .classify-index li img {
-  margin: 60px auto;
   display: block;
   width: 56px;
   height: 56px;
   transition: all .3s;
-  transform: scale(0.92);
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
 }
 .offer-index .classify-index li .english {
   color: #000;
   font-size: 24px;
   text-align: center;
   height: 82px;
-  padding-top: 12px;
+  padding-top: 188px;
 }
 .offer-index .classify-index li .china {
   line-height: 74px;
@@ -392,14 +410,14 @@
     padding-bottom: 0.68115942rem;
   }
   .offer-index .classify-index li img {
-    margin: 0.43478261rem auto;
+    top: 0.43478261rem;
     width: 0.43478261rem;
     height: 0.43478261rem;
   }
   .offer-index .classify-index li .english {
     font-size: 0.18115942rem;
     height: 0.5942029rem;
-    padding-top: 0.08695652rem;
+    padding-top: 1.36231884rem;
   }
   .offer-index .classify-index li .china {
     line-height: 0.53623188rem;
@@ -581,8 +599,12 @@
     margin-left: 8%;
     width: 12%;
   }
+  .offer-index .classify-index li a {
+    display: block;
+    padding-top: 1.36231884rem;
+  }
   .offer-index .classify-index li img {
-    margin: 0.6122449rem auto;
+    top: 0.6122449rem;
     width: 0.43478261rem;
     height: 0.43478261rem;
   }
@@ -777,8 +799,17 @@
     margin-right: 3%;
     margin-left: 5%;
   }
+  .offer-index .classify-index li:hover img {
+    top: 0.58666667rem;
+    width: 0.74666667rem;
+    height: 0.74666667rem;
+    animation: none;
+  }
+  .offer-index .classify-index li a {
+    padding-top: 2rem;
+  }
   .offer-index .classify-index li img {
-    margin: 0.58666667rem auto;
+    top: 0.58666667rem;
     width: 0.74666667rem;
     height: 0.74666667rem;
   }
