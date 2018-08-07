@@ -34,3 +34,23 @@ $(".header-fixed-list .list-skip .nav-a").hover(function(){
 },function(){
     $(this).find(".second").slideUp(0);
 });
+var animationClass = $('.common-nonactivated-animatiton');
+// $('.common-nonactivated-animatiton').each(function (index, item) {
+//     animationArr.push($('.common-nonactivated-animatiton').eq(index).offset().top);
+// })
+animationClass.each(function (index, item) {
+    if (animationClass.eq(index).offset().top <= $(window).scrollTop() + document.documentElement.clientHeight - 60 && !animationClass.eq(index).hasClass('common-active-animatiton')) {
+        animationClass.eq(index).addClass('common-active-animatiton');
+        // console.log(!animationClass.hasClass('common-active-animatiton'))
+    }
+})
+$(window).on('scroll',function(){
+    var _that = $(this);
+    animationClass.each(function (index, item) {
+        if (animationClass.eq(index).offset().top <= _that.scrollTop() + document.documentElement.clientHeight - 60 && !animationClass.eq(index).hasClass('common-active-animatiton')){
+            animationClass.eq(index).addClass('common-active-animatiton');
+            // console.log(!animationClass.hasClass('common-active-animatiton'))
+        }
+    })
+    // animationArr.
+});
