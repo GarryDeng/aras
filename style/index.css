@@ -20,17 +20,19 @@
   margin-left: 640px;
 }
 .swiper-pagination-bullet {
-  background-color: #FFF;
-  opacity: 1;
+  background-color: transparent;
+  opacity: .6;
+}
+.swiper-pagination-bullet .arc {
+  stroke-dashoffset: 30;
 }
 .swiper-pagination-bullet-active {
-  background: #FFF;
-  width: 16px;
-  height: 16px;
+  opacity: 1;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 32px auto;
-  display: block;
+.swiper-pagination-bullet-active .arc {
+  transition: 6s stroke-dasharray cubic-bezier(0.11, 0.65, 1, 1);
+  stroke-dashoffset: 0;
+  stroke-dasharray: 36px, 3px;
 }
 .offer-index {
   width: 1280px;
@@ -78,31 +80,57 @@
   margin-right: 6%;
   width: 14%;
 }
+.offer-index .classify-index li:nth-child(2) .img-svg svg rect {
+  stroke: #000;
+  stroke-dasharray: 90 600;
+}
 .offer-index .classify-index li:nth-child(3) {
   margin-right: 4%;
+  width: 16%;
+}
+.offer-index .classify-index li:nth-child(4) {
+  margin-left: 4%;
   width: 16%;
 }
 .offer-index .classify-index li:nth-child(5) {
   margin-left: 4%;
   width: 16%;
 }
-.offer-index .classify-index li:hover img {
-  top: 50px;
-  animation: top-bottom-keys 0.7s ease alternate;
-}
 .offer-index .classify-index li:hover .china::after {
   width: 40px;
   margin-left: -20px;
 }
-.offer-index .classify-index li img {
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect {
+  animation: rectAnimation 1s ease 2 alternate;
+  transform-origin: center bottom;
+}
+.offer-index .classify-index li:hover:nth-child(2) .img-svg svg rect {
+  animation: rectTAnimation 1s ease-in-out 2 alternate;
+  transform-origin: center bottom;
+}
+.offer-index .classify-index li:hover:nth-child(3) .img-svg svg path,
+.offer-index .classify-index li:hover:nth-child(3) .img-svg svg polygon {
+  animation: pathChild 1s ease-in-out 1 alternate;
+  transform-origin: center bottom;
+}
+.offer-index .classify-index li:hover:nth-child(4) .img-svg svg polygon.active {
+  animation: pathChild 1s ease-in-out 1;
+  transform-origin: center bottom;
+}
+.offer-index .classify-index li:hover:nth-child(5) .img-svg svg rect {
+  animation: easeAnm 0.6s ease-in-out 2 alternate;
+}
+.offer-index .classify-index li .img-svg {
   display: block;
   width: 56px;
-  height: 56px;
-  transition: all .3s;
   position: absolute;
   left: 50%;
   top: 60px;
   transform: translateX(-50%);
+}
+.offer-index .classify-index li .img-svg svg {
+  width: 100%;
+  height: auto;
 }
 .offer-index .classify-index li .english {
   color: #000;
@@ -128,6 +156,49 @@
   background-color: #000;
   margin-left: -10px;
   transition: all .3s;
+}
+@keyframes rectAnimation {
+  form {
+    height: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    height: 30px;
+    transform: translateY(20px);
+  }
+}
+@keyframes rectTAnimation {
+  form {
+    stroke-dasharray: 90 600;
+  }
+  to {
+    stroke-dasharray: 0 600;
+  }
+}
+@keyframes easeAnm {
+  form {
+    height: 60px;
+  }
+  to {
+    height: 0px;
+  }
+}
+@keyframes pathChild {
+  0% {
+    stroke: #000;
+    stroke-dasharray: 3 600;
+    stroke-dashoffset: -129;
+    fill: white;
+  }
+  99.99% {
+    fill: black;
+  }
+  100% {
+    stroke: #000;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1;
+    fill: black;
+  }
 }
 .offer-index .information-index li {
   float: left;
@@ -279,10 +350,32 @@
   float: left;
   transform: scale(1);
   transition: transform .3s;
+  position: relative;
+}
+.offer-index .service-index li .icon svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.offer-index .service-index li .icon svg circle {
+  stroke-dasharray: 0, 90;
+  stroke-dashoffset: 5;
+  transition: 0.8s stroke-dasharray cubic-bezier(0.78, 0.25, 1, 1);
+}
+.offer-index .service-index li .icon img {
+  display: block;
 }
 .offer-index .service-index li:hover .icon {
   transform: scale(1.08);
   transition: transform .3s;
+}
+.offer-index .service-index li:hover .icon svg circle {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 180, 0;
 }
 .offer-index .service-index li .content {
   float: right;
@@ -409,7 +502,7 @@
   .offer-index .classify-index {
     padding-bottom: 0.68115942rem;
   }
-  .offer-index .classify-index li img {
+  .offer-index .classify-index li .img-svg {
     top: 0.43478261rem;
     width: 0.43478261rem;
     height: 0.43478261rem;
@@ -523,6 +616,9 @@
     margin: 0 auto;
     display: block;
   }
+  .offer-index .service-index li .icon img {
+    width: 100%;
+  }
   .offer-index .service-index li .content {
     padding-top: 0.13043478rem;
     float: none;
@@ -603,7 +699,7 @@
     display: block;
     padding-top: 1.36231884rem;
   }
-  .offer-index .classify-index li img {
+  .offer-index .classify-index li .img-svg {
     top: 0.6122449rem;
     width: 0.43478261rem;
     height: 0.43478261rem;
@@ -764,10 +860,6 @@
     width: 4px;
     height: 4px;
   }
-  .swiper-pagination-bullet-active {
-    width: 8px;
-    height: 8px;
-  }
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
@@ -808,7 +900,7 @@
   .offer-index .classify-index li a {
     padding-top: 2rem;
   }
-  .offer-index .classify-index li img {
+  .offer-index .classify-index li .img-svg {
     top: 0.58666667rem;
     width: 0.74666667rem;
     height: 0.74666667rem;

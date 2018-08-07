@@ -210,6 +210,7 @@ header.whole-header-nav .header-fixed-list::before {
 .header-fixed-list .list-skip .nav-a a {
   color: #FFF;
   font-size: 14px;
+  transition: color .3s;
 }
 .header-fixed-list .list-skip .nav-a:last-child {
   margin-right: 0;
@@ -231,6 +232,15 @@ header.whole-header-nav .header-fixed-list::before {
 }
 .header-fixed-list .list-skip .nav-a .second a:last-child {
   border: none;
+}
+.header-fixed-list .list-skip .nav-a:hover a {
+  color: #2aa7d8;
+}
+.header-fixed-list .list-skip .nav-a:hover .second a {
+  color: #FFF;
+}
+.header-fixed-list .list-skip .nav-a:hover .second a:hover {
+  color: #2aa7d8;
 }
 .header-fixed-list .search-input {
   position: absolute;
@@ -328,6 +338,10 @@ header.whole-header-nav .header-fixed-list::before {
   color: #FFF;
   padding: 0 5px;
   margin: 0 10px;
+  transition: color .3s;
+}
+.header-fixed-list .login-register a:hover {
+  color: #2aa7d8;
 }
 .header-fixed-list .login-register a.registed {
   padding: 0;
@@ -365,6 +379,10 @@ footer .footer-common .nav-common a {
   opacity: .8;
   font-size: 14px;
   float: left;
+  transition: opacity .3s;
+}
+footer .footer-common .nav-common a:hover {
+  opacity: 1;
 }
 footer .footer-common .message-list {
   position: absolute;
@@ -476,6 +494,10 @@ footer .footer-common .message-common .blogroll a {
   opacity: .8;
   display: inline-block;
   margin-left: 10px;
+  transition: opacity .3s;
+}
+footer .footer-common .message-common .blogroll a:hover {
+  opacity: 1;
 }
 footer .copyright {
   margin-top: 120px;
@@ -486,7 +508,12 @@ footer .copyright {
   color: #FFF;
 }
 footer .copyright a {
+  opacity: .8;
   color: #FFF;
+  transition: opacity .3s;
+}
+footer .copyright a:hover {
+  opacity: 1;
 }
 .fixed-login-wechat {
   position: fixed;

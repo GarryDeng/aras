@@ -120,16 +120,22 @@
     </div>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
-            speed: 1000,
+            speed: 800,
             autoplay: {
                 delay: 5000,//1秒切换一次
             },
-            effect: 'fade',
+            // effect: 'fade',
             simulateTouch: false,//禁止鼠标模拟
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                renderBullet: function (index, className) {
+                    return '<i class="' + className +'"><svg class="fp-arc-loader" width="16" height="16" viewBox="0 0 16 16">'+
+                                '<circle class="arc" cx="8" cy="8" r="5.5" fill="none" stroke-dasharray="0, 90" stroke-dashoffset="5" transform="rotate(-90 8 8)" stroke="#FFF" stroke-opacity="1" stroke-width="1.5px" style=""></circle>'+
+                                '<circle cx="8" cy="8" r="2.5" fill="#FFF"></circle> '+
+                           '</svg></i> '
+                },
             },
         })
     </script>
@@ -141,7 +147,14 @@
         <ul class="classify-index clear">
             <li>
                 <a href="javascript:">
-                    <img src="images/line.png" alt="">
+                    <p class="img-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                            <rect x="21.95" y="40.42" width="5.65" height="25.4" />
+                            <rect x="4.07" y="29.13" width="5.65" height="36.7" />
+                            <rect x="39.83" y="6.55" width="5.65" height="59.28" />
+                            <rect x="57.71" y="17.84" width="5.65" height="47.99" />
+                        </svg>
+                    </p>
                     <p class="english">
                          SUBJECT<br/>RESEARCH
                     </p>
@@ -150,7 +163,17 @@
             </li>
             <li>
                 <a href="javascript:">
-                    <img src="images/diamonds.png" alt="">
+                    <p class="img-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                            <!-- <path d="M30.14,30.75H4.89V5.49H30.14Zm-22.25-3H27.14V8.49H7.89Z" /> -->
+                            <!-- <path d="M65,31.49H39.76V6.23H65Zm-22.25-3H62V9.23H42.76Z" />
+                            <path d="M30.14,64.5H4.89V39.24H30.14Zm-22.25-3H27.14V42.24H7.89Z" /> -->
+                            <rect x="7" fill="transparent" stroke-width="3" y="40" width="21.74" height="21.74" />
+                            <rect x="7" fill="transparent" stroke-width="3" y="7" width="21.74" height="21.74" />
+                            <rect x="40.51" fill="transparent" stroke-width="3" y="7" width="21.74" height="21.74" />
+                            <rect x="40.51" fill="#000" stroke-width="3" y="40" width="21.74" height="21.74" />
+                        </svg>
+                    </p>
                     <p class="english">
                          TOP-LEVEL<br/>PLAN
                     </p>
@@ -159,7 +182,12 @@
             </li>
             <li>
                 <a href="javascript:">
-                    <img src="images/book.png" alt="">
+                    <p class="img-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                            <path d="M63.46,64.37H7.34V6.28H48.1L63.34,20.34Zm-53.12-3H60.45l-.11-39.71L46.93,9.28H10.34Z"/>
+                            <polygon points="62.47 23.05 46.77 23.05 46.77 7.78 49.77 7.78 49.77 20.05 62.47 20.05 62.47 23.05" />
+                        </svg>
+                    </p>
                     <p class="english">
                          TOTAL<br/>SOLUTION
                     </p>
@@ -168,7 +196,12 @@
             </li>
             <li>
                 <a href="javascript:">
-                    <img src="images/charts.png" alt="">
+                    <p class="img-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                            <polygon class="active" points="39.91 45.04 29.31 33.44 18.41 43.91 16.33 41.74 29.45 29.15 39.92 40.61 55.98 23.26 58.18 25.3 39.91 45.04" />
+                            <polygon points="65.89 63.66 6.52 63.66 6.52 5.88 9.52 5.88 9.52 60.66 65.89 60.66 65.89 63.66" />
+                        </svg>
+                    </p>
                     <p class="english">
                          OPERATIONS<br/>MANAGEMENT
                     </p>
@@ -177,7 +210,13 @@
             </li>
             <li>
                 <a href="javascript:">
-                    <img src="images/trapezoid.png" alt="">
+                    <p class="img-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                            <rect x="-40" y="-87" width="5.65" height="60.69" transform="translate(93.63 20.73) rotate(-90)" />
+                            <rect x="23.75" y="14.14" width="5.65" height="40.93" transform="translate(61.17 8.03) rotate(90)" />
+                            <rect x="-19" y="-23.99" width="5.65" height="23.99" transform="translate(30.12 -6.08) rotate(-90)" />
+                        </svg>
+                    </p>
                     <p class="english">
                          ASSESSMENT<br/>REVIEW
                     </p>
@@ -302,7 +341,13 @@
         <ul class="service-index clear">
             <li>
                 <a class="clear" href="javascript:">
-                    <img class="icon" src="images/__book__.png" alt="">
+                    <span class="icon">
+                        <svg class="fp-arc-loader" width="160" height="160" viewBox="0 0 160 160">
+                            <circle class="arc" cx="80" cy="80" r="78" fill="none" transform="rotate(-90 80 80)" stroke="#000" stroke-opacity="1" stroke-width="1.5px"
+                                style=""></circle>
+                        </svg>
+                        <img src="images/__book__.png" alt="">
+                    </span>
                     <div class="content">
                         <p class="english">Authoritative<br/>expert</p>
                         <p class="china">权威的智库专家</p>
@@ -311,7 +356,13 @@
             </li>
             <li>
                 <a class="clear" href="javascript:">
-                    <img class="icon" src="images/__computer__.png" alt="">
+                    <span class="icon">
+                        <svg class="fp-arc-loader" width="160" height="160" viewBox="0 0 160 160">
+                            <circle class="arc" cx="80" cy="80" r="78" fill="none"
+                             transform="rotate(-90 80 80)" stroke="#000" stroke-opacity="1" stroke-width="1.5px" style=""></circle>
+                        </svg>
+                        <img src="images/__computer__.png" alt="">
+                    </span>
                     <div class="content">
                         <p class="english">Strong<br/>research</p>
                         <p class="china">强大的研发实力</p>
@@ -320,7 +371,13 @@
             </li>
             <li>
                 <a class="clear" href="javascript:">
-                    <img class="icon" src="images/__book__.png" alt="">
+                    <span class="icon">
+                        <svg class="fp-arc-loader" width="160" height="160" viewBox="0 0 160 160">
+                            <circle class="arc" cx="80" cy="80" r="78" fill="none" transform="rotate(-90 80 80)" stroke="#000" stroke-opacity="1" stroke-width="1.5px"
+                                style=""></circle>
+                        </svg>
+                        <img src="images/__partner__.png" alt="">
+                    </span>
                     <div class="content">
                         <p class="english">Cooperative<br/>partner</p>
                         <p class="china">优秀的合作伙伴</p>

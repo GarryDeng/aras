@@ -30,5 +30,7 @@ function phone(tele) {
 }
 //导航条
 $(".header-fixed-list .list-skip .nav-a").hover(function(){
-    $(this).find(".second").slideToggle(150);
+    $(this).find(".second").slideDown(150);
+},function(){
+    $(this).find(".second").slideUp(0);
 });

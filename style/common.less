@@ -85,6 +85,7 @@ header{
             a{
                 color: #FFF;
                 font-size: 14px;
+                transition: color .3s;
             }
             &:last-child{
                 margin-right: 0;
@@ -107,11 +108,20 @@ header{
                     }
                 }
             }
-            // &:hover{
-            //     .second{
-            //         display: block;
-            //     }
-            // }
+            &:hover{
+                a{
+                    color: #2aa7d8;
+                }
+                .second{
+                    // display: block;
+                    a{
+                        color: #FFF;
+                        &:hover{
+                            color: #2aa7d8;
+                        }
+                    }
+                }
+            }
         }
     }
     .search-input{
@@ -205,6 +215,10 @@ header{
             color: #FFF;
             padding: 0 5px;
             margin: 0 10px;
+            transition: color .3s;
+            &:hover{
+                color: #2aa7d8;
+            }
             &.registed{
                 padding: 0;
                 width: 38px;
@@ -241,6 +255,10 @@ footer{
                 opacity: .8;
                 font-size: 14px;
                 float: left;
+                transition: opacity .3s;
+                &:hover{
+                    opacity: 1;
+                }
             }
         }
         .message-list{
@@ -358,6 +376,10 @@ footer{
                     opacity: .8;
                     display: inline-block;
                     margin-left: 10px;
+                    transition: opacity .3s;
+                    &:hover{
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -367,7 +389,12 @@ footer{
         padding-bottom: 24px;
         text-align: center;
         a{
+            opacity: .8;
             color: #FFF;
+            transition: opacity .3s;
+            &:hover{
+                opacity: 1;
+            }
         }
         font-size: 12px;
         opacity: .8;
