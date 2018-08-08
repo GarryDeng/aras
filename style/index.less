@@ -93,6 +93,19 @@
             &:nth-child(1){
                 margin-right: 8%;
                 width: 12%;
+                // .img-svg{
+                //     svg{
+                //         // rect{
+                //         //     // fill: transparent;
+                //         //     // stroke-width: 4px;
+                //         //     // stroke: #000;
+                //         //     // stroke-dasharray: 90 600;
+                //         //     // stroke-dashoffset: -460;
+                //         //     // stroke-dasharray: 760;
+                //         //     // stroke-dashoffset: 0;
+                //         // }
+                //     }
+                // }
             }
             &:nth-child(2){
                 margin-right: 6%;
@@ -114,32 +127,30 @@
             &:nth-child(3){
                 margin-right: 4%;
                 width: 16%;
-                // .img-svg{
-                //     svg{
-                //         path{
-                //             stroke: #000;
-                //             stroke-dasharray: 3 600;
-                //             stroke-dashoffset: -129;
-                //             stroke-width: 2;
-                //             fill:#000;
-                //         }
-                //     }
-                // }
+                .img-svg{
+                    svg{
+                        path{
+                            stroke: #000;
+                            // stroke-dasharray: 90 600;
+                            stroke-dasharray: 300px 300px;
+                            stroke-dashoffset: 0px;
+                            fill:none;
+                            stroke-width: 2px;
+                        }
+                    }
+                }
             }
             &:nth-child(4){
                 margin-left: 4%;
                 width: 16%;
-                // .img-svg{
-                //     svg{
-                //         polygon{
-                //             stroke: #000;
-                //             stroke-dasharray: 3 600;
-                //             stroke-dashoffset: -129;
-                //             stroke-width: 2;
-                //             fill:#000;
-                //         }
-                //     }
-                // }
+                .img-svg{
+                    svg{
+                        path{
+                            stroke-dasharray: 300px 300px;
+                            stroke-dashoffset: 0px;
+                        }
+                    }
+                }
             }
             &:nth-child(5){
                 margin-left: 4%;
@@ -160,12 +171,12 @@
                 //     top: 50px;
                 //     animation: top-bottom-keys .7s ease alternate;
                 // }
-                .china{
-                    &::after{
-                        width: 40px;
-                        margin-left: -20px;
-                    }
-                }
+                // .china{
+                //     &::after{
+                //         width: 40px;
+                //         margin-left: -20px;
+                //     }
+                // }
                 // .english,.china{
                 //     transform: scale(1.08);
                 // }
@@ -174,8 +185,19 @@
                         svg{
                             // transform: rotate(180deg);
                             rect{
-                                animation: rectAnimation 1s ease 2 alternate;
-                                transform-origin: center bottom;
+                                &:nth-child(4){
+                                    animation: rectAnimation .6s ease 2 alternate;
+                                }
+                                &:nth-child(1){
+                                    animation: rectAnimation .6s ease .38s 2 alternate;
+                                }
+                                &:nth-child(2){
+                                    animation: rectAnimation .6s ease .15s 2 alternate;
+                                }
+                                &:nth-child(3){
+                                    animation: rectAnimation .6s ease .3s 2 alternate;
+                                }
+                                // transform-origin: center bottom;
                             }
                         }
                     }
@@ -185,7 +207,7 @@
                         svg{
                             rect{
                                 animation: rectTAnimation 1s ease-in-out 2 alternate;
-                                transform-origin: center bottom;
+                                // transform-origin: center bottom;
                             }
                         }
                     }
@@ -194,8 +216,8 @@
                     .img-svg{
                         svg{
                             path,polygon{
-                                animation: pathChild 1s ease-in-out 1 alternate;
-                                transform-origin: center bottom;
+                                animation: pathChild 1s ease-in-out 2 alternate;
+                                // transform-origin: center bottom;
                             }
                         }
                     }
@@ -203,9 +225,10 @@
                 &:nth-child(4){
                     .img-svg{
                         svg{
-                            polygon.active{
-                                animation: pathChild 1s ease-in-out 1;
-                                transform-origin: center bottom;
+                            path{
+                                animation: pathChild2 1s ease-in-out  2 alternate;
+                                // stroke-dashoffset: 0px;
+                                // transform-origin: center bottom;
                             }
                         }
                     }
@@ -273,13 +296,13 @@
         }
     }
     @keyframes rectAnimation {
-        form{
-            height: 0;
-            transform:translateY(-8px);
-        }
+        // form{
+        //     height: 60px;
+        //     // transform:translateY(-8px);
+        // }
         to{
-            height: 30px;
-            transform:translateY(20px);
+            height: 10px;
+            // transform:translateY(20px) rotate(180deg);
         }
     }
     @keyframes rectTAnimation {
@@ -299,24 +322,35 @@
         }
     }
     @keyframes pathChild {
-        0%{
-            stroke: #000;
-            stroke-dasharray: 3 600;
-            stroke-dashoffset: -129;
+        form{
+            stroke-dashoffset: 0px;
+        }
+        to{
+            // stroke: #000;
+            // stroke-dasharray: 300px;
+            stroke-dashoffset: 365px;
             // stroke-width: 2;
-            fill:white;
+            // fill:transparent;
         }
-        99.99%{
-            fill:black;
-        }
-        100%{
-            stroke: #000;
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1;
-            // stroke-width: 2;
-            fill:black;
-        }
+        // 99.99%{
+        //     fill:black;
+        // }
+        // 100%{
+        //     // stroke: #000;
+        //     // stroke-dasharray: 1000;
+        //     stroke-dashoffset: 0px;
+        //     // stroke-width: 2;
+        //     // fill:black;
+        // }
     }
+     @keyframes pathChild2 {
+         form{
+            stroke-dashoffset: 0px;
+        }
+        to{
+            stroke-dashoffset: -80px;
+        }
+     }
     .information-index{
         li{
             float: left;

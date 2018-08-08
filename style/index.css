@@ -88,34 +88,46 @@
   margin-right: 4%;
   width: 16%;
 }
+.offer-index .classify-index li:nth-child(3) .img-svg svg path {
+  stroke: #000;
+  stroke-dasharray: 300px 300px;
+  stroke-dashoffset: 0px;
+  fill: none;
+  stroke-width: 2px;
+}
 .offer-index .classify-index li:nth-child(4) {
   margin-left: 4%;
   width: 16%;
+}
+.offer-index .classify-index li:nth-child(4) .img-svg svg path {
+  stroke-dasharray: 300px 300px;
+  stroke-dashoffset: 0px;
 }
 .offer-index .classify-index li:nth-child(5) {
   margin-left: 4%;
   width: 16%;
 }
-.offer-index .classify-index li:hover .china::after {
-  width: 40px;
-  margin-left: -20px;
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(4) {
+  animation: rectAnimation .6s ease 2 alternate;
 }
-.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect {
-  animation: rectAnimation 1s ease 2 alternate;
-  transform-origin: center bottom;
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(1) {
+  animation: rectAnimation .6s ease .38s 2 alternate;
+}
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(2) {
+  animation: rectAnimation .6s ease .15s 2 alternate;
+}
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(3) {
+  animation: rectAnimation .6s ease .3s 2 alternate;
 }
 .offer-index .classify-index li:hover:nth-child(2) .img-svg svg rect {
   animation: rectTAnimation 1s ease-in-out 2 alternate;
-  transform-origin: center bottom;
 }
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg path,
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg polygon {
-  animation: pathChild 1s ease-in-out 1 alternate;
-  transform-origin: center bottom;
+  animation: pathChild 1s ease-in-out 2 alternate;
 }
-.offer-index .classify-index li:hover:nth-child(4) .img-svg svg polygon.active {
-  animation: pathChild 1s ease-in-out 1;
-  transform-origin: center bottom;
+.offer-index .classify-index li:hover:nth-child(4) .img-svg svg path {
+  animation: pathChild2 1s ease-in-out 2 alternate;
 }
 .offer-index .classify-index li:hover:nth-child(5) .img-svg svg rect {
   animation: easeAnm 0.6s ease-in-out 2 alternate;
@@ -158,13 +170,8 @@
   transition: all .3s;
 }
 @keyframes rectAnimation {
-  form {
-    height: 0;
-    transform: translateY(-8px);
-  }
   to {
-    height: 30px;
-    transform: translateY(20px);
+    height: 10px;
   }
 }
 @keyframes rectTAnimation {
@@ -184,20 +191,19 @@
   }
 }
 @keyframes pathChild {
-  0% {
-    stroke: #000;
-    stroke-dasharray: 3 600;
-    stroke-dashoffset: -129;
-    fill: white;
+  form {
+    stroke-dashoffset: 0px;
   }
-  99.99% {
-    fill: black;
+  to {
+    stroke-dashoffset: 365px;
   }
-  100% {
-    stroke: #000;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1;
-    fill: black;
+}
+@keyframes pathChild2 {
+  form {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: -80px;
   }
 }
 .offer-index .information-index li {
