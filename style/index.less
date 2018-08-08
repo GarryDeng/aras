@@ -216,8 +216,10 @@
                     .img-svg{
                         svg{
                             path,polygon{
-                                animation: pathChild 1s ease-in-out 2 alternate;
+                                animation: pathChild 1s ease-in-out 1;
                                 // transform-origin: center bottom;
+                                stroke-dashoffset: 300px;
+                                animation-fill-mode: forwards;
                             }
                         }
                     }
@@ -226,7 +228,9 @@
                     .img-svg{
                         svg{
                             path{
-                                animation: pathChild2 1s ease-in-out  2 alternate;
+                                animation: pathChild2 1s ease-in-out  1;
+                                stroke-dashoffset: -80px;
+                                animation-fill-mode: forwards;
                                 // stroke-dashoffset: 0px;
                                 // transform-origin: center bottom;
                             }
@@ -323,12 +327,12 @@
     }
     @keyframes pathChild {
         form{
-            stroke-dashoffset: 0px;
+            stroke-dashoffset: 300px;
         }
         to{
             // stroke: #000;
             // stroke-dasharray: 300px;
-            stroke-dashoffset: 365px;
+            stroke-dashoffset: 0px;
             // stroke-width: 2;
             // fill:transparent;
         }
@@ -344,11 +348,11 @@
         // }
     }
      @keyframes pathChild2 {
-         form{
-            stroke-dashoffset: 0px;
-        }
+        //  form{
+        //     stroke-dashoffset: 0px;
+        // }
         to{
-            stroke-dashoffset: -80px;
+            stroke-dashoffset: 0px;
         }
      }
     .information-index{

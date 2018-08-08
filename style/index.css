@@ -124,10 +124,14 @@
 }
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg path,
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg polygon {
-  animation: pathChild 1s ease-in-out 2 alternate;
+  animation: pathChild 1s ease-in-out 1;
+  stroke-dashoffset: 300px;
+  animation-fill-mode: forwards;
 }
 .offer-index .classify-index li:hover:nth-child(4) .img-svg svg path {
-  animation: pathChild2 1s ease-in-out 2 alternate;
+  animation: pathChild2 1s ease-in-out 1;
+  stroke-dashoffset: -80px;
+  animation-fill-mode: forwards;
 }
 .offer-index .classify-index li:hover:nth-child(5) .img-svg svg rect {
   animation: easeAnm 0.6s ease-in-out 2 alternate;
@@ -192,18 +196,15 @@
 }
 @keyframes pathChild {
   form {
-    stroke-dashoffset: 0px;
+    stroke-dashoffset: 300px;
   }
   to {
-    stroke-dashoffset: 365px;
+    stroke-dashoffset: 0px;
   }
 }
 @keyframes pathChild2 {
-  form {
-    stroke-dashoffset: 0px;
-  }
   to {
-    stroke-dashoffset: -80px;
+    stroke-dashoffset: 0px;
   }
 }
 .offer-index .information-index li {
