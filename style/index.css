@@ -31,6 +31,7 @@
 }
 .swiper-pagination-bullet-active .arc {
   transition: 6s stroke-dasharray cubic-bezier(0.11, 0.65, 1, 1);
+  -ms-transition: 6s stroke-dasharray cubic-bezier(0.11, 0.65, 1, 1);
   stroke-dashoffset: 0;
   stroke-dasharray: 36px, 3px;
 }
@@ -93,7 +94,7 @@
   stroke-dasharray: 300px 300px;
   stroke-dashoffset: 0px;
   fill: none;
-  stroke-width: 2px;
+  stroke-width: 3px;
 }
 .offer-index .classify-index li:nth-child(4) {
   margin-left: 4%;
@@ -106,6 +107,9 @@
 .offer-index .classify-index li:nth-child(5) {
   margin-left: 4%;
   width: 16%;
+}
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect {
+  bottom: 0;
 }
 .offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(4) {
   animation: rectAnimation .6s ease 2 alternate;
@@ -124,7 +128,8 @@
 }
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg path,
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg polygon {
-  animation: pathChild 1s ease-in-out 1;
+  animation: pathChild 1s ease-in-out;
+  -ms-animation: pathChild 1s ease-in-out;
   stroke-dashoffset: 300px;
   animation-fill-mode: forwards;
 }
@@ -174,11 +179,27 @@
   transition: all .3s;
 }
 @keyframes rectAnimation {
+  form {
+    height: 60px;
+  }
   to {
     height: 10px;
   }
 }
+@-ms-keyframes rectAnimation {
+  to {
+    bottom: -10px;
+  }
+}
 @keyframes rectTAnimation {
+  form {
+    stroke-dasharray: 90 600;
+  }
+  to {
+    stroke-dasharray: 0 600;
+  }
+}
+@-ms-keyframes rectTAnimation {
   form {
     stroke-dasharray: 90 600;
   }
@@ -194,6 +215,14 @@
     height: 0px;
   }
 }
+@-ms-keyframes easeAnm {
+  form {
+    height: 60px;
+  }
+  to {
+    height: 0px;
+  }
+}
 @keyframes pathChild {
   form {
     stroke-dashoffset: 300px;
@@ -202,7 +231,20 @@
     stroke-dashoffset: 0px;
   }
 }
+@-ms-keyframes pathChild {
+  form {
+    stroke-dashoffset: 300px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
 @keyframes pathChild2 {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@-ms-keyframes pathChild2 {
   to {
     stroke-dashoffset: 0px;
   }
