@@ -39,17 +39,18 @@ var animationClass = $('.common-nonactivated-animatiton');
 //     animationArr.push($('.common-nonactivated-animatiton').eq(index).offset().top);
 // })
 animationClass.each(function (index, item) {
+    // console.log($(".offer-index .classify-index li .img-svg svg.common-nonactivated-animatiton").eq(index).offset())
     if (animationClass.eq(index).offset().top <= $(window).scrollTop() + document.documentElement.clientHeight - 60 && !animationClass.eq(index).hasClass('common-active-animatiton')) {
         animationClass.eq(index).addClass('common-active-animatiton');
-        // console.log(!animationClass.hasClass('common-active-animatiton'))
+        // console.log(animationClass.eq(index).css('height','auto'));
     }
 })
 $(window).on('scroll',function(){
     var _that = $(this);
     animationClass.each(function (index, item) {
         if (animationClass.eq(index).offset().top <= _that.scrollTop() + document.documentElement.clientHeight - 60 && !animationClass.eq(index).hasClass('common-active-animatiton')){
-            animationClass.eq(index).addClass('common-active-animatiton');
-            // console.log(!animationClass.hasClass('common-active-animatiton'))
+            animationClass.eq(index).toggleClass('common-active-animatiton');
+            // console.log(!animationClass.eq(index).hasClass('common-active-animatiton'))
         }
     })
     // animationArr.

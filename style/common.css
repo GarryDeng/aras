@@ -366,7 +366,6 @@ footer .footer-common {
   width: 1280px;
   margin: 0 auto;
   position: relative;
-  z-index: 9;
 }
 footer .footer-common .nav-common {
   padding-top: 130px;
@@ -399,7 +398,6 @@ footer .footer-common .message-list a {
   background-size: 24px auto;
   margin: 0 16px;
   position: relative;
-  z-index: 9;
 }
 footer .footer-common .message-list a.sina {
   background: url("../images/sina.png") no-repeat center;
@@ -944,6 +942,15 @@ footer .copyright a:hover {
   opacity: 0;
 }
 .common-nonactivated-y {
+  transform: translate(0, 80px);
+  opacity: 0;
+}
+.common-nonactivated-y2 {
+  transition: all .6s ease;
+  transform: translate(0, 60px);
+  opacity: 0;
+}
+.common-nonactivated-svg {
   transform: translate(0, 80px);
   opacity: 0;
 }
