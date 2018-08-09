@@ -366,6 +366,7 @@ footer .footer-common {
   width: 1280px;
   margin: 0 auto;
   position: relative;
+  z-index: 9;
 }
 footer .footer-common .nav-common {
   padding-top: 130px;
@@ -398,6 +399,7 @@ footer .footer-common .message-list a {
   background-size: 24px auto;
   margin: 0 16px;
   position: relative;
+  z-index: 9;
 }
 footer .footer-common .message-list a.sina {
   background: url("../images/sina.png") no-repeat center;
@@ -450,7 +452,7 @@ footer .footer-common .message-common .call-mail span.phone {
   position: relative;
   background: url("../images/phone.png") no-repeat left center;
   background-size: 18px auto;
-  text-indent: 38px;
+  padding-left: 38px;
 }
 footer .footer-common .message-common .call-mail span.phone::after {
   content: "";
@@ -851,7 +853,6 @@ footer .copyright a:hover {
   footer .footer-common .message-common .address span.phone {
     padding-left: 0.42666667rem;
     background-size: 0.18666667rem auto;
-    text-indent: 0;
   }
   footer .footer-common .message-common .call-mail span.phone::after,
   footer .footer-common .message-common .address span.phone::after {

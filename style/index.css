@@ -24,15 +24,18 @@
   opacity: .6;
 }
 .swiper-pagination-bullet .arc {
-  stroke-dashoffset: 30;
+  stroke-dashoffset: 30px;
+  transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
+  -ms-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
+  -webkit-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
+  -o-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
 .swiper-pagination-bullet-active .arc {
-  transition: 6s stroke-dasharray cubic-bezier(0.11, 0.65, 1, 1);
-  -ms-transition: 6s stroke-dasharray cubic-bezier(0.11, 0.65, 1, 1);
-  stroke-dashoffset: 0;
+  transition: 6s all cubic-bezier(0.11, 0.65, 1, 1);
+  stroke-dashoffset: 0px;
   stroke-dasharray: 36px, 3px;
 }
 .offer-index {
@@ -77,6 +80,10 @@
   margin-right: 8%;
   width: 12%;
 }
+.offer-index .classify-index li:nth-child(1) .img-svg svg path {
+  stroke-dasharray: 71 71;
+  stroke-dashoffset: 0;
+}
 .offer-index .classify-index li:nth-child(2) {
   margin-right: 6%;
   width: 14%;
@@ -108,19 +115,20 @@
   margin-left: 4%;
   width: 16%;
 }
-.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect {
-  bottom: 0;
+.offer-index .classify-index li:nth-child(5) .img-svg svg path {
+  stroke-dasharray: 70 70;
+  stroke-dashoffset: 0;
 }
-.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(4) {
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg path:nth-child(4) {
   animation: rectAnimation .6s ease 2 alternate;
 }
-.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(1) {
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg path:nth-child(1) {
   animation: rectAnimation .6s ease .38s 2 alternate;
 }
-.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(2) {
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg path:nth-child(2) {
   animation: rectAnimation .6s ease .15s 2 alternate;
 }
-.offer-index .classify-index li:hover:nth-child(1) .img-svg svg rect:nth-child(3) {
+.offer-index .classify-index li:hover:nth-child(1) .img-svg svg path:nth-child(3) {
   animation: rectAnimation .6s ease .3s 2 alternate;
 }
 .offer-index .classify-index li:hover:nth-child(2) .img-svg svg rect {
@@ -138,7 +146,7 @@
   stroke-dashoffset: -80px;
   animation-fill-mode: forwards;
 }
-.offer-index .classify-index li:hover:nth-child(5) .img-svg svg rect {
+.offer-index .classify-index li:hover:nth-child(5) .img-svg svg path {
   animation: easeAnm 0.6s ease-in-out 2 alternate;
 }
 .offer-index .classify-index li .img-svg {
@@ -180,15 +188,10 @@
 }
 @keyframes rectAnimation {
   form {
-    height: 60px;
+    stroke-dashoffset: 0;
   }
   to {
-    height: 10px;
-  }
-}
-@-ms-keyframes rectAnimation {
-  to {
-    bottom: -10px;
+    stroke-dashoffset: 60;
   }
 }
 @keyframes rectTAnimation {
@@ -209,18 +212,10 @@
 }
 @keyframes easeAnm {
   form {
-    height: 60px;
+    stroke-dashoffset: 0;
   }
   to {
-    height: 0px;
-  }
-}
-@-ms-keyframes easeAnm {
-  form {
-    height: 60px;
-  }
-  to {
-    height: 0px;
+    stroke-dashoffset: 70;
   }
 }
 @keyframes pathChild {
@@ -461,7 +456,7 @@
 .coo-con-index::before {
   content: "";
   position: absolute;
-  z-index: 8;
+  z-index: 2;
   left: 0;
   right: 0;
   bottom: 0;
@@ -536,7 +531,7 @@
     margin-left: 3.91304348rem;
   }
   .offer-index {
-    width: 7.82608696rem;
+    width: 7.84782609rem;
   }
   .offer-index .english-china {
     line-height: 160px;
@@ -900,13 +895,6 @@
     width: 9.4rem;
     height: 3.2rem;
     margin: 0 auto 1.33333333rem auto;
-  }
-  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 12px auto;
-  }
-  .swiper-pagination-bullet {
-    width: 4px;
-    height: 4px;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
