@@ -24,19 +24,13 @@
   opacity: .6;
 }
 .swiper-pagination-bullet .arc {
-  stroke-dashoffset: 30px;
-  transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
-  -ms-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
-  -webkit-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
-  -o-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
+  stroke-dashoffset: 36px;
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
 .swiper-pagination-bullet-active .arc {
-  transition: 6s all cubic-bezier(0.11, 0.65, 1, 1);
-  stroke-dashoffset: 0px;
-  stroke-dasharray: 36px, 3px;
+  stroke-dasharray: 36px, 36px;
 }
 .offer-index {
   width: 1280px;
@@ -137,7 +131,6 @@
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg path,
 .offer-index .classify-index li:hover:nth-child(3) .img-svg svg polygon {
   animation: pathChild 1s ease-in-out;
-  -ms-animation: pathChild 1s ease-in-out;
   stroke-dashoffset: 300px;
   animation-fill-mode: forwards;
 }
@@ -202,14 +195,6 @@
     stroke-dasharray: 0 600;
   }
 }
-@-ms-keyframes rectTAnimation {
-  form {
-    stroke-dasharray: 90 600;
-  }
-  to {
-    stroke-dasharray: 0 600;
-  }
-}
 @keyframes easeAnm {
   form {
     stroke-dashoffset: 0;
@@ -226,20 +211,7 @@
     stroke-dashoffset: 0px;
   }
 }
-@-ms-keyframes pathChild {
-  form {
-    stroke-dashoffset: 300px;
-  }
-  to {
-    stroke-dashoffset: 0px;
-  }
-}
 @keyframes pathChild2 {
-  to {
-    stroke-dashoffset: 0px;
-  }
-}
-@-ms-keyframes pathChild2 {
   to {
     stroke-dashoffset: 0px;
   }

@@ -23,23 +23,19 @@
     background-color: transparent;
     opacity: .6;
     .arc{
-        stroke-dashoffset: 30px;
+        stroke-dashoffset: 36px;
         // stroke-dasharray: 0, 90;
         // transition: all 5s ease;
-        transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
-        -ms-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
-        -webkit-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
-        -o-transition: 6s stroke-dashoffset cubic-bezier(0.11, 0.65, 1, 1);
     }
 }
 .swiper-pagination-bullet-active{
     opacity: 1;
     .arc{
         // animation: circleKeys 6s;
-        transition: 6s all cubic-bezier(0.11, 0.65, 1, 1);
-        // -ms-transition: 6s all cubic-bezier(0.11, 0.65, 1, 1);
-        stroke-dashoffset: 0px; 
-        stroke-dasharray: 36px, 3px;
+        // transition: 6s stroke-dasharray cubic-bezier(0.11, 0.65, 1, 1);
+        // -ms-transition: 6s stroke-dasharray cubic-bezier(0.11, 0.65, 1, 1);
+        // stroke-dashoffset: 0; 
+        stroke-dasharray: 36px, 36px;
     }
 }
 // @keyframes circleKeys{
@@ -226,7 +222,7 @@
                         svg{
                             path,polygon{
                                 animation: pathChild 1s ease-in-out;
-                                -ms-animation: pathChild 1s ease-in-out;
+                                // -ms-animation: pathChild 1s ease-in-out;
                                 // transform-origin: center bottom;
                                 stroke-dashoffset: 300px;
                                 animation-fill-mode: forwards;
@@ -341,14 +337,14 @@
             stroke-dasharray: 0 600;
         }
     }
-    @-ms-keyframes rectTAnimation {
-        form{
-            stroke-dasharray: 90 600;
-        }
-        to{
-            stroke-dasharray: 0 600;
-        }
-    }
+    // @-ms-keyframes rectTAnimation {
+    //     form{
+    //         stroke-dasharray: 90 600;
+    //     }
+    //     to{
+    //         stroke-dasharray: 0 600;
+    //     }
+    // }
     @keyframes easeAnm {
         form{
             // height: 60px;
@@ -389,28 +385,28 @@
         //     // fill:black;
         // }
     }
-    @-ms-keyframes pathChild {
-        form{
-            stroke-dashoffset: 300px;
-        }
-        to{
-            // stroke: #000;
-            // stroke-dasharray: 300px;
-            stroke-dashoffset: 0px;
-            // stroke-width: 2;
-            // fill:transparent;
-        }
-        // 99.99%{
-        //     fill:black;
-        // }
-        // 100%{
-        //     // stroke: #000;
-        //     // stroke-dasharray: 1000;
-        //     stroke-dashoffset: 0px;
-        //     // stroke-width: 2;
-        //     // fill:black;
-        // }
-    }
+    // @-ms-keyframes pathChild {
+    //     form{
+    //         stroke-dashoffset: 300px;
+    //     }
+    //     to{
+    //         // stroke: #000;
+    //         // stroke-dasharray: 300px;
+    //         stroke-dashoffset: 0px;
+    //         // stroke-width: 2;
+    //         // fill:transparent;
+    //     }
+    //     // 99.99%{
+    //     //     fill:black;
+    //     // }
+    //     // 100%{
+    //     //     // stroke: #000;
+    //     //     // stroke-dasharray: 1000;
+    //     //     stroke-dashoffset: 0px;
+    //     //     // stroke-width: 2;
+    //     //     // fill:black;
+    //     // }
+    // }
     @keyframes pathChild2 {
         //  form{
         //     stroke-dashoffset: 0px;
@@ -419,14 +415,14 @@
             stroke-dashoffset: 0px;
         }
     }
-    @-ms-keyframes pathChild2 {
-        //  form{
-        //     stroke-dashoffset: 0px;
-        // }
-        to{
-            stroke-dashoffset: 0px;
-        }
-    }
+    // @-ms-keyframes pathChild2 {
+    //     //  form{
+    //     //     stroke-dashoffset: 0px;
+    //     // }
+    //     to{
+    //         stroke-dashoffset: 0px;
+    //     }
+    // }
     .information-index{
         li{
             float: left;

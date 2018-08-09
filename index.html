@@ -127,6 +127,14 @@
             // effect: 'fade',
             simulateTouch: false,//禁止鼠标模拟
             loop: true,
+            on: {
+                imagesReady: function () {
+                    changeAnimate();
+                },
+                slideChangeTransitionStart: function () {
+                    changeAnimate();
+                },
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -138,6 +146,13 @@
                 },
             },
         })
+        //动画IE兼容
+        function changeAnimate () {
+            var animateClass = $('.swiper-container .swiper-pagination-bullet-active .arc');
+            animateClass.stop();
+            animateClass.css({ 'strokeDashoffset': '36px' })
+            animateClass.animate({ 'strokeDashoffset': '0px' }, 5800);
+        }
     </script>
     <div class="offer-index">
         <div class="clear english-china">
@@ -559,6 +574,67 @@
         }else{
             $(".header-fixed-list").removeClass('add-head-before');
         }
-    })
+    });
+    //判断IE浏览器
+    function IEVersion() {
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器  
+        var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器  
+        var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+        if (isIE || isIE11) {
+            return 'IE';
+        } else if (isEdge) {
+            return 'edge';//edge
+        } else {
+            return -1;//不是ie浏览器
+        }
+    }
+    //svg在IE浏览器中的兼容
+    if(IEVersion() == 'IE') {
+        // alert(1)
+        var offerIndexClass = $('.offer-index .classify-index li');
+        offerIndexClass.eq(0).hover(function () {
+            var _that = $(this);
+            _that.find('.img-svg path').stop();
+            _that.find('.img-svg path').eq(1).delay(380);
+            _that.find('.img-svg path').eq(2).delay(150);
+            _that.find('.img-svg path').eq(3).delay(300);
+            _that.find('.img-svg path').animate({'strokeDashoffset':"60"},600,function(){
+                _that.find('.img-svg path').animate({ 'strokeDashoffset': "0" }, 600);
+            });
+        },function(){ $(this).find('.img-svg path').stop()});
+        offerIndexClass.eq(1).hover(function () {
+            var _that = $(this);
+            _that.find('.img-svg rect').stop();
+            _that.find('.img-svg rect').animate({ 'strokeDasharray': "90" }, 1000, function () {
+                // _that.find('.img-svg rect').animate({ 'strokeDasharray': "0" }, 1000);
+            });
+        },function(){ 
+            $(this).find('.img-svg rect').css({ 'strokeDasharray': "0" });
+        });
+        offerIndexClass.eq(2).hover(function () {
+            var _that = $(this);
+            _that.find('.img-svg path').css({ 'strokeDashoffset': "0" });
+            _that.find('.img-svg path').stop();
+            _that.find('.img-svg path').animate({ 'strokeDashoffset': "300" }, 1000, function () {
+                _that.find('.img-svg path').animate({ 'strokeDashoffset': "0" },1000);
+            });
+        }, function () { $(this).find('.img-svg path').stop() });
+        offerIndexClass.eq(3).hover(function () {
+            var _that = $(this);
+            _that.find('.img-svg path').css({ 'strokeDashoffset': "0" });
+            _that.find('.img-svg path').stop();
+            _that.find('.img-svg path').animate({ 'strokeDashoffset': "-80" }, 1000, function () {
+                _that.find('.img-svg path').animate({ 'strokeDashoffset': "0" }, 1000);
+            });
+        }, function () { $(this).find('.img-svg path').stop()});
+        offerIndexClass.eq(4).hover(function () {
+            var _that = $(this);
+            _that.find('.img-svg path').stop();
+            _that.find('.img-svg path').animate({ 'strokeDashoffset': "70" }, 600, function () {
+                _that.find('.img-svg path').animate({ 'strokeDashoffset': "0" }, 600);
+            });
+        }, function () { $(this).find('.img-svg path').stop() });
+    }
 </script>
 </html>
