@@ -935,24 +935,30 @@ footer .copyright a:hover {
   }
 }
 .common-nonactivated-animatiton {
-  transition: all 1.6s ease;
+  transition: all 1s ease;
+  opacity: 0;
 }
 .common-nonactivated-x {
   transform: translate(-80px, 0);
-  opacity: 0;
 }
 .common-nonactivated-y {
-  transform: translate(0, 80px);
-  opacity: 0;
+  transform: translate(0, 120px);
+}
+.common-nonactivated-ya {
+  transform: translate(0, 100px);
+  transition: all 1.2s ease;
+}
+.common-nonactivated-yb {
+  transform: translate(0, 100px);
+  transition: all 1.3s ease;
+}
+.common-nonactivated-yc {
+  transform: translate(0, 100px);
+  transition: all 1.4s ease;
 }
 .common-nonactivated-y2 {
   transition: all .6s ease;
-  transform: translate(0, 60px);
-  opacity: 0;
-}
-.common-nonactivated-svg {
-  transform: translate(0, 80px);
-  opacity: 0;
+  transform: translate(0, 120px);
 }
 .common-active-animatiton {
   transform: translate(0, 0);
