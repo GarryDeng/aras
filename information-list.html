@@ -365,18 +365,23 @@
 <script src="js/common.js"></script>
 <script>
     $(function(){
-        var oTop = $(".information-recommend").offset().top - $('.header-fixed-list').height();
+        var recommendClass = $(".information-recommend"), oTop = recommendClass.offset().top - $('.header-fixed-list').height(),oButton = $(".information-list").offset().top + $(".information-list").height() - recommendClass.height() - $(".header-fixed-list").height();
         $(window).on('scroll', function () {
             if ($(this).scrollTop() != 0) {
                 $(".header-fixed-list").addClass('add-head-before');
             } else {
                 $(".header-fixed-list").removeClass('add-head-before');
             }
-            if($(this).scrollTop()>= oTop){
-                $(".information-recommend").addClass('fixed-information-recommend');
-            }else{
-                $(".information-recommend").removeClass('fixed-information-recommend');
-            }
+            if($(this).scrollTop()>= oTop && !recommendClass.hasClass('fixed-information-recommend'))
+                recommendClass.addClass('fixed-information-recommend');
+            
+            if($(this).scrollTop() >= oButton && !recommendClass.hasClass('absolute-information-recommend'))
+                recommendClass.addClass("absolute-information-recommend");
+            
+            if($(this).scrollTop() < oTop && !!recommendClass.hasClass('fixed-information-recommend'))
+                recommendClass.removeClass('fixed-information-recommend');
+            if($(this).scrollTop() < oButton && !!recommendClass.hasClass('absolute-information-recommend'))
+                recommendClass.removeClass('absolute-information-recommend');
         })
     })
 </script>

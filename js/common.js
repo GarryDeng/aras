@@ -5,6 +5,7 @@ $('.header-fixed-list .search-input').on('click',function(){
     var searchValue = $(this).find('input').val();
     if ($(this).hasClass('search-focus') || searchValue=="") {
         $(this).removeClass('search-focus').find('input').focus();
+        $(this).siblings('.list-skip').fadeOut();
     }else{
         if (searchValue !== "")
         // 跳转链接
@@ -16,7 +17,7 @@ $('.header-fixed-list .search-input input').on('blur',function(){
     focusTime = true;
     var focusTimeSet = setTimeout(function(){
         if (!($('.header-fixed-list .search-input').hasClass('search-focus')) && focusTime)
-            $('.header-fixed-list .search-input').addClass('search-focus');
+            $('.header-fixed-list .search-input').addClass('search-focus').siblings('.list-skip').fadeIn();;
     },500)
 });
 //清空输入内容

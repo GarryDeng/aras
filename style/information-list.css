@@ -179,6 +179,11 @@
   margin-left: 280px;
   z-index: 0;
 }
+.information-content-list .information-recommend.fixed-information-recommend.absolute-information-recommend {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
 .information-content-list .information-recommend h5 {
   font-size: 24px;
   font-weight: normal;

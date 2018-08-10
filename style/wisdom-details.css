@@ -27,7 +27,7 @@
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  box-shadow: 4px 5px 12px 1px #ccc;
+  box-shadow: 2px 2px 9px 0px #e2e2e2;
 }
 .wisdom-specialist-body .user-data .head-name .name {
   line-height: 90px;
@@ -578,7 +578,7 @@
     font-size: 0.26666667rem;
   }
   .wisdom-specialist-body .specialist-details-title .details-swiper-content {
-    width: 7.57333333rem;
+    width: 9.4rem;
   }
   .wisdom-specialist-body .specialist-details-title .details-swiper-content .opinion-img {
     width: 6.24rem;
@@ -630,6 +630,11 @@
     font-size: 0.21333333rem;
     padding-left: 0.36rem;
     position: relative;
+  }
+  .wisdom-specialist-body .specialist-details-title .history-list li::before,
+  .wisdom-specialist-body .specialist-details-title .honor li::before {
+    left: -0.3rem;
+    top: 0.18666667rem;
   }
   .wisdom-specialist-body .specialist-details-title .history-list li p,
   .wisdom-specialist-body .specialist-details-title .honor li p {

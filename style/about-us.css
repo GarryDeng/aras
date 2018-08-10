@@ -17,9 +17,9 @@
 .wisdom-search-input .search-input .click-button {
   position: absolute;
   display: block;
-  width: 38px;
+  width: 30px;
   right: 18px;
-  top: 8px;
+  top: 12px;
   cursor: pointer;
 }
 .wisdom-search-input .search-input .send-input {
@@ -125,7 +125,7 @@
   height: 432px;
   position: relative;
   overflow: hidden;
-  box-shadow: 3px 2px 6px 1px #efefef;
+  box-shadow: 2px 2px 9px 0px #e2e2e2;
 }
 .wisdom-search-thinktak .wisdom-specialist li:nth-child(4n) {
   margin-right: 0;
@@ -282,9 +282,9 @@
     margin-top: 0.17753623rem;
   }
   .wisdom-search-input .search-input .click-button {
-    width: 0.27536232rem;
+    width: 0.2173913rem;
     right: 0.13043478rem;
-    top: 0.05797101rem;
+    top: 0.08695652rem;
   }
   .wisdom-search-input .search-input .send-input {
     width: 5.02898551rem;
@@ -388,9 +388,9 @@
     margin-top: 0.25rem;
   }
   .wisdom-search-input .search-input .click-button {
-    width: 0.3877551rem;
+    width: 0.30612245rem;
     right: 0.18367347rem;
-    top: 0.08163265rem;
+    top: 0.12244898rem;
   }
   .wisdom-search-input .search-input .send-input {
     width: 7.08163265rem;
@@ -735,7 +735,7 @@
   margin: 93px auto 150px auto;
   position: relative;
   overflow: hidden;
-  height: 384px;
+  height: 480px;
 }
 .swiper-container-synopsis .pagination {
   position: absolute;
@@ -746,8 +746,7 @@
   font-size: 14px;
 }
 .swiper-container-synopsis .swiper-slide {
-  line-height: 64px;
-  height: 64px;
+  line-height: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -777,12 +776,13 @@
   vertical-align: top;
 }
 .swiper-container-synopsis .swiper-slide span.context {
-  position: relative;
+  position: absolute;
+  right: 190px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 620px;
-  line-height: 32px;
+  line-height: 26px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -866,7 +866,7 @@
   }
   .wisdom-introduction-synopsis .img {
     padding-left: 0.50724638rem;
-    padding-top: 0.50724638rem;
+    padding-top: 0.31884058rem;
     width: 4.13043478rem;
   }
   .wisdom-introduction-synopsis .title {
@@ -886,11 +886,10 @@
   .swiper-container-synopsis {
     width: 7.82608696rem;
     margin: 0.67391304rem auto 1.08695652rem auto;
-    height: 2.7826087rem;
+    height: 3.47826087rem;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.46376812rem;
-    height: 0.46376812rem;
+    line-height: 0.57971014rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 6px;
@@ -915,8 +914,9 @@
     width: 2.02898551rem;
   }
   .swiper-container-synopsis .swiper-slide span.context {
-    width: 4.49275362rem;
-    line-height: 0.23188406rem;
+    width: 4.92753623rem;
+    line-height: 0.1884058rem;
+    right: 0.86956522rem;
   }
   .swiper-container-synopsis .swiper-slide.active::before {
     width: 12px;
@@ -983,11 +983,10 @@
   }
   .swiper-container-synopsis {
     width: 8.57142857rem;
-    height: 3.42857143rem;
+    height: 6.48979592rem;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.57142857rem;
-    height: 0.57142857rem;
+    line-height: 0.81632653rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 0.10204082rem;
@@ -1003,11 +1002,14 @@
     width: 2.02898551rem;
   }
   .swiper-container-synopsis .swiper-slide span.context {
-    width: 4.49275362rem;
-    line-height: 0.28571429rem;
+    line-height: 0.26530612rem;
+    right: 1rem;
   }
   .swiper-container-synopsis .swiper-slide.active span {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .swiper-container-synopsis .swiper-slide.active span.context {
+    font-size: 14px;
   }
   .swiper-container-synopsis .swiper-button-next,
   .swiper-container-synopsis .swiper-button-prev {
@@ -1074,15 +1076,14 @@
   }
   .swiper-container-synopsis {
     width: 9.38666667rem;
-    height: 4rem;
+    height: 6rem;
     margin: 0.66666667rem auto;
   }
   .swiper-container-synopsis .pagination {
     display: none;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.66666667rem;
-    height: 0.66666667rem;
+    line-height: 1rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 4px;
@@ -1214,6 +1215,9 @@
     padding-top: 0.53333333rem;
     padding-bottom: 1.14666667rem;
     font-size: 0.4rem;
+  }
+  .about-content-box .context {
+    font-size: 0.21333333rem;
   }
   .about-us-title {
     padding-top: 0.69333333rem;

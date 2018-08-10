@@ -532,7 +532,7 @@ footer .copyright a:hover {
   transform: translate(-50%, -50%);
   background: #FFF url('../images/wechat.png') no-repeat left top;
   border-radius: 12px;
-  box-shadow: 1px 1px 5px 1px #757575;
+  box-shadow: 2px 2px 9px 0px #e2e2e2;
 }
 .fixed-login-wechat .content-text .title {
   line-height: 106px;

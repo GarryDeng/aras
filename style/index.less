@@ -505,7 +505,7 @@
                 width: 194px;
                 height: 194px;
                 border-radius: 50%;
-                box-shadow:  5px 5px 5px 0px #ababab;
+                box-shadow: 2px 2px 9px 0px #e2e2e2;
                 position: relative;
                 overflow: hidden;
             }
@@ -581,8 +581,8 @@
             }
             .icon{
                 float: left;
-                transform: scale(1);
-                transition: transform .3s;
+                // transform: scale(1);
+                // transition: transform .3s;
                 position: relative;
                 svg{
                     position: absolute;
@@ -590,12 +590,15 @@
                     right: 0;
                     bottom: 0;
                     top: 0;
-                    width: 100%;
-                    height: 100%;
+                    width: 80%;
+                    height: 80%;
+                    margin: auto;
+                    transition: all .3s ease;
                     circle{
-                        stroke-dasharray:0, 90;
+                        stroke-dasharray:2, 0;
                         stroke-dashoffset:5;
                         transition: .8s stroke-dasharray cubic-bezier(0.78, 0.25, 1, 1);
+                        // stroke-dasharray: 180, 0;
                     }
                 }
                 img{
@@ -608,13 +611,15 @@
             }
             &:hover{
                 .icon{
-                    transform: scale(1.08);
-                    transition: transform .3s;
+                    // transform: scale(1.08);
+                    // transition: transform .3s;
                     svg{
-                        circle{
-                            stroke-dashoffset: 0; 
-                            stroke-dasharray: 180, 0;
-                        }
+                        width: 100%;
+                        height: 100%;
+                        // circle{
+                        //     // stroke-dashoffset: 0; 
+                        //     // stroke-dasharray: 2, 0;
+                        // }
                     }
                 }
             }

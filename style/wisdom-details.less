@@ -24,7 +24,7 @@
                 border-radius: 50%;
                 position: relative;
                 overflow: hidden;
-                box-shadow: 4px 5px 12px 1px #ccc;
+                box-shadow: 2px 2px 9px 0px #e2e2e2;
             }
             .name{
                 line-height: 90px;
@@ -595,7 +595,8 @@
                 }
             }
             .details-swiper-content{
-                width: (468+100)/75rem;
+                // width: (468+100)/75rem;
+                width: 9.4rem;
                 .opinion-img{
                     width: 468/75rem;
                     height: 261/75rem;
@@ -660,6 +661,10 @@
                     font-size: 16/75rem;
                     padding-left: 27/75rem;
                     position: relative;
+                    &::before{
+                        left: -.3rem;
+                        top: 14/75rem;
+                    }
                     p{
                         line-height: 38/75rem;
                         &.time{

@@ -15,9 +15,9 @@
         .click-button{
             position: absolute;
             display: block;
-            width: 38px;
+            width: 30px;
             right: 18px;
-            top: 8px;
+            top: 12px;
             cursor: pointer;
         }
         .send-input{
@@ -123,7 +123,7 @@
             height: 322+110px;
             position: relative;
             overflow: hidden;
-            box-shadow: 3px 2px 6px 1px #efefef;
+            box-shadow: 2px 2px 9px 0px #e2e2e2;
             &:nth-child(4n){
                 margin-right: 0;
             }
@@ -282,9 +282,9 @@
         .search-input{
             margin-top: 49/2/138rem;
             .click-button{
-                width: 38/138rem;
+                width: 30/138rem;
                 right: 18/138rem;
-                top: 8/138rem;
+                top: 12/138rem;
             }
             .send-input {
                 width: 694/138rem;
@@ -405,9 +405,9 @@
         .search-input{
             margin-top: 49/2/98rem;
             .click-button{
-                width: 38/98rem;
+                width: 30/98rem;
                 right: 18/98rem;
-                top: 8/98rem;
+                top: 12/98rem;
             }
             .send-input {
                 width: 694/98rem;
@@ -564,6 +564,16 @@
                 }
                 &:nth-child(4){
                     text-align: right;
+                }
+                &.swiper-slide{
+                    &:nth-child(n){
+                        text-align: center;
+                        text-indent: 0;
+                        margin-right: .5rem;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
                 }
                 a{
                     font-size: 26/75rem;
