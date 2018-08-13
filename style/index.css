@@ -364,6 +364,7 @@
 }
 .offer-index .service-index li .icon {
   float: left;
+  width: 160px;
   position: relative;
 }
 .offer-index .service-index li .icon svg {
@@ -384,6 +385,13 @@
 }
 .offer-index .service-index li .icon img {
   display: block;
+  transform: scale(0.9);
+  transform-origin: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 .offer-index .service-index li:hover .icon svg {
   width: 100%;
@@ -626,6 +634,7 @@
     height: 1.15942029rem;
     margin: 0 auto;
     display: block;
+    position: relative;
   }
   .offer-index .service-index li .icon img {
     width: 100%;
