@@ -964,3 +964,27 @@ footer .copyright a:hover {
   transform: translate(0, 0);
   opacity: 1;
 }
+@media screen and (max-width: 750px) {
+  .common-nonactivated-animatiton {
+    opacity: 1;
+  }
+  .common-nonactivated-x {
+    transform: translate(0, 0);
+  }
+  .common-nonactivated-y {
+    transform: translate(0, 0);
+  }
+  .common-nonactivated-ya {
+    transform: translate(0, 0);
+    transition: all 1.2s ease;
+  }
+  .common-nonactivated-yb {
+    transform: translate(0, 0);
+  }
+  .common-nonactivated-yc {
+    transform: translate(0, 0);
+  }
+  .common-nonactivated-y2 {
+    transform: translate(0, 0);
+  }
+}
