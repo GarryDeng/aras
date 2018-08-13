@@ -895,40 +895,64 @@ footer .copyright a:hover {
     top: 0;
     opacity: .4;
   }
-  .phone-nav-header .link a {
-    display: block;
+  .phone-nav-header .link .a-link {
     float: left;
     line-height: 0.66666667rem;
     padding-top: 0.66666667rem;
-    color: #000;
     opacity: .4;
     text-align: center;
     font-size: 0.26666667rem;
   }
-  .phone-nav-header .link a.active {
+  .phone-nav-header .link .a-link a {
+    color: #000;
+  }
+  .phone-nav-header .link .a-link .second {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.33333333rem;
+  }
+  .phone-nav-header .link .a-link .second a {
+    display: block;
+    height: 1.54666667rem;
+    line-height: 1.54666667rem;
+    position: relative;
+    background-color: #FFF;
+  }
+  .phone-nav-header .link .a-link .second a::before {
+    content: "";
+    display: block;
+    bottom: 0;
+    border-bottom: 1px solid #f0efee;
+    transform: scaleY(0.3333333);
+    width: 9.4rem;
+    position: absolute;
+    left: .3rem;
+  }
+  .phone-nav-header .link .a-link.active {
     opacity: 1;
   }
-  .phone-nav-header .link a:nth-child(1) {
+  .phone-nav-header .link .a-link:nth-child(1) {
     width: 17.33333333%;
     background: url("../images/phone-index-nav.png") no-repeat center 0.16rem;
     background-size: 0.52rem auto;
   }
-  .phone-nav-header .link a:nth-child(2) {
+  .phone-nav-header .link .a-link:nth-child(2) {
     width: 21.33333333%;
     background: url("../images/phone-tank.png") no-repeat center 0.13333333rem;
     background-size: 0.6rem auto;
   }
-  .phone-nav-header .link a:nth-child(3) {
+  .phone-nav-header .link .a-link:nth-child(3) {
     width: 22.66666667%;
     background: url("../images/phone-scheme.png") no-repeat center 0.26666667rem;
     background-size: 0.45333333rem auto;
   }
-  .phone-nav-header .link a:nth-child(4) {
+  .phone-nav-header .link .a-link:nth-child(4) {
     width: 21.33333333%;
     background: url("../images/phone-book.png") no-repeat center 0.17333333rem;
     background-size: 0.41333333rem auto;
   }
-  .phone-nav-header .link a:nth-child(5) {
+  .phone-nav-header .link .a-link:nth-child(5) {
     width: 17.33333333%;
     background: url("../images/phone-me.png") no-repeat center 0.16rem;
     background-size: 0.45333333rem auto;

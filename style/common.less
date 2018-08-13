@@ -823,15 +823,41 @@ footer{
                 top: 0;
                 opacity: .4;
             }
-            a{
-                display: block;
+            .a-link{
+                // display: block;
                 float: left;
                 line-height: 50/75rem;
                 padding-top: 50/75rem;
-                color: #000;
                 opacity: .4;
                 text-align: center;
                 font-size: 20/75rem;
+                a{
+                    color: #000;
+                    // opacity: .4;
+                }
+                .second{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 100/75rem;
+                    a{
+                        display: block;
+                        height: 116/75rem;
+                        line-height: 116/75rem;
+                        position: relative;
+                        background-color: #FFF;
+                        &::before{
+                            content: "";
+                            display: block;
+                            bottom: 0;
+                            border-bottom: 1px solid #f0efee;
+                            transform: scaleY(.3333333);
+                            width: 9.4rem;
+                            position: absolute;
+                            left: .3rem;
+                        }
+                    }
+                }
                 &.active{
                     opacity: 1;
                 }
