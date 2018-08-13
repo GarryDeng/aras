@@ -562,11 +562,14 @@
                 <a class="list" href="./">首页</a>
             </div>
             <div class="a-link">
-                <a class="list" href="wisdom-search.html">智库</a>
+                <a class="list" href="wisdom-introduction.html">智库</a>
             </div>
             <div class="a-link">
                 <a class="list" href="javascript:">解决方案</a>
                 <div class="second">
+                    <!-- 防止点击隐藏标签start -->
+                    <i class="fixed-none"></i>
+                    <!-- 防止点击隐藏标签end -->
                     <a href="">解决方案1</a>
                     <a href="">解决方案2</a>
                     <a href="">解决方案3</a>
@@ -579,6 +582,15 @@
             <div class="a-link">
                 <a class="list" href="about-us.html">关于我们</a>
             </div>
+            <script>
+                $(".a-link").on("click",function(ev){
+                    console.log($(ev.target).parents().length)
+                    if ($(ev.target).parents().length == 6) {
+                        return $(this).removeClass('active').find('.second').fadeOut();
+                    }
+                    $(this).toggleClass('active').find('.second').fadeToggle();
+                })
+            </script>
         </div>
     </div>
     <!-- 手机低栏导航end -->

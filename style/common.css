@@ -912,6 +912,15 @@ footer .copyright a:hover {
     right: 0;
     bottom: 1.33333333rem;
     opacity: 1;
+    box-shadow: 0px -9px 9px 0px #e2e2e2;
+    display: none;
+  }
+  .phone-nav-header .link .a-link .second .fixed-none {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1.54666667rem;
+    top: 0;
   }
   .phone-nav-header .link .a-link .second a {
     display: block;

@@ -540,6 +540,14 @@
   .wisdom-search-list ul li:nth-child(4) {
     text-align: right;
   }
+  .wisdom-search-list ul li.swiper-slide:nth-child(n) {
+    text-align: center;
+    text-indent: 0;
+    margin-right: .5rem;
+  }
+  .wisdom-search-list ul li.swiper-slide:last-child {
+    margin-right: 0;
+  }
   .wisdom-search-list ul li a {
     font-size: 0.34666667rem;
     padding: 0;
@@ -741,7 +749,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   line-height: 22px;
   font-size: 14px;
 }

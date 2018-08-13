@@ -105,7 +105,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   line-height: 22px;
   font-size: 14px;
 }
@@ -440,14 +440,14 @@
   }
   .swiper-container-synopsis {
     width: 9.38666667rem;
-    height: 6rem;
+    height: 8rem;
     margin: 0.66666667rem auto;
   }
   .swiper-container-synopsis .pagination {
     display: none;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 1rem;
+    line-height: 1.33333333rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 4px;

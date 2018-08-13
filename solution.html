@@ -27,7 +27,7 @@
                     <a href="./">首页</a>
                 </div>
                 <div class="nav-a">
-                    <a href="wisdom-search.html">智库</a>
+                    <a href="wisdom-introduction.html">智库</a>
                     <div class="second">
                         <a href="wisdom-introduction.html">智库简介</a>
                         <a href="wisdom-service.html">服务咨询</a>
@@ -97,14 +97,14 @@
         <img class="banner" src="images/introduction-banner.jpg" alt="">
         <div class="content">
             <p class="china">
-                从设计出发，
-                <br/>打造智慧社区-智慧城市-智慧地球
+                <span class="common-nonactivated-animatiton common-nonactivated-y" style="display: block">从设计出发，</span>
+                <span class="common-nonactivated-animatiton common-nonactivated-yc" style="display: block">打造智慧社区-智慧城市-智慧地球</span>
             </p>
             <p class="en">
-                Starting from design,
-                <br/>build smart community - smart city - smart earth
+                <span class="common-nonactivated-animatiton common-nonactivated-y" style="display: block">Starting from design,</span>
+                <span class="common-nonactivated-animatiton common-nonactivated-yc" style="display: block">build smart community - smart city - smart earth</span>
             </p>
-            <!-- <a class="join-me" href="">我要加入</a> -->
+            <a class="join-me common-nonactivated-animatiton common-nonactivated-y" href="">我要加入</a>
         </div>
     </div>
     <!-- <div class="wisdom-search-list">
@@ -341,11 +341,39 @@
     <div class="phone-nav-header" style="display: none;">
         <div class="link">
             <!-- active为选中状态 -->
-            <a class="active" href="./">首页</a>
-            <a href="wisdom-search.html">智库</a>
-            <a href="solution.html">解决方案</a>
-            <a href="information-list.html">筑享汇</a>
-            <a href="about-us.html">关于我们</a>
+            <div class="a-link">
+                <a class="list" href="./">首页</a>
+            </div>
+            <div class="a-link">
+                <a class="list" href="wisdom-introduction.html">智库</a>
+            </div>
+            <div class="a-link">
+                <a class="list" href="javascript:">解决方案</a>
+                <div class="second">
+                    <!-- 防止点击隐藏标签start -->
+                    <i class="fixed-none"></i>
+                    <!-- 防止点击隐藏标签end -->
+                    <a href="">解决方案1</a>
+                    <a href="">解决方案2</a>
+                    <a href="">解决方案3</a>
+                    <a href="">解决方案4</a>
+                </div>
+            </div>
+            <div class="a-link">
+                <a class="list" href="information-list.html">筑享汇</a>
+            </div>
+            <div class="a-link">
+                <a class="list" href="about-us.html">关于我们</a>
+            </div>
+            <script>
+                $(".a-link").on("click", function (ev) {
+                    console.log($(ev.target).parents().length)
+                    if ($(ev.target).parents().length == 6) {
+                        return $(this).removeClass('active').find('.second').fadeOut();
+                    }
+                    $(this).toggleClass('active').find('.second').fadeToggle();
+                })
+            </script>
         </div>
     </div>
     <!-- 手机低栏导航end -->
