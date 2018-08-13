@@ -911,6 +911,7 @@ footer .copyright a:hover {
     left: 0;
     right: 0;
     bottom: 1.33333333rem;
+    opacity: 1;
   }
   .phone-nav-header .link .a-link .second a {
     display: block;
@@ -918,6 +919,7 @@ footer .copyright a:hover {
     line-height: 1.54666667rem;
     position: relative;
     background-color: #FFF;
+    opacity: 1;
   }
   .phone-nav-header .link .a-link .second a::before {
     content: "";
@@ -969,20 +971,20 @@ footer .copyright a:hover {
   transform: translate(0, 120px);
 }
 .common-nonactivated-ya {
-  transform: translate(0, 100px);
+  transform: translate(0, 90px);
   transition: all 1.2s ease;
 }
 .common-nonactivated-yb {
-  transform: translate(0, 100px);
+  transform: translate(0, 90px);
   transition: all 1.3s ease;
 }
 .common-nonactivated-yc {
-  transform: translate(0, 100px);
+  transform: translate(0, 90px);
   transition: all 1.4s ease;
 }
 .common-nonactivated-y2 {
   transition: all .6s ease;
-  transform: translate(0, 120px);
+  transform: translate(0, 100px);
 }
 .common-active-animatiton {
   transform: translate(0, 0);
