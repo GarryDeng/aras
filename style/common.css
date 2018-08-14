@@ -1021,7 +1021,16 @@ footer .copyright a:hover {
   transition: all .6s ease;
   transform: translate(0, 100px);
 }
+.common-nonactivated-yy::before {
+  transform: translate(0, 80px);
+  transition: all 1.4s ease;
+  opacity: 0;
+}
 .common-active-animatiton {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.common-active-animatiton.common-nonactivated-yy::before {
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -1031,6 +1040,10 @@ footer .copyright a:hover {
   }
   .common-nonactivated-x {
     transform: translate(0, 0);
+  }
+  .common-nonactivated-yy::before {
+    transform: translate(0, 0);
+    transition: all 1.9s ease;
   }
   .common-nonactivated-y {
     transform: translate(0, 0);
