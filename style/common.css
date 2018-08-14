@@ -898,13 +898,14 @@ footer .copyright a:hover {
   .phone-nav-header .link .a-link {
     float: left;
     line-height: 0.66666667rem;
-    padding-top: 0.66666667rem;
     text-align: center;
     font-size: 0.26666667rem;
     position: relative;
   }
   .phone-nav-header .link .a-link a {
     color: #000;
+    padding-top: 0.66666667rem;
+    display: block;
   }
   .phone-nav-header .link .a-link a.list {
     opacity: .4;
