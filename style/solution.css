@@ -1,4 +1,4 @@
-.solution-function-bg:nth-child(2n) {
+.solution-function-bg:nth-child(even) {
   background-color: #ebebeb;
 }
 .solution-function-bg .content {

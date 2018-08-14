@@ -828,15 +828,18 @@ footer{
                 float: left;
                 line-height: 50/75rem;
                 padding-top: 50/75rem;
-                opacity: .4;
+                // opacity: .4;
                 text-align: center;
                 font-size: 20/75rem;
+                position: relative;
                 a{
                     color: #000;
-                    // opacity: .4;
+                    &.list{
+                        opacity: .4;
+                    }
                 }
                 .second{
-                    position: absolute;
+                    position: fixed;
                     left: 0;
                     right: 0;
                     bottom: 100/75rem;
@@ -870,32 +873,55 @@ footer{
                     }
                 }
                 &.active{
-                    opacity: 1;
+                    a.list,&::before{
+                        opacity: 1;
+                    }
+                }
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    height: 50/75rem;
+                    width: 100%;
+                    opacity: .4;
                 }
                 &:nth-child(1){
                     width: 130/75*10%;
-                    background: url("../images/phone-index-nav.png") no-repeat center 12/75rem;
-                    background-size: 39/75rem auto;
+                    &::before{
+                        background: url("../images/phone-index-nav.png") no-repeat center 12/75rem;
+                        background-size: 39/75rem auto;
+                    }
                 }
                 &:nth-child(2){
                     width: 160/75*10%;
-                    background: url("../images/phone-tank.png") no-repeat center 10/75rem;
-                    background-size: 45/75rem auto;
+                    &::before{
+                        background: url("../images/phone-tank.png") no-repeat center 10/75rem;
+                        background-size: 45/75rem auto;
+                    }
                 }
                 &:nth-child(3){
                     width: 170/75*10%;
-                    background: url("../images/phone-scheme.png") no-repeat center 20/75rem;
-                    background-size: 34/75rem auto;
+                    &::before{
+                        background: url("../images/phone-scheme.png") no-repeat center 20/75rem;
+                        background-size: 34/75rem auto;
+                    }
                 }
                 &:nth-child(4){
                     width: 160/75*10%;
-                    background: url("../images/phone-book.png") no-repeat center 13/75rem;
-                    background-size: 31/75rem auto;
+                    &::before{
+                        background: url("../images/phone-book.png") no-repeat center 13/75rem;
+                        background-size: 31/75rem auto;
+                    }
                 }
                  &:nth-child(5){
                     width: 130/75*10%;
-                    background: url("../images/phone-me.png") no-repeat center 12/75rem;
-                    background-size: 34/75rem auto;
+                    &::before{
+                        background: url("../images/phone-me.png") no-repeat center 12/75rem;
+                        background-size: 34/75rem auto;
+                    }
                 }
             }
         }

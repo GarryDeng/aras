@@ -56,3 +56,10 @@ $(window).on('scroll',function(){
     })
     // animationArr.
 });
+//手机端二级导航判断问题
+$(".a-link").on("click", function (ev) {
+    if ($(ev.target).parents().length == 6) {
+        return $(this).find('.second').fadeOut();
+    }
+    $(this).find('.second').fadeToggle();
+});

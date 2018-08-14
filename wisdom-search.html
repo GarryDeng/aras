@@ -418,15 +418,6 @@
             <div class="a-link">
                 <a class="list" href="about-us.html">关于我们</a>
             </div>
-            <script>
-                $(".a-link").on("click", function (ev) {
-                    console.log($(ev.target).parents().length)
-                    if ($(ev.target).parents().length == 6) {
-                        return $(this).removeClass('active').find('.second').fadeOut();
-                    }
-                    $(this).toggleClass('active').find('.second').fadeToggle();
-                })
-            </script>
         </div>
     </div>
     <!-- 手机低栏导航end -->
