@@ -100,7 +100,7 @@
     margin: 93px auto 150px auto;
     position: relative;
     overflow: hidden;
-    height: 80*6px;
+    height: 90*6px;
     .pagination{
         position: absolute;
         right: 0;
@@ -110,9 +110,11 @@
         font-size: 14px;
     }
     .swiper-slide{
-        line-height: 80px;
+        line-height: 26px;
         position: relative;
         overflow: hidden;
+        height: 78px !important;
+        padding-top: 12px;
         &::before{
             content: "";
             display: block;
@@ -121,7 +123,7 @@
             border-radius: 50%;
             background-color: #000;
             left: 0;
-            top: 50%;
+            top: 13+12px;
             margin-top: -3px;
             margin-left: 3px;
             position: absolute;
@@ -140,13 +142,13 @@
             &.context{
                 position: absolute;
                 right: 190px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+                // white-space: nowrap;
                 width: 620px;
-                line-height: 26px;
-                top: 50%;
-                transform: translateY(-50%);
+                // line-height: 26px;
+                top: 12px;
+                // transform: translateY(-50%);
             }
         }
         &.active{
@@ -160,7 +162,7 @@
                 font-size: 24px;
                 &.context{
                     font-size: 18px;
-                    white-space: normal;
+                    // white-space: normal;
                 }
             }
         }
@@ -252,12 +254,15 @@
     .swiper-container-synopsis{
         width: 1080/138rem;
         margin: 93/138rem auto 150/138rem auto;
-        height: 80*6/138rem;
+        height: 92*6/138rem;
         .swiper-slide{
-            line-height: 80/138rem;
+            line-height: 26/138rem;
+            height: 78/138rem !important;
+            padding-top: 12/138rem;
             &::before{
                 width: 6px;
                 height: 6px;
+                top: 25/138rem;
                 margin-top: -3px;
                 margin-left: 4px;
             }
@@ -278,8 +283,9 @@
                 }
                 &.context{
                     width: 680/138rem;
-                    line-height: 26/138rem;
+                    // line-height: 26/138rem;
                     right: 120/138rem;
+                    top: 12/138rem;
                 }
             }
             &.active{
@@ -352,9 +358,11 @@
     }
     .swiper-container-synopsis{
         width: 840/98rem;
-        height: 106*6/98rem;
+        height: 100*6/98rem;
         .swiper-slide{
-            line-height: 80/98rem;
+            line-height: 22/98rem;
+            height: 88/98rem !important;
+            padding-top: 12/98rem;
             &::before{
                 width: 10/98rem;
                 height: 10/98rem;
@@ -369,8 +377,9 @@
                 }
                 &.context{
                     // width: 640/98rem;
-                    line-height: 26/98rem;
+                    // line-height: 26/98rem;
                     right: 1rem;
+                    top: 12/98rem;
                 }
             }
             &.active{
@@ -382,7 +391,7 @@
                 span{
                     font-size: 16px;
                     &.context{
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -460,12 +469,16 @@
             display: none;
         }
         .swiper-slide{
-            line-height: 100/75rem;
+            line-height: 22/75rem;
+            height: 100/75rem!important;
+            padding-top: 12/75rem;
+            box-sizing: border-box;
             &::before{
                 width: 4px;
                 height: 4px;
                 margin-top: -2px;
                 margin-left: 3px;
+                top: 23/75rem;
             }
             span{
                 font-size: 18/75rem;
@@ -475,7 +488,8 @@
                 }
                 &.context{
                     width: 446/75rem;
-                    line-height: 50/2/75rem;
+                    // line-height: 50/2/75rem;
+                    top: 12/75rem;
                 }
             }
             &.active{

@@ -99,7 +99,7 @@
   margin: 93px auto 150px auto;
   position: relative;
   overflow: hidden;
-  height: 480px;
+  height: 540px;
 }
 .swiper-container-synopsis .pagination {
   position: absolute;
@@ -110,9 +110,11 @@
   font-size: 14px;
 }
 .swiper-container-synopsis .swiper-slide {
-  line-height: 80px;
+  line-height: 26px;
   position: relative;
   overflow: hidden;
+  height: 78px !important;
+  padding-top: 12px;
 }
 .swiper-container-synopsis .swiper-slide::before {
   content: "";
@@ -122,7 +124,7 @@
   border-radius: 50%;
   background-color: #000;
   left: 0;
-  top: 50%;
+  top: 25px;
   margin-top: -3px;
   margin-left: 3px;
   position: absolute;
@@ -142,13 +144,8 @@
 .swiper-container-synopsis .swiper-slide span.context {
   position: absolute;
   right: 190px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   width: 620px;
-  line-height: 26px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 12px;
 }
 .swiper-container-synopsis .swiper-slide.active::before {
   width: 12px;
@@ -161,7 +158,6 @@
 }
 .swiper-container-synopsis .swiper-slide.active span.context {
   font-size: 18px;
-  white-space: normal;
 }
 .swiper-container-synopsis .swiper-button-next,
 .swiper-container-synopsis .swiper-button-prev {
@@ -250,14 +246,17 @@
   .swiper-container-synopsis {
     width: 7.82608696rem;
     margin: 0.67391304rem auto 1.08695652rem auto;
-    height: 3.47826087rem;
+    height: 4rem;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.57971014rem;
+    line-height: 0.1884058rem;
+    height: 0.56521739rem !important;
+    padding-top: 0.08695652rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 6px;
     height: 6px;
+    top: 0.18115942rem;
     margin-top: -3px;
     margin-left: 4px;
   }
@@ -279,8 +278,8 @@
   }
   .swiper-container-synopsis .swiper-slide span.context {
     width: 4.92753623rem;
-    line-height: 0.1884058rem;
     right: 0.86956522rem;
+    top: 0.08695652rem;
   }
   .swiper-container-synopsis .swiper-slide.active::before {
     width: 12px;
@@ -347,10 +346,12 @@
   }
   .swiper-container-synopsis {
     width: 8.57142857rem;
-    height: 6.48979592rem;
+    height: 6.12244898rem;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 0.81632653rem;
+    line-height: 0.2244898rem;
+    height: 0.89795918rem !important;
+    padding-top: 0.12244898rem;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 0.10204082rem;
@@ -366,14 +367,14 @@
     width: 2.02898551rem;
   }
   .swiper-container-synopsis .swiper-slide span.context {
-    line-height: 0.26530612rem;
     right: 1rem;
+    top: 0.12244898rem;
   }
   .swiper-container-synopsis .swiper-slide.active span {
     font-size: 16px;
   }
   .swiper-container-synopsis .swiper-slide.active span.context {
-    font-size: 14px;
+    font-size: 13px;
   }
   .swiper-container-synopsis .swiper-button-next,
   .swiper-container-synopsis .swiper-button-prev {
@@ -447,13 +448,17 @@
     display: none;
   }
   .swiper-container-synopsis .swiper-slide {
-    line-height: 1.33333333rem;
+    line-height: 0.29333333rem;
+    height: 1.33333333rem !important;
+    padding-top: 0.16rem;
+    box-sizing: border-box;
   }
   .swiper-container-synopsis .swiper-slide::before {
     width: 4px;
     height: 4px;
     margin-top: -2px;
     margin-left: 3px;
+    top: 0.30666667rem;
   }
   .swiper-container-synopsis .swiper-slide span {
     font-size: 0.24rem;
@@ -464,7 +469,7 @@
   }
   .swiper-container-synopsis .swiper-slide span.context {
     width: 5.94666667rem;
-    line-height: 0.33333333rem;
+    top: 0.16rem;
   }
   .swiper-container-synopsis .swiper-slide.active::before {
     width: 10px;
