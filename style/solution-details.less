@@ -124,6 +124,15 @@
                 padding-left: 123px;
                 line-height: 72px;
                 position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 270px;
+                    border-top: 1px solid #f0f0f0;
+                    top: 0;
+                    left: 19px;
+                }
                 img{
                     display: block;
                     position: absolute;
@@ -343,6 +352,10 @@
                         height: 30px;
                         left: 19px;
                     }
+                    &::before{
+                        width: 160px;
+                        left: 16px;
+                    }
                 }
             }
             .solution-scheme{
@@ -408,6 +421,10 @@
                     // &:nth-child(n){
                     //     background: none;
                     // }
+                    &::before{
+                        width: 128px;
+                        left: 10px;
+                    }
                 }
             }
             .solution-scheme{

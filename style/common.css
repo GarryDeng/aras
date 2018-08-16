@@ -165,16 +165,24 @@ header.whole-header-nav .header-fixed-list::before {
   z-index: 999;
   transition: top .3s;
 }
-.header-fixed-list.add-head-before {
+.header-fixed-list.add-head-before,
+.header-fixed-list.add-notime-before {
   top: 0;
 }
-.header-fixed-list.add-head-before::before {
+.header-fixed-list.add-head-before::before,
+.header-fixed-list.add-notime-before::before {
   top: 0;
   max-width: 100%;
   background-color: #000;
   left: 0;
   right: 0;
   height: 70px;
+}
+.header-fixed-list.add-notime-before {
+  transition: all 0s;
+}
+.header-fixed-list.add-notime-before::before {
+  transition: all 0s;
 }
 .header-fixed-list::before {
   content: "";
@@ -403,18 +411,28 @@ footer .footer-common .message-list a.sina {
   background: url("../images/sina.png") no-repeat center;
   background-size: 20px auto;
 }
-footer .footer-common .message-list a img {
+footer .footer-common .message-list a .er-code {
   display: none;
   position: absolute;
   bottom: 32px;
   left: 50%;
-  width: 100px;
-  height: 100px;
-  margin-left: -50px;
+  width: 120px;
+  margin-left: -60px;
   z-index: 9;
+  border: 6px solid #FFF;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #000;
+  background: #FFF;
+  text-align: center;
+  line-height: 1.8em;
 }
-footer .footer-common .message-list a.public:hover img,
-footer .footer-common .message-list a.service:hover img {
+footer .footer-common .message-list a .er-code img {
+  width: 100%;
+  display: block;
+}
+footer .footer-common .message-list a.public:hover .er-code,
+footer .footer-common .message-list a.service:hover .er-code {
   display: block;
 }
 footer .footer-common .message-list a.public:hover::before,
@@ -432,8 +450,9 @@ footer .footer-common .message-list a::before {
   left: 50%;
   margin-left: -8px;
 }
-footer .footer-common .message-list a.service img {
-  margin-left: -92px;
+footer .footer-common .message-list a.service {
+  background: url("../images/mini-program.png") no-repeat center;
+  background-size: 20px auto;
 }
 footer .footer-common .message-common .call-mail {
   padding-top: 40px;

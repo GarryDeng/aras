@@ -37,7 +37,7 @@ header{
     margin: 0 auto;
     z-index: 999;
     transition: top .3s;
-    &.add-head-before{
+    &.add-head-before,&.add-notime-before{
         top: 0;
         &::before{
             top: 0;
@@ -47,6 +47,12 @@ header{
             right: 0;
             height: 70px;
             // box-shadow: 0 0px 8px 1px #989898;
+        }
+    }
+    &.add-notime-before{
+        transition: all 0s;
+        &::before{
+            transition: all 0s;
         }
     }
     &::before{
@@ -278,19 +284,30 @@ footer{
                    background: url("../images/sina.png") no-repeat center;
                    background-size: 20px auto;
                 }
-                img{
+                .er-code{
                     display: none;
                     position: absolute;
                     bottom: 32px;
                     left: 50%;
-                    width: 100px;
-                    height: 100px;
-                    margin-left: -50px;
+                    width: 120px;
+                    // height: 100px;
+                    margin-left: -60px;
                     z-index: 9;
+                    border: 6px solid #FFF;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    color: #000;
+                    background: #FFF;
+                    text-align: center;
+                    line-height: 1.8em;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
                 }
                 &.public,&.service{
                     &:hover{
-                        img{
+                        .er-code{
                             display: block;
                         }
                         &::before{
@@ -311,9 +328,11 @@ footer{
                     margin-left: -8px;
                 }
                 &.service{
-                    img{
-                        margin-left: -100+8px;
-                    }
+                    background: url("../images/mini-program.png") no-repeat center;
+                    background-size: 20px auto;
+                    // img{
+                    //     margin-left: -100+8px;
+                    // }
                 }
             }
         }

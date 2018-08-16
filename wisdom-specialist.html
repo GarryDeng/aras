@@ -122,7 +122,7 @@
     <script>
         //滚动条
         if (window.location.href.indexOf('#wisdom') > -1)
-            $("body,html").animate({ 'scrollTop': $(".wisdom-introduction-banner").height() - $(".header-fixed-list").height() })
+            $("body,html").animate({ 'scrollTop': $(".wisdom-introduction-banner").height() - $(".header-fixed-list").height()},1);
         // 手机端进行滑动start
         if (rem.html.clientWidth <= 750) {
             var mySwiperSearch = new Swiper('.wisdom-search-list', {
@@ -438,12 +438,16 @@
             </div>
             <div class="message-list clear">
                 <a class="public" href="javascript:">
-                    <img src="images/er-code.png" alt="">
+                    <p class="er-code">
+                        <img src="images/er-code-login.png" alt=""> 请扫描微信二维码
+                    </p>
+                </a>
+                <a class="service" href="javascript:">
+                    <p class="er-code">
+                        <img src="https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/mydev/mydev-qrcode.jpg" alt=""> 请扫描微信二维码
+                    </p>
                 </a>
                 <a class="sina" href="javascript:"></a>
-                <a class="service" href="javascript:">
-                    <img src="images/er-code.png" alt="">
-                </a>
             </div>
             <!-- //新浪分享 -->
             <script>
@@ -538,11 +542,14 @@
 </body>
 <script src="js/common.js"></script>
 <script>
+    if ($(window).scrollTop() != 0) {
+        $(".header-fixed-list").addClass('add-notime-before');
+    }
     $(window).on('scroll', function () {
         if ($(this).scrollTop() != 0) {
             $(".header-fixed-list").addClass('add-head-before');
         } else {
-            $(".header-fixed-list").removeClass('add-head-before');
+            $(".header-fixed-list").removeClass('add-head-before add-notime-before');
         }
     })
 </script>

@@ -124,6 +124,15 @@
   line-height: 72px;
   position: relative;
 }
+.solution-details-content .list-left .find-window a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 270px;
+  border-top: 1px solid #f0f0f0;
+  top: 0;
+  left: 19px;
+}
 .solution-details-content .list-left .find-window a img {
   display: block;
   position: absolute;
@@ -273,6 +282,10 @@
     height: 30px;
     left: 19px;
   }
+  .solution-details-content .list-left .find-window a::before {
+    width: 160px;
+    left: 16px;
+  }
   .solution-details-content .list-left .solution-scheme a::before {
     width: 160px;
     left: 16px;
@@ -324,6 +337,10 @@
   }
   .solution-details-content .list-left .find-window a img {
     display: none;
+  }
+  .solution-details-content .list-left .find-window a::before {
+    width: 128px;
+    left: 10px;
   }
   .solution-details-content .list-left .solution-scheme a::before {
     width: 128px;
