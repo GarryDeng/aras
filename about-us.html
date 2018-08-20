@@ -212,7 +212,12 @@
             $('.pagination .tatol').text($(".swiper-container-synopsis").find('.swiper-slide').length);//计算总算
             $('.pagination .present').text(newNumber);//计算单个当前位置
             $(".swiper-container-synopsis").find('.swiper-slide').eq(newNumber - 1).addClass('active');
-        })
+        });
+        // 判断swiper的轮播个数
+        var swiperLength = $(".swiper-container-synopsis"), swiperNumber = swiperLength.find(".swiper-slide").length;
+        if (swiperNumber < 6) {
+            swiperLength.css('height', swiperLength.find(".swiper-slide").height() * swiperNumber + 'px');
+        }
     </script>
     <!-- 滚动条简介end -->
     <!-- 底部start -->
