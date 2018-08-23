@@ -507,6 +507,8 @@
     line-height: 1.09333333rem;
     height: 1.09333333rem;
     width: 9.38666667rem;
+    overflow: hidden;
+    margin: 0 auto;
   }
   .wisdom-search-list.fixed-search-list {
     top: 1.26666667rem;
@@ -514,6 +516,7 @@
   .wisdom-search-list ul {
     line-height: 1.09333333rem;
     height: 1.09333333rem;
+    width: 100%;
   }
   .wisdom-search-list ul li {
     margin-right: 0;
@@ -543,7 +546,7 @@
   .wisdom-search-list ul li.swiper-slide:nth-child(n) {
     text-align: center;
     text-indent: 0;
-    margin-right: .5rem;
+    margin-right: .7rem;
   }
   .wisdom-search-list ul li.swiper-slide:last-child {
     margin-right: 0;
