@@ -536,6 +536,7 @@
   .wisdom-specialist-body .user-data {
     margin-top: 0.90666667rem;
     padding-bottom: 0.74666667rem;
+    min-height: 3.5rem !important;
   }
   .wisdom-specialist-body .user-data .head-name {
     left: 0;
@@ -618,6 +619,7 @@
   }
   .wisdom-specialist-body .specialist-details-title .education-icon li img {
     width: 1.16rem;
+    height: auto;
   }
   .wisdom-specialist-body .specialist-details-title .education-icon li .title {
     font-size: 0.32rem;

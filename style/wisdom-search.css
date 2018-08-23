@@ -506,6 +506,7 @@
   .wisdom-search-list {
     line-height: 1.09333333rem;
     height: 1.09333333rem;
+    width: 9.38666667rem;
   }
   .wisdom-search-list.fixed-search-list {
     top: 1.26666667rem;
@@ -513,7 +514,6 @@
   .wisdom-search-list ul {
     line-height: 1.09333333rem;
     height: 1.09333333rem;
-    width: 9.38666667rem;
   }
   .wisdom-search-list ul li {
     margin-right: 0;

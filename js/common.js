@@ -11,7 +11,14 @@ $('.header-fixed-list .search-input').on('click',function(){
         // 跳转链接
         window.location.href = './?' + searchValue;
     }
-})
+});
+//判断触发事件
+$('.search-input input').keydown(function (event) {
+    var _thisText = $(this).val();//导航的输入框文字
+    if(event.keyCode == 13 & !!_thisText) {
+        //在有焦点并且有输入内容情况下，按回车执行这里的code
+    }
+});
 // 搜索框失去焦点
 $('.header-fixed-list .search-input input').on('blur',function(){
     focusTime = true;

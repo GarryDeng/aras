@@ -123,8 +123,12 @@
     </div>
     <script>
         //滚动条
-        if (window.location.href.indexOf('#wisdom') > -1)
-            $("body,html").animate({ 'scrollTop': $(".wisdom-introduction-banner").height() - $(".header-fixed-list").height() },1);
+        if (window.location.href.indexOf('#wisdom') > -1) {
+            $("body,html").animate({ 'scrollTop': $(".wisdom-introduction-banner").height() - $(".header-fixed-list").height() }, 1);
+            if ($(window).scrollTop() != 0) {
+                $(".header-fixed-list").addClass('add-notime-before');
+            }
+        } 
         // 手机端进行滑动start
         if (rem.html.clientWidth <= 750) {
             var mySwiperSearch = new Swiper('.wisdom-search-list', {

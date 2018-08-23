@@ -15,3 +15,10 @@ bind-phone-succeed.html 绑定手机号码成功
 edit-phone.html 更换绑定手机号码
 join-us.html 加入我们
 user-history.html 反馈记录
+
+
+
+导航搜索回车触发js写在common.js里面
+
+
+
