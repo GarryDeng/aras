@@ -91,7 +91,7 @@
   width: 1280px;
   margin: 0 auto;
   margin-top: 80px;
-  min-height: 1180px;
+  min-height: 700px;
   position: relative;
 }
 .information-content-list .information-list {
@@ -238,7 +238,6 @@
   .information-content-list {
     width: 7.82608696rem;
     margin-top: 50px;
-    min-height: 1100px;
   }
   .information-content-list .information-list {
     padding-right: 260px;
@@ -311,7 +310,7 @@
   .information-content-list {
     width: 8.53061224rem;
     margin-top: 40px;
-    min-height: 300px;
+    min-height: 80px;
   }
   .information-content-list .information-list {
     padding-right: 0;

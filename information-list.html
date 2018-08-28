@@ -135,7 +135,7 @@
         if(rem.html.clientWidth <= 750){
             var mySwiperSearch = new Swiper('.wisdom-search-list', {
                 autoplay: false,//可选选项，自动滑动
-                slidesPerView: 5.5,
+                slidesPerView: 'auto',
             })
         }
         // 手机端进行滑动end
@@ -159,55 +159,8 @@
                     </p>
                 </div>
             </a>
-            <!-- 资讯2 -->
-            <a href="information-details.html" class="information-unit">
-                <div class="information-img">
-                    <img src="images/information-list.jpg" alt="">
-                </div>
-                <div class="context">
-                    <h3>物联网基本安全的三个简单步骤</h3>
-                    <p class="list-name">文章分类名称</p>
-                    <p class="content">如果还有关于物联网(IoT)有多受欢迎的任何争论，现在都可以停下来了，因为2018年物联网设备数量有望超过智能手机。 像谷歌、苹果、微软和其他主要大公司都在物联网技术上投入巨资，这被广泛认为是下一波技术浪潮。
-                    </p>
-                    <p class="read-time clear">
-                        <span class="read">900</span>
-                        <span class="time">2018/04/01</span>
-                    </p>
-                </div>
-            </a>
-            <!-- 资讯3 -->
-            <a href="information-details.html" class="information-unit">
-                <div class="information-img">
-                    <img src="images/information-list.jpg" alt="">
-                </div>
-                <div class="context">
-                    <h3>物联网基本安全的三个简单步骤</h3>
-                    <p class="list-name">文章分类名称</p>
-                    <p class="content">如果还有关于物联网(IoT)有多受欢迎的任何争论，现在都可以停下来了，因为2018年物联网设备数量有望超过智能手机。 像谷歌、苹果、微软和其他主要大公司都在物联网技术上投入巨资，这被广泛认为是下一波技术浪潮。
-                    </p>
-                    <p class="read-time clear">
-                        <span class="read">900</span>
-                        <span class="time">2018/04/01</span>
-                    </p>
-                </div>
-            </a>
-            <!-- 资讯4 -->
-            <a href="" class="information-unit">
-                <div class="information-img">
-                    <img src="images/information-list.jpg" alt="">
-                </div>
-                <div class="context">
-                    <h3>物联网基本安全的三个简单步骤</h3>
-                    <p class="list-name">文章分类名称</p>
-                    <p class="content">如果还有关于物联网(IoT)有多受欢迎的任何争论，现在都可以停下来了，因为2018年物联网设备数量有望超过智能手机。 像谷歌、苹果、微软和其他主要大公司都在物联网技术上投入巨资，这被广泛认为是下一波技术浪潮。
-                    </p>
-                    <p class="read-time clear">
-                        <span class="read">900</span>
-                        <span class="time">2018/04/01</span>
-                    </p>
-                </div>
-            </a>
-            <!-- 资讯列表end -->
+           
+            
         </li>
         <li class="information-recommend">
             <h5>热门搜索</h5>
@@ -387,6 +340,7 @@
 <script>
     $(function(){
         var recommendClass = $(".information-recommend"), oTop = recommendClass.offset().top - $('.header-fixed-list').height(),oButton = $(".information-list").offset().top + $(".information-list").height() - recommendClass.height() - $(".header-fixed-list").height();
+        $(".information-list").css('min-height' , recommendClass.height() + 'px');
         $(window).on('scroll', function () {
             if ($(this).scrollTop() != 0) {
                 $(".header-fixed-list").addClass('add-head-before');
