@@ -100,6 +100,12 @@
   position: relative;
   overflow: hidden;
 }
+.wisdom-swiper-introduction .swiper-wrapper {
+  height: 4.6875rem;
+}
+.wisdom-swiper-introduction .swiper-wrapper .swiper-slide {
+  height: 4.6875rem;
+}
 .swiper-container-synopsis {
   width: 1280px;
   margin: 93px auto 150px auto;
