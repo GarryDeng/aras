@@ -95,10 +95,11 @@
     <div class="wisdom-introduction-banner">
         <div class="wisdom-swiper-introduction">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <!--  data-url填写跳转地址 -->
+                <div class="swiper-slide" data-url="test1.html">
                     <img class="banner" src="images/introduction-banner.jpg" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-url="test2.html">
                     <img class="banner" src="images/introduction-banner.jpg" alt="">
                 </div>
             </div>
@@ -156,6 +157,10 @@
             },
             loop:true,
         });
+        $(".wisdom-introduction-banner").on('click',function(){
+            var hre = $(this).find('.swiper-slide-active').attr("data-url");
+            window.location.href = hre;
+        })
         // banner图轮播end
          //滚动条
         if (window.location.href.indexOf('#wisdom') > -1) {

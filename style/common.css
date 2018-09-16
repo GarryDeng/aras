@@ -207,7 +207,6 @@ header.whole-header-nav .header-fixed-list::before {
   font-size: 0;
 }
 .header-fixed-list .list-skip .nav-a {
-  margin-right: 82px;
   margin-top: -1em;
   vertical-align: top;
   display: inline-block;
@@ -216,12 +215,13 @@ header.whole-header-nav .header-fixed-list::before {
   -webkit-text-size-adjust: none;
 }
 .header-fixed-list .list-skip .nav-a a {
+  padding: 0 40px;
   color: #FFF;
   font-size: 14px;
   transition: color .3s;
 }
 .header-fixed-list .list-skip .nav-a:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 .header-fixed-list .list-skip .nav-a .second {
   position: absolute;
@@ -609,8 +609,10 @@ footer .copyright a:hover {
     top: 16px;
   }
   .header-fixed-list .list-skip .nav-a {
-    margin-right: 50px;
     height: 60px;
+  }
+  .header-fixed-list .list-skip .nav-a a {
+    padding: 0 25px;
   }
   .header-fixed-list .list-skip .nav-a .second {
     top: 60px;
@@ -679,8 +681,8 @@ footer .copyright a:hover {
     left: 0.6122449rem;
     top: 17px;
   }
-  .header-fixed-list .list-skip .nav-a {
-    margin-right: 0.30612245rem;
+  .header-fixed-list .list-skip .nav-a a {
+    padding: 0 0.30612245rem;
   }
   .header-fixed-list .search-input {
     right: 180px;
