@@ -10,6 +10,9 @@
 .swiper-container .swiper-slide a img {
   width: 100%;
 }
+.swiper-container .swiper-slide a img.phone {
+  display: none;
+}
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -866,6 +869,12 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .swiper-container .swiper-slide a img.phone {
+    display: block;
+  }
+  .swiper-container .swiper-slide a img.pc {
+    display: none;
+  }
   .swiper-container-synopsis {
     width: 9.4rem;
     height: 3.2rem;

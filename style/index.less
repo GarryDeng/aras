@@ -7,6 +7,9 @@
             display: block;
             img{
                 width: 100%;
+                &.phone{
+                    display: none;
+                }
             }
         }
     }
@@ -1123,6 +1126,20 @@
     }
 }
 @media screen and (max-width:750px) {
+    .swiper-container{
+        .swiper-slide{
+            a{
+                img{
+                    &.phone{
+                        display: block;
+                    }
+                    &.pc{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     .swiper-container-synopsis{
         width: 9.4rem;
         height: 80*3/75rem;
